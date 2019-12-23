@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  superset.lotteryjs.com:
+    image: pierrezemb/gostatic
+    restart: always
+    # networks:
+    #   - web
+    ports: 
+      - 8043:8043
+    volumes: 
+      - $PWD:/srv/http
+    logging:
+      options:
+        max-size: "100k"
+        max-file: "3"
+    labels:
+      - "traefik.docker.network=web"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.rule=Host:superset.lotteryjs.com"
+      - "traefik.basic.port=8043"
+      - "traefik.basic.protocol=http"
+networks:
+  web:
+    external: true
