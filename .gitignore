@@ -1,7 +1,4 @@
 .DS_Store
 _build
-_images
-_modules
-_static
 build
 publish.sh
