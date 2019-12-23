@@ -4,12 +4,12 @@ services:
   superset.lotteryjs.com:
     image: pierrezemb/gostatic
     restart: always
-    # networks:
-    #   - web
+    networks:
+      - web
     ports: 
       - 8043:8043
     volumes: 
-      - $PWD:/srv/http
+      - $PWD/site:/srv/http
     logging:
       options:
         max-size: "100k"
