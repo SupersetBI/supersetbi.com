@@ -28,9 +28,7 @@
 Apache Superset (incubating)
 ''''''''''''''''''''''''''''
 
-Apache Superset (incubating) is a modern, enterprise-ready business
-intelligence web application
-
+Apache Superset(incubating) 是一个现代的、企业级的商业智能 web 应用程序
 
 ----------------
 
