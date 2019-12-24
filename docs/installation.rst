@@ -113,8 +113,8 @@ Superset将数据库连接信息存储在其元数据数据库中。
     brew install pkg-config libffi openssl python
     env LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" pip install cryptography==2.4.2
 
-**Windows** isn't officially supported at this point, but if you want to
-attempt it, download `get-pip.py <https://bootstrap.pypa.io/get-pip.py>`_, and run ``python get-pip.py`` which may need admin access. Then run the following: ::
+**Windows** 目前还不支持，但是如果您想尝试一下，请下载 `get-pip.py <https://bootstrap.pypa.io/get-pip.py>`_。
+运行 ``python get-pip.py``，可能需要管理员访问。然后运行以下命令: ::
 
     C:\> pip install cryptography
 
