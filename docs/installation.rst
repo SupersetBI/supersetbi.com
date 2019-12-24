@@ -118,7 +118,7 @@ Superset将数据库连接信息存储在其元数据数据库中。
 
     C:\> pip install cryptography
 
-    # You may also have to create C:\Temp
+    # 你可能还需要创建 C:\Temp
     C:\> md C:\Temp
 
 Python virtualenv
