@@ -15,105 +15,89 @@
     specific language governing permissions and limitations
     under the License.
 
-Installation & Configuration
+安装与配置
 ============================
 
-Getting Started
+入门指南
 ---------------
 
-Superset has deprecated support for Python ``2.*`` and supports
-only ``~=3.6`` to take advantage of the newer Python features and reduce
-the burden of supporting previous versions. We run our test suite
-against ``3.6``, but ``3.7`` is fully supported as well.
+Superset 已经弃用支持 Python ``2.*`` 并且只支持 ``~=3.6`` ，以充分利用Python的新特性，
+减少支持以前版本的负担。我们在``3.6``上运行我们的测试套件，同时也完全支持 ``3.7``。
 
-Cloud-native!
+Cloud-native（云原生）!
 -------------
 
-Superset is designed to be highly available. It is
-"cloud-native" as it has been designed scale out in large,
-distributed environments, and works well inside containers.
-While you can easily
-test drive Superset on a modest setup or simply on your laptop,
-there's virtually no limit around scaling out the platform.
-Superset is also cloud-native in the sense that it is
-flexible and lets you choose your web server (Gunicorn, Nginx, Apache),
-your metadata database engine (MySQL, Postgres, MariaDB, ...),
-your message queue (Redis, RabbitMQ, SQS, ...),
-your results backend (S3, Redis, Memcached, ...), your caching layer
-(Memcached, Redis, ...), works well with services like NewRelic, StatsD and
-DataDog, and has the ability to run analytic workloads against
-most popular database technologies.
+Superset 被设计成高可用。它是 "cloud-native" 因为它已经被设计成大规模横向可扩展，
+分布式环境，并且在容器内工作良好。
+尽管您可以在适中的设置下或仅在笔记本电脑上就能轻松测试驱动Superset，
+但实际上扩展这个平台几乎没有任何限制。
+Superset 也是云原生的，因为它很灵活，允许你选择你的 Web 服务器 (Gunicorn, Nginx, Apache)，
+你的元数据数据库引擎 (MySQL, Postgres, MariaDB, ...)，
+你的消息队列 (Redis, RabbitMQ, SQS, ...)，
+你的结果后端 (S3, Redis, Memcached, ...)，
+你的缓存层 (Memcached, Redis, ...)，可以很好地与 NewRelic、StatsD 和 DataDog 等服务协同工作，
+并且能够在最流行的数据库技术上运行分析工作负载。
 
-Superset is battle tested in large environments with hundreds
-of concurrent users. Airbnb's production environment runs inside
-Kubernetes and serves 600+ daily active users viewing over 100K charts a
-day.
+Superset 在有数百个并发用户的大型环境中进行了测试。
+Airbnb 的生产环境在 Kubernetes 内部运行，
+每天为600多名活跃用户提供超过10万张图表的浏览服务。
 
-The Superset web server and the Superset Celery workers (optional)
-are stateless, so you can scale out by running on as many servers
-as needed.
+Superset web 服务器和 Superset Celery workers（可选）是无状态的，
+因此您可以根据需要在多个服务器上运行来进行扩展。
 
-Start with Docker
+从 Docker 开始
 -----------------
 
 .. note ::
-    The Docker-related files and documentation are actively maintained and
-    managed by the core committers working on the project. Help and contributions
-    around Docker are welcomed!
+    与 docker 相关的文件和文档由项目中的核心提交者积极维护和管理。
+    欢迎围绕 Docker 的帮助和贡献！
 
-If you know docker, then you're lucky, we have shortcut road for you to
-initialize development environment: ::
+如果你了解docker，那么你是幸运的，我们为你提供了初始化开发环境的捷径: ::
 
     git clone https://github.com/apache/incubator-superset/
     cd incubator-superset
-    # you can run this command everytime you need to start superset now:
+    # 您可以在每次需要启动 Superset 时运行此命令:
     docker-compose up
 
-After several minutes for superset initialization to finish, you can open
-a browser and view `http://localhost:8088` to start your journey.
+几分钟后，superset 初始化完成，您可以打开浏览器并查看 `http://localhost:8088` 来开始你的旅程。
 
-From there, the container server will reload on modification of the superset python
-and javascript source code.
-Don't forget to reload the page to take the new frontend into account though.
+然后，容器服务器将在修改 Superset python 和 javascript 源代码时重新加载。
+不过，不要忘记重新加载页面以考虑新的前端。
 
-See also `CONTRIBUTING.md#building <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md#building>`_,
-for alternative way of serving the frontend.
+参阅 `CONTRIBUTING.md#building <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md#building>`_,提供另一种服务前端的方式。
 
-It is currently not recommended to run docker-compose in production.
+目前不建议在生产环境中运行 docker-compose。
 
-If you are attempting to build on a Mac and it exits with 137 you need to increase your docker resources.
-OSX instructions: https://docs.docker.com/docker-for-mac/#advanced (Search for memory)
+如果你试图在Mac上构建，它有137个退出，你需要增加你的docker资源。
+OSX指令: https://docs.docker.com/docker-for-mac/#advanced (Search for memory)
 
-Or if you're curious and want to install superset from bottom up, then go ahead.
+或者如果你很好奇，想要自底向上安装superset，那就继续吧。
 
-See also `docker/README.md <https://github.com/apache/incubator-superset/blob/master/docker/README.md>`_
+参阅 `docker/README.md <https://github.com/apache/incubator-superset/blob/master/docker/README.md>`_
 
-OS dependencies
+OS 依赖
 ---------------
 
-Superset stores database connection information in its metadata database.
-For that purpose, we use the ``cryptography`` Python library to encrypt
-connection passwords. Unfortunately, this library has OS level dependencies.
+Superset将数据库连接信息存储在其元数据数据库中。
+为此，我们使用 ``cryptography`` Python 库来加密连接密码。
+不幸的是，这个库具有操作系统级依赖项。
 
-You may want to attempt the next step
-("Superset installation and initialization") and come back to this step if
-you encounter an error.
+您可能想尝试下一步
+(“Superset安装和初始化”)，如果遇到错误，请回到这一步。
 
-Here's how to install them:
+下面是如何安装它们:
 
-For **Debian** and **Ubuntu**, the following command will ensure that
-the required dependencies are installed: ::
+对于 **Debian** 和 **Ubuntu**，以下命令将确保安装所需的依赖项: ::
 
     sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev
 
-**Ubuntu 18.04** If you have python3.6 installed alongside with python2.7, as is default on **Ubuntu 18.04 LTS**, run this command also: ::
+**Ubuntu 18.04** 如果你已经安装了 python3.6和 python2.7，这是 **Ubuntu 18.04 LTS** 的默认设置, 你也可以运行这个命令: ::
 
     sudo apt-get install build-essential libssl-dev libffi-dev python3.6-dev python-pip libsasl2-dev libldap2-dev
 
-otherwise build for ``cryptography`` fails.
+否则，``cryptography`` 构建将失败。
 
-For **Fedora** and **RHEL-derivatives**, the following command will ensure
-that the required dependencies are installed: ::
+对于 **Fedora** 和 **RHEL-derivatives**，以下命令将确保安装所需的依赖项: ::
 
     sudo yum upgrade python-setuptools
     sudo yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel openssl-devel cyrus-sasl-devel openldap-devel
