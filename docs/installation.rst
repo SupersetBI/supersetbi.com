@@ -123,20 +123,19 @@ Superset将数据库连接信息存储在其元数据数据库中。
 
 Python virtualenv
 -----------------
-It is recommended to install Superset inside a virtualenv. Python 3 already ships virtualenv.
-But if it's not installed in your environment for some reason, you can install it
-via the package for your operating systems, otherwise you can install from pip: ::
+建议在 virtualenv 中安装 Superset。Python 3 已经发布了 virtualenv。
+但是，如果由于某些原因它没有安装在您的环境中，您可以通过操作系统的包安装它，否则您可以从 pip 安装它: ::
 
     pip install virtualenv
 
-You can create and activate a virtualenv by: ::
+您可以创建并激活一个 virtualenv: ::
 
-    # virtualenv is shipped in Python 3.6+ as venv instead of pyvenv.
-    # See https://docs.python.org/3.6/library/venv.html
+    # virtualenv 是在 Python 3.6+ 中作为 venv 发布的，代替 pyvenv。
+    # 参看 https://docs.python.org/3.6/library/venv.html
     python3 -m venv venv
     . venv/bin/activate
 
-On Windows the syntax for activating it is a bit different: ::
+在Windows上，激活它的语法略有不同: ::
 
     venv\Scripts\activate
 
