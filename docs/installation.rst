@@ -102,13 +102,13 @@ Superset将数据库连接信息存储在其元数据数据库中。
     sudo yum upgrade python-setuptools
     sudo yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel openssl-devel cyrus-sasl-devel openldap-devel
 
-**Mac OS X** If possible, you should upgrade to the latest version of OS X as issues are more likely to be resolved for that version.
-You *will likely need* the latest version of XCode available for your installed version of OS X. You should also install
-the XCode command line tools: ::
+**Mac OS X** 如果可能的话，您应该升级到最新版本的OS X，因为该版本的问题更有可能得到解决。
+您 **可能需要** 最新版本的 XCode 来支持您安装的 OS X 版本。
+您还应该安装 XCode 命令行工具: ::
 
     xcode-select --install
 
-System python is not recommended. Homebrew's python also ships with pip: ::
+不推荐使用 System python。Homebrew 的 python 也附带了 pip: ::
 
     brew install pkg-config libffi openssl python
     env LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" pip install cryptography==2.4.2
