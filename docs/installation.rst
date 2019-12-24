@@ -141,10 +141,9 @@ Python virtualenv
 
 一旦你激活了你的 virtualenv，你所做的一切都被限制在 virtualenv 里面了。要退出 virtualenv，只需键入 ``deactivate``。
 
-Python's setup tools and pip
+Python 的 setup tools 和 pip
 ----------------------------
-Put all the chances on your side by getting the very latest ``pip``
-and ``setuptools`` libraries.::
+获得最新的 ``pip`` 和 ``setuptools`` 库，把所有的机会都放在您这一边。::
 
     pip install --upgrade setuptools pip
 
