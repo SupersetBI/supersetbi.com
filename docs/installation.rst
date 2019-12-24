@@ -157,14 +157,14 @@ Superset 安装和初始化
     # 初始化数据库
     superset db upgrade
 
-    # 创建一个管理员用户 (you will be prompted to set a username, first and last name before setting a password)
+    # 创建一个管理员用户 (在设置密码之前，系统将提示您设置用户名、姓和名)
     $ export FLASK_APP=superset
     superset fab create-admin
 
-    # Load some data to play with
+    # 加载一些数据来处理
     superset load_examples
 
-    # Create default roles and permissions
+    # 创建默认角色和权限
     superset init
 
     # To start a development web server on port 8088, use -p to bind to another port
