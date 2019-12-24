@@ -167,7 +167,7 @@ Superset 安装和初始化
     # 创建默认角色和权限
     superset init
 
-    # To start a development web server on port 8088, use -p to bind to another port
+    # 要在端口 8088 上启动开发 web 服务器，使用 -p 绑定到另一个端口
     superset run -p 8088 --with-threads --reload --debugger
 
 After installation, you should be able to point your browser to the right
