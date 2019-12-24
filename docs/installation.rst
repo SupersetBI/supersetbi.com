@@ -147,17 +147,17 @@ Python 的 setup tools 和 pip
 
     pip install --upgrade setuptools pip
 
-Superset installation and initialization
+Superset 安装和初始化
 ----------------------------------------
-Follow these few simple steps to install Superset.::
+遵循以下几个简单的步骤来安装 Superset。::
 
-    # Install superset
+    # 安装 superset
     pip install apache-superset
 
-    # Initialize the database
+    # 初始化数据库
     superset db upgrade
 
-    # Create an admin user (you will be prompted to set a username, first and last name before setting a password)
+    # 创建一个管理员用户 (you will be prompted to set a username, first and last name before setting a password)
     $ export FLASK_APP=superset
     superset fab create-admin
 
