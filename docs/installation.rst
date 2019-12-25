@@ -362,10 +362,9 @@ Database dependencies
 +------------------+---------------------------------------+-------------------------------------------------+
 
 
-Note that many other databases are supported, the main criteria being the
-existence of a functional SqlAlchemy dialect and Python driver. Googling
-the keyword ``sqlalchemy`` in addition of a keyword that describes the
-database you want to connect to should get you to the right place.
+注意，还支持许多其他数据库，主要的标准是是否存在函数式 SqlAlchemy dialect 和 Python 驱动程序。
+在 google 上搜索关键字 ``sqlalchemy`` 和描述要连接的数据库的关键字，应该可以找到正确的位置。
+
 
 Hana
 ------------
