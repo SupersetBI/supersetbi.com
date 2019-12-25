@@ -450,7 +450,7 @@ Elasticsearch 默认限制为 10000 行，因此可以在集群中增加这个�
 
     select timestamp, agent from "logstash-*"
 
-But, to use visualizations for multiple indices you need to create an alias index on your cluster ::
+但是，要对多个索引使用可视化，需要在集群上创建别名索引 ::
 
     POST /_aliases
     {
@@ -459,12 +459,12 @@ But, to use visualizations for multiple indices you need to create an alias inde
         ]
     }
 
-Then register your table with the ``alias`` name ``logstasg_all``
+然后用 ``alias`` 名称 ``logstasg_all`` 注册你的表
 
 Snowflake
 ---------
 
-The connection string for Snowflake looks like this ::
+Snowflake 的连接字符串如下 ::
 
     snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&warehouse={warehouse}
 
