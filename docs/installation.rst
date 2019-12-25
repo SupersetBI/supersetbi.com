@@ -505,8 +505,8 @@ Apache Drill
     cd sqlalchemy-drill
     python3 setup.py install
 
-Once that is done, you can connect to Drill in two ways, either via the REST interface or by JDBC.  If you are connecting via JDBC, you must have the
-Drill JDBC Driver installed.
+完成之后，您可以通过两种方式连接到 Drill，一种是通过 REST 接口，另一种是通过 JDBC。
+如果您通过 JDBC 进行连接，则必须安装 Drill JDBC 驱动程序。
 
 The basic connection string for Drill looks like this ::
 
