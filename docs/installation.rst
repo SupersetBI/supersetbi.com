@@ -473,8 +473,7 @@ Snowflake 的连接字符串如下 ::
 
     snowflake://{user}:{password}@{account}.{region}/{database}
 
-确保用户有权访问和使用所有必需的
-databases/schemas/tables/views/warehouses，
+确保用户有权访问和使用所有必需的 databases/schemas/tables/views/warehouses，
 因为 Snowflake SQLAlchemy 引擎在创建引擎期间不测试用户权限。
 
 参看 `Snowflake SQLAlchemy <https://github.com/snowflakedb/snowflake-sqlalchemy>`_.
@@ -482,7 +481,7 @@ databases/schemas/tables/views/warehouses，
 Teradata
 ---------
 
-The connection string for Teradata looks like this ::
+Teradata 的连接字符串如下 ::
 
     teradata://{user}:{password}@{host}
 
