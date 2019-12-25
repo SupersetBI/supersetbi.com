@@ -398,19 +398,16 @@ BigQuery 的连接字符串如下 ::
 
     bigquery://{project_id}
 
-Additionally, you will need to configure authentication via a
-Service Account. Create your Service Account via the Google
-Cloud Platform control panel, provide it access to the appropriate
-BigQuery datasets, and download the JSON configuration file
-for the service account. In Superset, Add a JSON blob to
-the "Secure Extra" field in the database configuration page
-with the following format ::
+此外，您还需要通过服务帐户配置身份验证。通过谷歌云平台控制面板创建服务帐户，
+为其提供对适当的 BigQuery 数据集的访问，并下载服务帐户的 JSON 配置文件。
+在 Superset 中，使用以下格式将 JSON blob 添加到
+数据库配置页中的 “Secure Extra” 字段 ::
 
     {
         "credentials_info": <contents of credentials JSON file>
     }
 
-The resulting file should have this structure ::
+结果文件应该具有这种结构 ::
 
     {
         "credentials_info": {
