@@ -217,13 +217,9 @@ Flask-AppBuilder 权限
  Load Balancer 背后的配置
 ------------------------------------
 
-If you are running superset behind a load balancer or reverse proxy (e.g. NGINX
-or ELB on AWS), you may need to utilise a healthcheck endpoint so that your
-load balancer knows if your superset instance is running. This is provided
-at ``/health`` which will return a 200 response containing "OK" if the
-the webserver is running.
-如果您在 `load balancer` 或 `reverse proxy`（如 AWS 上的 NGINX 或 ELB）后面运行 Superset，
-则可能需要使用 healthcheck 端点，以便您的 `load balancer` 知道您的 Superset 实例是否正在运行。
+如果您在 load balancer 或 reverse proxy（如 AWS 上的 NGINX 或 ELB）后面运行 Superset，
+则可能需要使用 healthcheck 端点，以便您的 load balancer 知道您的 Superset 实例是否正在运行。
+这是在``/health``提供的，如果 webserver 正在运行，它将返回一个包含 "OK" 的200响应。
 
 If the load balancer is inserting X-Forwarded-For/X-Forwarded-Proto headers, you
 should set `ENABLE_PROXY_FIX = True` in the superset config file to extract and use
