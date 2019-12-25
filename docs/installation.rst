@@ -277,13 +277,13 @@ Superset 使用的 web 框架提供了很多配置设置。有关如何配置它
 请参阅`Flask App Builder Documentation
 <https://flask-appbuilder.readthedocs.org/en/latest/config.html>`_。
 
-Make sure to change:
+一定要换的配置:
 
-* *SQLALCHEMY_DATABASE_URI*, by default it is stored at *~/.superset/superset.db*
-* *SECRET_KEY*, to a long random string
+* *SQLALCHEMY_DATABASE_URI*, 默认情况下，它存储在 *~/.superset/superset.db*
+* *SECRET_KEY*, 一个长而随机的字符串
 
-In case you need to exempt endpoints from CSRF, e.g. you are running a custom
-auth postback endpoint, you can add them to *WTF_CSRF_EXEMPT_LIST*
+如果您需要免除CSRF的端点，e.g. 您正在运行一个自定义的 auth postback 端点，
+您可以将它们添加到 *WTF_CSRF_EXEMPT_LIST*
 
      WTF_CSRF_EXEMPT_LIST = ['']
 
@@ -293,8 +293,7 @@ auth postback endpoint, you can add them to *WTF_CSRF_EXEMPT_LIST*
 Database dependencies
 ---------------------
 
-Superset does not ship bundled with connectivity to databases, except
-for Sqlite, which is part of the Python standard library.
+除了 Sqlite (Python标准库的一部分)之外，Superset 没有绑定到数据库的连接。
 You'll need to install the required packages for the database you
 want to use as your metadata database as well as the packages needed to
 connect to the databases you want to access through Superset.
