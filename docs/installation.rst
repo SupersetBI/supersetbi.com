@@ -446,7 +446,7 @@ Elasticsearch 默认限制为 10000 行，因此可以在集群中增加这个�
 
     ROW_LIMIT = 10000
 
-You can query multiple indices on SQLLab for example ::
+例如，您可以在SQLLab上查询多个索引 ::
 
     select timestamp, agent from "logstash-*"
 
