@@ -431,11 +431,11 @@ BigQuery 的连接字符串如下 ::
 Elasticsearch
 -------------
 
-The connection string for Elasticsearch looks like this ::
+Elasticsearch 的连接字符串如下 ::
 
     elasticsearch+http://{user}:{password}@{host}:9200/
 
-Using HTTPS ::
+使用 HTTPS ::
 
     elasticsearch+https://{user}:{password}@{host}:9200/
 
