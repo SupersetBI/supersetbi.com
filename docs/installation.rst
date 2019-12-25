@@ -381,7 +381,7 @@ Athena 的连接字符串如下 ::
 
     awsathena+jdbc://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&...
 
-Where you need to escape/encode at least the s3_staging_dir, i.e., ::
+至少需要 escape/encode s3_staging_dir, i.e., ::
 
     s3://... -> s3%3A//...
 
