@@ -469,15 +469,15 @@ Snowflake 的连接字符串如下 ::
     snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&warehouse={warehouse}
 
 连接字符串中不需要 schema，因为它是按 table/query 定义的。
-The role and warehouse can be omitted if defaults are defined for the user, i.e.
+如果为用户定义了默认值，可以省略角色和仓库, i.e.
 
     snowflake://{user}:{password}@{account}.{region}/{database}
 
-Make sure the user has privileges to access and use all required
-databases/schemas/tables/views/warehouses, as the Snowflake SQLAlchemy engine does
-not test for user rights during engine creation.
+确保用户有权访问和使用所有必需的
+databases/schemas/tables/views/warehouses，
+因为 Snowflake SQLAlchemy 引擎在创建引擎期间不测试用户权限。
 
-See `Snowflake SQLAlchemy <https://github.com/snowflakedb/snowflake-sqlalchemy>`_.
+参看 `Snowflake SQLAlchemy <https://github.com/snowflakedb/snowflake-sqlalchemy>`_.
 
 Teradata
 ---------
