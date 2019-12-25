@@ -485,7 +485,7 @@ Teradata 的连接字符串如下 ::
 
     teradata://{user}:{password}@{host}
 
-*Note*: Its required to have Teradata ODBC drivers installed and environment variables configured for proper work of sqlalchemy dialect. Teradata ODBC Drivers available here: https://downloads.teradata.com/download/connectivity/odbc-driver/linux
+*注意*：需要安装 Teradata ODBC 驱动程序并配置环境变量，以便正确使用 sqlalchemy dialect。此处提供 Teradata ODBC 驱动程序：https://downloads.teradata.com/download/connectivity/odbc-driver/linux
 
 Required environment variables: ::
 
