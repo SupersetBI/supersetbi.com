@@ -385,11 +385,11 @@ Athena 的连接字符串如下 ::
 
     s3://... -> s3%3A//...
 
-You can also use `PyAthena` library(no java required) like this ::
+您还可以像这样使用 `PyAthena` 库（不需要java）::
 
     awsathena+rest://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&...
 
-See `PyAthena <https://github.com/laughingman7743/PyAthena#sqlalchemy>`_.
+参看 `PyAthena <https://github.com/laughingman7743/PyAthena#sqlalchemy>`_.
 
 (Google) BigQuery
 -----------------
