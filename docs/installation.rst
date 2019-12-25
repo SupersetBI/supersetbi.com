@@ -294,9 +294,8 @@ Database dependencies
 ---------------------
 
 除了 Sqlite (Python标准库的一部分)之外，Superset 没有绑定到数据库的连接。
-You'll need to install the required packages for the database you
-want to use as your metadata database as well as the packages needed to
-connect to the databases you want to access through Superset.
+您将需要安装作为元数据数据库使用的数据库所需的包，以及通过 Superset 连接到
+要访问的数据库所需的包。
 
 Here's a list of some of the recommended packages.
 
