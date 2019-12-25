@@ -297,7 +297,7 @@ Database dependencies
 您将需要安装作为元数据数据库使用的数据库所需的包，以及通过 Superset 连接到
 要访问的数据库所需的包。
 
-Here's a list of some of the recommended packages.
+以下是一些推荐的软件包。
 
 +------------------+---------------------------------------+-------------------------------------------------+
 | database         | pypi package                          | SQLAlchemy URI prefix                           |
