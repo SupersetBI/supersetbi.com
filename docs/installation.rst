@@ -170,12 +170,10 @@ Superset 安装和初始化
     # 要在端口 8088 上启动开发 web 服务器，使用 -p 绑定到另一个端口
     superset run -p 8088 --with-threads --reload --debugger
 
-After installation, you should be able to point your browser to the right
-hostname:port `http://localhost:8088 <http://localhost:8088>`_, login using
-the credential you entered while creating the admin account, and navigate to
-`Menu -> Admin -> Refresh Metadata`. This action should bring in all of
-your datasources for Superset to be aware of, and they should show up in
-`Menu -> Datasources`, from where you can start playing with your data!
+安装之后，您应该能够将浏览器指向正确的 hostname:port `http://localhost:8088 <http://localhost:8088>`_,
+使用创建管理员帐户时输入的凭据登录，并导航到 `Menu -> Admin -> Refresh Metadata` 。
+此操作应该为 Superset 带来所有需要注意的数据源，并且它们应该出现在 `Menu -> Datasources`，
+从那里你可以开始玩你的数据！
 
 A proper WSGI HTTP Server
 -------------------------
