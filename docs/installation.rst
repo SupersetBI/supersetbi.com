@@ -221,13 +221,11 @@ Flask-AppBuilder 权限
 则可能需要使用 healthcheck 端点，以便您的 load balancer 知道您的 Superset 实例是否正在运行。
 这是在``/health``提供的，如果 webserver 正在运行，它将返回一个包含 "OK" 的200响应。
 
-If the load balancer is inserting X-Forwarded-For/X-Forwarded-Proto headers, you
-should set `ENABLE_PROXY_FIX = True` in the superset config file to extract and use
-the headers.
+如果 load balancer 正在插入 X-Forwarded-For/X-Forwarded-Proto 头，
+则应在 superset 配置文件中设置 `ENABLE_PROXY_FIX = True` 以提取和使用头。
 
-In case that the reverse proxy is used for providing ssl encryption,
-an explicit definition of the `X-Forwarded-Proto` may be required.
-For the Apache webserver this can be set as follows: ::
+如果 reverse proxy 用于提供 ssl 加密，则可能需要 `X-Forwarded-Proto` 的显式定义。
+对于 Apache webserver，可以如下设置: ::
 
     RequestHeader set X-Forwarded-Proto "https"
 
