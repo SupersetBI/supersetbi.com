@@ -229,12 +229,11 @@ Flask-AppBuilder 权限
 
     RequestHeader set X-Forwarded-Proto "https"
 
-Configuration
+配置
 -------------
 
-To configure your application, you need to create a file (module)
-``superset_config.py`` and make sure it is in your PYTHONPATH. Here are some
-of the parameters you can copy / paste in that configuration module: ::
+要配置应用程序，您需要创建一个文件（module）``superset_config.py``，并确保它位于 PYTHONPATH 中。
+以下是可以在该配置模块中 copy / paste 的一些参数: ::
 
     #---------------------------------------------------------
     # Superset specific config
