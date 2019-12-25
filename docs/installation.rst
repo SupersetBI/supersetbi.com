@@ -499,7 +499,7 @@ Apache Drill
 在编写本文时，pypi 上没有 SQLAlchemy Dialect，并且必须在此处下载:
 `SQLAlchemy Drill <https://github.com/JohnOmernik/sqlalchemy-drill>`_
 
-Alternatively, you can install it completely from the command line as follows: ::
+或者，您可以从命令行完全安装它，如下所示: ::
 
     git clone https://github.com/JohnOmernik/sqlalchemy-drill
     cd sqlalchemy-drill
