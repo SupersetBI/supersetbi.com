@@ -440,8 +440,9 @@ Elasticsearch 的连接字符串如下 ::
     elasticsearch+https://{user}:{password}@{host}:9200/
 
 
-Elasticsearch as a default limit of 10000 rows, so you can increase this limit on your cluster
-or set Superset's row limit on config ::
+Elasticsearch 默认限制为 10000 行，因此可以在集群中增加这个限制，
+或者在 config 中增加 set Superset 的行限制 ::
+
 
     ROW_LIMIT = 10000
 
