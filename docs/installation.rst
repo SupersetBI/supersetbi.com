@@ -175,16 +175,13 @@ Superset 安装和初始化
 此操作应该为 Superset 带来所有需要注意的数据源，并且它们应该出现在 `Menu -> Datasources`，
 从那里你可以开始玩你的数据！
 
-A proper WSGI HTTP Server
+一个合适的 WSGI HTTP 服务器
 -------------------------
 
-While you can setup Superset to run on Nginx or Apache, many use
-Gunicorn, preferably in **async mode**, which allows for impressive
-concurrency even and is fairly easy to install and configure. Please
-refer to the
-documentation of your preferred technology to set up this Flask WSGI
-application in a way that works well in your environment. Here's an **async**
-setup known to work well in production: ::
+虽然可以将 Superset 设置为在 Nginx 或 Apache 上运行，但很多都使用 Gunicorn，
+最好是在 **async mode** 下，这甚至可以实现令人印象深刻的并发性，而且相当容易安装和配置。
+请参考您首选技术的文档，以在您的环境中正常工作的方式设置此 Flask WSGI 应用程序。
+以下是一个在生产中运行良好的 **async** 设置: ::
 
  　gunicorn \
         -w 10 \
