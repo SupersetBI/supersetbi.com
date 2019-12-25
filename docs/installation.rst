@@ -377,7 +377,7 @@ Hana 的连接字符串是这样的 ::
 (AWS) Athena
 ------------
 
-The connection string for Athena looks like this ::
+Athena 的连接字符串如下 ::
 
     awsathena+jdbc://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&...
 
