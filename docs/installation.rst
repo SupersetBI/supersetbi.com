@@ -492,7 +492,7 @@ Teradata 的连接字符串如下 ::
     export ODBCINI=/.../teradata/client/ODBC_64/odbc.ini
     export ODBCINST=/.../teradata/client/ODBC_64/odbcinst.ini
 
-See `Teradata SQLAlchemy <https://github.com/Teradata/sqlalchemy-teradata>`_.
+参看 `Teradata SQLAlchemy <https://github.com/Teradata/sqlalchemy-teradata>`_.
 
 Apache Drill
 ------------
