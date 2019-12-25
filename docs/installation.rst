@@ -426,8 +426,7 @@ BigQuery 的连接字符串如下 ::
 
 然后，您应该能够连接到您的 BigQuery 数据集。
 
-To be able to upload data, e.g. sample data, the python library `pandas_gbq` is required.
-
+能够上传数据, e.g. 样本数据，python库 `pandas_gbq` 是必需的。
 
 Elasticsearch
 -------------
