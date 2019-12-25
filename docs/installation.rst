@@ -203,24 +203,18 @@ Superset 安装和初始化
 Flask-AppBuilder 权限
 ----------------------------
 
-By default, every time the Flask-AppBuilder (FAB) app is initialized the
-permissions and views are added automatically to the backend and associated with
-the ‘Admin’ role. The issue, however, is when you are running multiple concurrent
-workers this creates a lot of contention and race conditions when defining
-permissions and views.
 默认情况下，每次初始化 Flask-AppBuilder (FAB) 应用程序时，
-权限和视图都会自动添加到后端并与 ‘Admin’ 角色关联。
+权限和视图都会自动添加到后端并与 ‘Admin’ 角色关联。但是，问题是，当您运行多个并发 worker 时，
+这会在定义权限和视图时创建大量争用和竞争条件。
 
+为了缓解这个问题，可以通过设置 `FAB_UPDATE_PERMS = False`（默认为True）来禁用权限的自动更新。
 
-To alleviate this issue, the automatic updating of permissions can be disabled
-by setting `FAB_UPDATE_PERMS = False` (defaults to True).
-
-In a production environment initialization could take on the following form:
+在生产环境中，初始化可以采用以下形式：
 
   superset init
   gunicorn -w 10 ... superset:app
 
-Configuration behind a load balancer
+ Load Balancer 背后的配置
 ------------------------------------
 
 If you are running superset behind a load balancer or reverse proxy (e.g. NGINX
