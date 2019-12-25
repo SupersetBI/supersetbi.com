@@ -266,12 +266,9 @@ Flask-AppBuilder 权限
     # Set this API key to enable Mapbox visualizations
     MAPBOX_API_KEY = ''
 
-All the parameters and default values defined in
-https://github.com/apache/incubator-superset/blob/master/superset/config.py
-can be altered in your local ``superset_config.py`` .
-Administrators will want to
-read through the file to understand what can be configured locally
-as well as the default values in place.
+https://github.com/apache/incubator-superset/blob/master/superset/config.py 
+中定义的所有参数和默认值都可以在本地``superset_config.py``中更改。
+管理员将希望通读该文件，以了解可以在本地配置的内容以及现有的默认值。
 
 Since ``superset_config.py`` acts as a Flask configuration module, it
 can be used to alter the settings Flask itself,
