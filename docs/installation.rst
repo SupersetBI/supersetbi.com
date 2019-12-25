@@ -195,8 +195,7 @@ Superset 安装和初始化
 
 有关更多信息，请参阅 `Gunicorn documentation <https://docs.gunicorn.org/en/stable/design.html>`_。
 
-Note that the development web
-server (`superset run` or `flask run`) is not intended for production use.
+请注意，开发环境 web 服务器（`superset run` or `flask run`）不准备用在生产环境。
 
 If not using gunicorn, you may want to disable the use of flask-compress
 by setting `ENABLE_FLASK_COMPRESS = False` in your `superset_config.py`
