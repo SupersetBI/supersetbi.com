@@ -496,7 +496,7 @@ Teradata 的连接字符串如下 ::
 
 Apache Drill
 ------------
-At the time of writing, the SQLAlchemy Dialect is not available on pypi and must be downloaded here:
+在编写本文时，pypi 上没有 SQLAlchemy Dialect，并且必须在此处下载:
 `SQLAlchemy Drill <https://github.com/JohnOmernik/sqlalchemy-drill>`_
 
 Alternatively, you can install it completely from the command line as follows: ::
