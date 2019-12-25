@@ -522,10 +522,9 @@ Drill 的基本连接字符串如下 ::
 Caching
 -------
 
-Superset uses `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ for
-caching purpose. Configuring your caching backend is as easy as providing
-a ``CACHE_CONFIG``, constant in your ``superset_config.py`` that
-complies with the Flask-Cache specifications.
+Superset使用 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ 进行缓存。
+配置缓存后端就像在 ``superset_config.py`` 中提供一个符合 Flask-Cache 规范的 ``CACHE_CONFIG`` 常量一样简单。
+
 
 Flask-Cache supports multiple caching backends (Redis, Memcached,
 SimpleCache (in-memory), or the local filesystem). If you are going to use
