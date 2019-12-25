@@ -278,6 +278,9 @@ framework used by Superset offers many configuration settings. Please consult
 the `Flask App Builder Documentation
 <https://flask-appbuilder.readthedocs.org/en/latest/config.html>`_
 for more information on how to configure it.
+由于 ``superset_config.py`` 充当一个 Flask 配置模块，它可以用来改变 Flask 本身的设置，
+也可以用来改变 Flask 的扩展，比如``flask-wtf``, ``flask-cache``,
+``flask-migrate`` 和 ``flask-appbuilder``。
 
 Make sure to change:
 
