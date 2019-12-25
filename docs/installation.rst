@@ -468,7 +468,7 @@ Snowflake 的连接字符串如下 ::
 
     snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&warehouse={warehouse}
 
-The schema is not necessary in the connection string, as it is defined per table/query.
+连接字符串中不需要 schema，因为它是按 table/query 定义的。
 The role and warehouse can be omitted if defaults are defined for the user, i.e.
 
     snowflake://{user}:{password}@{account}.{region}/{database}
