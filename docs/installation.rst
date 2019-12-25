@@ -369,7 +369,7 @@ Database dependencies
 Hana
 ------------
 
-Hana 的连接字符串是这样的 ::
+Hana 的连接字符串如下 ::
 
     hana://{username}:{password}@{host}:{port}
 
@@ -394,7 +394,7 @@ Athena 的连接字符串如下 ::
 (Google) BigQuery
 -----------------
 
-The connection string for BigQuery looks like this ::
+BigQuery 的连接字符串如下 ::
 
     bigquery://{project_id}
 
