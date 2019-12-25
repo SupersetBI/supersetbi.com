@@ -508,7 +508,7 @@ Apache Drill
 完成之后，您可以通过两种方式连接到 Drill，一种是通过 REST 接口，另一种是通过 JDBC。
 如果您通过 JDBC 进行连接，则必须安装 Drill JDBC 驱动程序。
 
-The basic connection string for Drill looks like this ::
+Drill的基本连接字符串如下 ::
 
     drill+sadrill://{username}:{password}@{host}:{port}/{storage_plugin}?use_ssl=True
 
