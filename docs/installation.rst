@@ -369,7 +369,7 @@ Database dependencies
 Hana
 ------------
 
-The connection string for Hana looks like this ::
+Hana 的连接字符串是这样的 ::
 
     hana://{username}:{password}@{host}:{port}
 
