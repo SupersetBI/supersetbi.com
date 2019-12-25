@@ -516,7 +516,7 @@ Drill 的基本连接字符串如下 ::
 
     drill+jdbc://{username}:{password}@{host}:{port}/{storage_plugin}
 
-For a complete tutorial about how to use Apache Drill with Superset, see this tutorial:
+有关如何在 Superset 中使用 Apache Drill 的完整教程，请参阅本教程:
 `Visualize Anything with Superset and Drill <http://thedataist.com/visualize-anything-with-superset-and-drill/>`_
 
 Caching
