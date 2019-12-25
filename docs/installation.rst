@@ -197,8 +197,8 @@ Superset 安装和初始化
 
 请注意，开发环境 web 服务器（`superset run` or `flask run`）不准备用在生产环境。
 
-If not using gunicorn, you may want to disable the use of flask-compress
-by setting `ENABLE_FLASK_COMPRESS = False` in your `superset_config.py`
+如果不使用 gunicorn，你或许想要禁用 flask-compress 的使用，可以通过在你的 `superset_config.py`
+中设置 `ENABLE_FLASK_COMPRESS = False`。
 
 Flask-AppBuilder Permissions
 ----------------------------
