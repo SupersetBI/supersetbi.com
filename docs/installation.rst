@@ -193,9 +193,7 @@ Superset 安装和初始化
         --statsd-host localhost:8125 \
         "superset.app:create_app()"
 
-Refer to the
-`Gunicorn documentation <https://docs.gunicorn.org/en/stable/design.html>`_
-for more information.
+有关更多信息，请参阅 `Gunicorn documentation <https://docs.gunicorn.org/en/stable/design.html>`_。
 
 Note that the development web
 server (`superset run` or `flask run`) is not intended for production use.
