@@ -533,10 +533,8 @@ SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memca
 
     pip install redis
 
-For setting your timeouts, this is done in the Superset metadata and goes
-up the "timeout searchpath", from your slice configuration, to your
-data source's configuration, to your database's and ultimately falls back
-into your global default defined in ``CACHE_CONFIG``.
+对于设置超时，这是在 Superset 元数据中完成的，并将 "timeout searchpath" 从 slice 配置
+上升到你数据源的配置，再上升到你数据库的配置，最终返回到 ``CACHE_CONFIG`` 中定义的全局默认值。
 
 .. code-block:: python
 
