@@ -526,14 +526,10 @@ Superset使用 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ 进行缓�
 配置缓存后端就像在 ``superset_config.py`` 中提供一个符合 Flask-Cache 规范的 ``CACHE_CONFIG`` 常量一样简单。
 
 
-Flask-Cache supports multiple caching backends (Redis, Memcached,
-SimpleCache (in-memory), or the local filesystem). If you are going to use
-Memcached please use the `pylibmc` client library as `python-memcached` does
-not handle storing binary data correctly. If you use Redis, please install
-the `redis <https://pypi.python.org/pypi/redis>`_ Python package: ::
-Flask-Cache支持多个缓存后端 (Redis, Memcached,
+Flask-Cache 支持多个缓存后端 (Redis, Memcached,
 SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memcached，
 请使用 `pylibmc` 客户端库，因为 `python-memcached` 不能正确存储二进制数据。
+如果您使用的是 Redis，请安装 `redis <https://pypi.python.org/pypi/redis>`_ Python包: ::
 
     pip install redis
 
