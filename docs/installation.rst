@@ -531,6 +531,9 @@ SimpleCache (in-memory), or the local filesystem). If you are going to use
 Memcached please use the `pylibmc` client library as `python-memcached` does
 not handle storing binary data correctly. If you use Redis, please install
 the `redis <https://pypi.python.org/pypi/redis>`_ Python package: ::
+Flask-Cache支持多个缓存后端 (Redis, Memcached,
+SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memcached，
+请使用 `pylibmc` 客户端库，因为 `python-memcached` 不能正确存储二进制数据。
 
     pip install redis
 
