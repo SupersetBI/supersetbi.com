@@ -564,9 +564,8 @@ SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memca
 
     CACHE_CONFIG = init_cache
 
-Superset has a Celery task that will periodically warm up the cache based on
-different strategies. To use it, add the following to the `CELERYBEAT_SCHEDULE`
-section in `config.py`:
+Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存。
+要使用它，请将以下内容添加到 `config.py` 中的 `CELERYBEAT_SCHEDULE` 部分：
 
 .. code-block:: python
 
