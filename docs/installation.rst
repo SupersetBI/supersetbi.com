@@ -581,8 +581,8 @@ Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存
         },
     }
 
-This will cache all the charts in the top 5 most popular dashboards every hour.
-For other strategies, check the `superset/tasks/cache.py` file.
+这将每小时将所有图表缓存在前5个最受欢迎的仪表板中。
+对于其他策略，请查看 `superset/tasks/cache.py` 文件。
 
 
 Deeper SQLAlchemy integration
