@@ -588,18 +588,19 @@ Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存
 Deeper SQLAlchemy integration
 -----------------------------
 
-It is possible to tweak the database connection information using the
-parameters exposed by SQLAlchemy. In the ``Database`` edit view, you will
-find an ``extra`` field as a ``JSON`` blob.
+
+可以使用 SQLAlchemy 公开的参数调整数据库连接信息。
+在 ``Database`` edit 视图中，您将发现一个 ``extra`` 的字段作为 ``JSON`` blob。
+
 
 .. image:: images/tutorial/add_db.png
    :scale: 30 %
 
-This JSON string contains extra configuration elements. The ``engine_params``
-object gets unpacked into the
-`sqlalchemy.create_engine <https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine>`_ call,
-while the ``metadata_params`` get unpacked into the
-`sqlalchemy.MetaData <https://docs.sqlalchemy.org/en/rel_1_2/core/metadata.html#sqlalchemy.schema.MetaData>`_ call. Refer to the SQLAlchemy docs for more information.
+
+这个JSON字符串包含额外的配置元素。``engine_params`` 对象被解压到 `sqlalchemy.create_engine <https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine>`_ 调用中，
+而 ``metadata_params`` 被解压到 `sqlalchemy.MetaData <https://docs.sqlalchemy.org/en/rel_1_2/core/metadata.html#sqlalchemy.schema.MetaData>`_ 调用中。
+有关更多信息，请参阅 SQLAlchemy 文档。
+
 
 .. note:: If your using CTAS on SQLLab and PostgreSQL
     take a look at :ref:`ref_ctas_engine_config` for specific ``engine_params``.
