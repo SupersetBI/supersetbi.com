@@ -616,9 +616,9 @@ Postgres 和 Redshift 以及其他数据库使用 **schema** 的概念作为 **d
 
 External Password store for SQLAlchemy connections
 --------------------------------------------------
-It is possible to use an external store for you database passwords. This is
-useful if you a running a custom secret distribution framework and do not wish
-to store secrets in Superset's meta database.
+可以为数据库密码使用外部存储。如果您正在运行一个自定义秘密分布式框架，
+并且不希望将秘密存储在 Superset 的元数据库中，那么这是非常有用的。
+
 
 Example:
 Write a function that takes a single argument of type ``sqla.engine.url`` and returns
