@@ -545,9 +545,10 @@ SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memca
         'CACHE_REDIS_URL': 'redis://localhost:6379/0',
     }
 
-It is also possible to pass a custom cache initialization function in the
-config to handle additional caching use cases. The function must return an
-object that is compatible with the `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ API.
+
+也可以在配置中传递自定义缓存初始化函数来处理额外的缓存用例。
+该函数必须返回一个与 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ API 兼容的对象。
+
 
 .. code-block:: python
 
