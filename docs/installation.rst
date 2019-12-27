@@ -666,16 +666,14 @@ Druid
 
 * 导航到你的数据源
 
-Note that you can run the ``superset refresh_druid`` command to refresh the
-metadata from your Druid cluster(s)
+注意，您可以运行 ``superset refresh_druid`` 命令从您的 Druid 集群刷新元数据
 
 
 Presto
 ------
 
-By default Superset assumes the most recent version of Presto is being used when
-querying the datasource. If you're using an older version of presto, you can configure
-it in the ``extra`` parameter::
+默认情况下，Superset 假定在查询数据源时使用的是 Presto 的最新版本。
+如果您使用的是旧版本的 presto，则可以在 ``extra`` 参数中对其进行配置::
 
     {
         "version": "0.123"
