@@ -660,13 +660,11 @@ SSL Access to databases
 Druid
 -----
 
-* From the UI, enter the information about your clusters in the
-  `Sources -> Druid Clusters` menu by hitting the + sign.
+* 在 UI 中，点击 + 号在 `Sources -> Druid Clusters` 菜单中输入集群的相关信息。
 
-* Once the Druid cluster connection information is entered, hit the
-  `Sources -> Refresh Druid Metadata` menu item to populate
+* 一旦输入 Druid 集群连接信息后，点击 `Sources -> Refresh Druid Metadata` 菜单项以便填充
 
-* Navigate to your datasources
+* 导航到你的数据源
 
 Note that you can run the ``superset refresh_druid`` command to refresh the
 metadata from your Druid cluster(s)
