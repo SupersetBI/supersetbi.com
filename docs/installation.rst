@@ -602,8 +602,8 @@ Deeper SQLAlchemy integration
 有关更多信息，请参阅 SQLAlchemy 文档。
 
 
-.. note:: If your using CTAS on SQLLab and PostgreSQL
-    take a look at :ref:`ref_ctas_engine_config` for specific ``engine_params``.
+.. 注意:: 如果您在 SQLLab 和 PostgreSQL 上使用 CTAS
+    请查看 :ref:`ref_ctas_engine_config` 对于特定的 ``engine_params``。
 
 
 Schemas (Postgres & Redshift)
