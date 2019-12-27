@@ -609,10 +609,9 @@ Deeper SQLAlchemy integration
 Schemas (Postgres & Redshift)
 -----------------------------
 
-Postgres and Redshift, as well as other databases,
-use the concept of **schema** as a logical entity
-on top of the **database**. For Superset to connect to a specific schema,
-there's a **schema** parameter you can set in the table form.
+
+Postgres 和 Redshift 以及其他数据库使用 **schema** 的概念作为 **database** 顶部的逻辑实体。
+对于要连接到特定 schema 的 Superset，可以在 table 表单中设置 **schema** 参数。
 
 
 External Password store for SQLAlchemy connections
