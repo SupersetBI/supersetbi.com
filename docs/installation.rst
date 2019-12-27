@@ -630,8 +630,8 @@ External Password store for SQLAlchemy connections
 
     SQLALCHEMY_CUSTOM_PASSWORD_STORE = example_lookup_password
 
-A common pattern is to use environment variables to make secrets available.
-``SQLALCHEMY_CUSTOM_PASSWORD_STORE`` can also be used for that purpose. ::
+一种常见的模式是使用环境变量来提供 secrets。
+``SQLALCHEMY_CUSTOM_PASSWORD_STORE`` 也可以用于这个目的。 ::
 
     def example_password_as_env_var(url):
         # assuming the uri looks like
@@ -643,9 +643,8 @@ A common pattern is to use environment variables to make secrets available.
 
 SSL Access to databases
 -----------------------
-This example worked with a MySQL database that requires SSL. The configuration
-may differ with other backends. This is what was put in the ``extra``
-parameter ::
+这个例子使用了一个需要SSL的MySQL数据库。
+配置可能与其他后端不同。这是放在 ``extra`` 参数中的 ::
 
     {
         "metadata_params": {},
