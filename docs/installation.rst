@@ -620,10 +620,9 @@ External Password store for SQLAlchemy connections
 并且不希望将秘密存储在 Superset 的元数据库中，那么这是非常有用的。
 
 
-Example:
-Write a function that takes a single argument of type ``sqla.engine.url`` and returns
-the password for the given connection string. Then set ``SQLALCHEMY_CUSTOM_PASSWORD_STORE``
-in your config file to point to that function. ::
+示例：
+编写一个函数，该函数接受 ``sqla.engine.url`` 类型的单个参数，并返回给定连接字符串的密码。
+然后在配置文件中设置 ``SQLALCHEMY_CUSTOM_PASSWORD_STORE`` 以指向该函数。 ::
 
     def example_lookup_password(url):
         secret = <<get password from external framework>>
