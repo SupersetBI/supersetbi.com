@@ -924,7 +924,7 @@ Email reports 允许用户安排电子邮件报告
 为了能够上手，你需要配置一个 celery worker 和一个 celery beat(参见 "Celery Tasks" 一节)。
 您的 celery 配置还需要一个条目 ``email_reports.schedule_hourly`` 针对 ``CELERYBEAT_SCHEDULE``。
 
-To send emails you need to configure SMTP settings in your configuration file. e.g.
+要发送电子邮件，您需要在您的配置文件中配置 SMTP 设置。如：
 
 .. code-block:: python
 
