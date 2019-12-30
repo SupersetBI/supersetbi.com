@@ -878,11 +878,10 @@ worker 进程和 web 服务器进程应该具有相同的配置。
     RESULTS_BACKEND = RedisCache(
         host='localhost', port=6379, key_prefix='superset_results')
 
-For performance gains, `MessagePack <https://github.com/msgpack/msgpack-python>`_
-and `PyArrow <https://arrow.apache.org/docs/python/>`_ are now used for results
-serialization. This can be disabled by setting ``RESULTS_BACKEND_USE_MSGPACK = False``
-in your configuration, should any issues arise. Please clear your existing results
-cache store when upgrading an existing environment.
+为了提高性能，`MessagePack <https://github.com/msgpack/msgpack-python>`_ 和
+ `PyArrow <https://arrow.apache.org/docs/python/>`_ 现在用于结果序列化。
+ 如果出现任何问题，可以通过在配置中设置 ``RESULTS_BACKEND_USE_MSGPACK = False`` 来禁用此选项。
+ 升级现有环境时，请清除现有结果缓存存储。
 
 **Important notes**
 
