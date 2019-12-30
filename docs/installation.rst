@@ -898,10 +898,10 @@ worker 进程和 web 服务器进程应该具有相同的配置。
 
 Email Reports
 -------------
-Email reports allow users to schedule email reports for
+Email reports 允许用户安排电子邮件报告
 
-* chart and dashboard visualization (Attachment or inline)
-* chart data (CSV attachment on inline table)
+* 图表和仪表板可视化（附件或内联）
+* 图表数据（内联表上的 CSV 附件）
 
 **Setup**
 
