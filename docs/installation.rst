@@ -795,11 +795,10 @@ Upgrading
 我们建议在升级 Superset 时遵循标准的最佳实践，例如在升级之前进行数据库备份，
 在升级生产之前升级 staging 环境，以及在平台上活动用户较少的情况下升级生产。
 
-.. note ::
-   Some upgrades may contain backward-incompatible changes, or require
-   scheduling downtime, when that is the case, contributors attach notes in
-   ``UPDATING.md`` in the repository. It's recommended to review this
-   file prior to running an upgrade.
+.. 注意 ::
+   某些升级可能包含向后不兼容的更改，或需要安排停机时间，
+   此时，贡献者会在存储库的 ``UPDATING.md`` 中附加注释。
+   建议在运行升级之前查看此文件。
 
 
 Celery Tasks
