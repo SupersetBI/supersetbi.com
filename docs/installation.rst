@@ -643,7 +643,7 @@ External Password store for SQLAlchemy connections
 
 SSL Access to databases
 -----------------------
-这个例子使用了一个需要SSL的MySQL数据库。
+这个例子使用了一个需要 SSL 的 MySQL 数据库。
 配置可能与其他后端不同。这是放在 ``extra`` 参数中的 ::
 
     {
@@ -683,11 +683,11 @@ Presto
 Exasol
 ---------
 
-The connection string for Exasol looks like this ::
+Exasol 的连接字符串如下  ::
 
     exa+pyodbc://{user}:{password}@{host}
 
-*Note*: It's required to have Exasol ODBC drivers installed for the sqlalchemy dialect to work properly. Exasol ODBC Drivers available are here: https://www.exasol.com/portal/display/DOWNLOAD/Exasol+Download+Section
+*注意*: 为了使 sqlalchemy dialect 正常工作，需要安装 Exasol ODBC 驱动程序。Exasol ODBC 驱动程序可在这里: https://www.exasol.com/portal/display/DOWNLOAD/Exasol+Download+Section
 
 Example config (odbcinst.ini can be left empty) ::
 
