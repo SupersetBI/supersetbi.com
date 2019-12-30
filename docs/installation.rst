@@ -855,7 +855,7 @@ worker 进程和 web 服务器进程应该具有相同的配置。
     celery worker --app=superset.tasks.celery_app:app --pool=prefork -O fair -c 4
 
 
-* 启动一个定期后台 job，请运行 ::
+* 启动一个安排定期后台作业的作业，请运行 ::
 
     celery beat --app=superset.tasks.celery_app:app
 
