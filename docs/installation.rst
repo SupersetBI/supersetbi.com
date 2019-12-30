@@ -777,7 +777,8 @@ Event Logging
                 print(json.dumps(log))
 
 
-Then on Superset's config pass an instance of the logger type you want to use.
+然后在 Superset 的配置中传递一个您想要使用的 logger 类型的实例。
+
 
     EVENT_LOGGER = JSONStdOutEventLogger()
 
