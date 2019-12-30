@@ -905,14 +905,14 @@ Email reports 允许用户安排电子邮件报告
 
 **Setup**
 
-Make sure you enable email reports in your configuration file
+请确保在配置文件中启用电子邮件报告
 
 .. code-block:: python
 
     ENABLE_SCHEDULED_EMAIL_REPORTS = True
 
-Now you will find two new items in the navigation bar that allow you to schedule email
-reports
+
+现在，您将在导航栏中发现两个允许您安排电子邮件报告的新项
 
 * Manage -> Dashboard Emails
 * Manage -> Chart Email Schedules
