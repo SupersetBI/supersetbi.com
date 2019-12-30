@@ -889,13 +889,11 @@ worker 进程和 web 服务器进程应该具有相同的配置。
   这意味着 SQLite 将无法在此上下文中工作，因为它对并发性的支持有限，
   并且通常位于本地文件系统上。
 
-* There should only be one instance of ``celery beat`` running in your
-  entire setup. If not, background jobs can get scheduled multiple times
-  resulting in weird behaviors like duplicate delivery of reports,
-  higher than expected load / traffic etc.
+* 在你的整个设置中应该只有一个 ``celery beat`` 运行的实例。
+  如果不是，后台作业可能会被多次调度，从而导致一些奇怪的行为，
+  如重复提交报告、比预期的负载/流量高等等。
 
-* SQL Lab will only run your queries asynchronously if you enable
-  "Asynchronous Query Execution" in your database settings.
+* 如果在数据库设置中启用 "Asynchronous Query Execution" ，SQL Lab 将仅异步运行查询。
 
 
 Email Reports
