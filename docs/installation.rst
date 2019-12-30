@@ -722,7 +722,7 @@ Chrome 允许每个域一次最多打开6个连接。当 dashboard 中有6个以
 `PR 5039 <https://github.com/apache/incubator-superset/pull/5039>`_ 将域分片添加到 Superset 中，
 并且该功能将仅通过配置来启用(默认情况下 Superset 不允许跨域请求)。
 
-* ``SUPERSET_WEBSERVER_DOMAINS``: list of allowed hostnames for domain sharding feature. default `None`
+* ``SUPERSET_WEBSERVER_DOMAINS``: domain sharding 功能允许的主机名列表。 默认 `None`
 
 
 Middleware
