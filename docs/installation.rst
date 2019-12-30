@@ -717,12 +717,10 @@ CORS
 Domain Sharding
 ---------------
 
-Chrome allows up to 6 open connections per domain at a time. When there are more
-than 6 slices in dashboard, a lot of time fetch requests are queued up and wait for
-next available socket. `PR 5039 <https://github.com/apache/incubator-superset/pull/5039>`_ adds domain sharding to Superset,
-and this feature will be enabled by configuration only (by default Superset
-doesn't allow cross-domain request).
-Chrome 允许每个域一次最多打开6个连接。当 dashboard 中有6个以上的 slice 时，很多时候获取请求会排队等待下一个可用的 socket。
+Chrome 允许每个域一次最多打开6个连接。当 dashboard 中有6个以上的 slice 时，
+很多时候获取请求会排队等待下一个可用的 socket。
+`PR 5039 <https://github.com/apache/incubator-superset/pull/5039>`_ 将域分片添加到 Superset 中，
+并且该功能将仅通过配置来启用(默认情况下 Superset 不允许跨域请求)。
 
 * ``SUPERSET_WEBSERVER_DOMAINS``: list of allowed hostnames for domain sharding feature. default `None`
 
