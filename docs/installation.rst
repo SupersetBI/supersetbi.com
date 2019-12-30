@@ -917,10 +917,9 @@ Email reports 允许用户安排电子邮件报告
 * Manage -> Dashboard Emails
 * Manage -> Chart Email Schedules
 
-Schedules are defined in crontab format and each schedule
-can have a list of recipients (all of them can receive a single mail,
-or separate mails). For audit purposes, all outgoing mails can have a
-mandatory bcc.
+计划以 crontab 格式定义，每个计划可以有一个收件人列表
+（所有收件人都可以接收一封邮件或单独的邮件）。
+出于审核目的，所有外发邮件都可以具有必填密件抄送。
 
 In order get picked up you need to configure a celery worker and a celery beat
 (see section above "Celery Tasks"). Your celery configuration also
