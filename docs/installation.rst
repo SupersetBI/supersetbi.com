@@ -731,9 +731,8 @@ Middleware
 Superset 允许您添加自己的中间件。要添加自己的中间件，请更新 `superset_config.py` 中的
  ``ADDITIONAL_MIDDLEWARE`` key。``ADDITIONAL_MIDDLEWARE`` 应该是您附加的中间件类的列表。
 
-For example, to use AUTH_REMOTE_USER from behind a proxy server like nginx, you have to add a simple middleware class to
-add the value of ``HTTP_X_PROXY_REMOTE_USER`` (or any other custom header from the proxy) to Gunicorn's ``REMOTE_USER``
-environment variable: ::
+例如，要从像 nginx 这样的代理服务器后面使用 AUTH_REMOTE_USER，您必须添加一个简单的中间件类，
+将 HTTP_X_PROXY_REMOTE_USER (或任何来自代理的自定义头文件)的值添加到 Gunicorn 的 REMOTE_USER 环境变量: ::
 
     class RemoteUserMiddleware(object):
         def __init__(self, app):
