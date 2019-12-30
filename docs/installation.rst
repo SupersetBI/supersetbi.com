@@ -939,12 +939,12 @@ Email reports 允许用户安排电子邮件报告
     SMTP_MAIL_FROM = "insights@komoot.com"
 
 
-To render dashboards you need to install a local browser on your superset instance
+要呈现仪表板，您需要在 superset 实例上安装一个本地浏览器
 
-  * `geckodriver <https://github.com/mozilla/geckodriver>`_ and Firefox is preferred
-  * `chromedriver <http://chromedriver.chromium.org/>`_ is a good option too
+  * `geckodriver <https://github.com/mozilla/geckodriver>`_ Firefox 是首选
+  * `chromedriver <http://chromedriver.chromium.org/>`_ 也是不错的选项
 
-You need to adjust the ``EMAIL_REPORTS_WEBDRIVER`` accordingly in your configuration.
+您需要在您的配置中相应地调整 ``EMAIL_REPORTS_WEBDRIVER``。
 
 You also need to specify on behalf of which username to render the dashboards. In general
 dashboards and charts are not accessible to unauthorized requests, that is why the
