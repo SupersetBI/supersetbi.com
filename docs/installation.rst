@@ -850,7 +850,7 @@ worker 进程和 web 服务器进程应该具有相同的配置。
 
     CELERY_CONFIG = CeleryConfig
 
-* To start a Celery worker to leverage the configuration run: ::
+* 利用配置去启动一个 Celery worker 运行: ::
 
     celery worker --app=superset.tasks.celery_app:app --pool=prefork -O fair -c 4
 
