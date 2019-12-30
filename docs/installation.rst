@@ -753,7 +753,7 @@ Event Logging
 这些日志可以在导航到 "Security" -> "Action Log" 的 UI 上访问。
 您可以通过实现自己的事件日志类自由地自定义这些日志。
 
-Example of a simple JSON to Stdout class::
+一个简单的 JSON 到 Stdout 类的例子::
 
     class JSONStdOutEventLogger(AbstractEventLogger):
 
