@@ -702,16 +702,16 @@ Exasol 的连接字符串如下  ::
 CORS
 ----
 
-The extra CORS Dependency must be installed:
+必须安装额外的 CORS 依赖项:
 
     superset[cors]
 
 
-The following keys in `superset_config.py` can be specified to configure CORS:
+可以指定 `superset_config.py` 中的以下键来配置 CORS:
 
 
-* ``ENABLE_CORS``: Must be set to True in order to enable CORS
-* ``CORS_OPTIONS``: options passed to Flask-CORS (`documentation <https://flask-cors.corydolphin.com/en/latest/api.html#extension>`)
+* ``ENABLE_CORS``: 必须设置为 True 才能启用 CORS
+* ``CORS_OPTIONS``: 传递给 Flask-CORS 的选项 (`documentation <https://flask-cors.corydolphin.com/en/latest/api.html#extension>`)
 
 
 Domain Sharding
