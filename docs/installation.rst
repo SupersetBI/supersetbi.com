@@ -689,7 +689,7 @@ Exasol 的连接字符串如下  ::
 
 *注意*: 为了使 sqlalchemy dialect 正常工作，需要安装 Exasol ODBC 驱动程序。Exasol ODBC 驱动程序可在这里: https://www.exasol.com/portal/display/DOWNLOAD/Exasol+Download+Section
 
-Example config (odbcinst.ini can be left empty) ::
+示例配置 (odbcinst.ini 可以留空) ::
 
     $ cat $/.../path/to/odbc.ini
     [EXAODBC]
@@ -697,7 +697,7 @@ Example config (odbcinst.ini can be left empty) ::
     EXAHOST = host:8563
     EXASCHEMA = main
 
-See `SQLAlchemy for Exasol <https://github.com/blue-yonder/sqlalchemy_exasol>`_.
+参阅 `SQLAlchemy for Exasol <https://github.com/blue-yonder/sqlalchemy_exasol>`_.
 
 CORS
 ----
