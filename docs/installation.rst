@@ -804,23 +804,19 @@ Upgrading
 Celery Tasks
 ------------
 
-On large analytic databases, it's common to run queries that
-execute for minutes or hours.
-To enable support for long running queries that
-execute beyond the typical web request's timeout (30-60 seconds), it is
-necessary to configure an asynchronous backend for Superset which consists of:
+在大型分析数据库中，通常运行执行数分钟或数小时的查询。
+为了支持在典型的 web 请求超时(30-60秒)之外执行的长时间运行的查询，
+需要为 Superset 配置一个异步后端，它包括:
 
-* one or many Superset workers (which is implemented as a Celery worker), and
-  can be started with the ``celery worker`` command, run
-  ``celery worker --help`` to view the related options.
-* a celery broker (message queue) for which we recommend using Redis
-  or RabbitMQ
-* a results backend that defines where the worker will persist the query
-  results
+* 一个或多个 Superset worker(作为 Celery worker 的实现)，
+  可以使用 ``celery worker`` 命令启动，
+  运行 ``celery worker --help`` 查看相关选项。
+* celery broker(消息队列)，我们建议使用 Redis 或 RabbitMQ
+* results backend，它定义工作人员将在何处持久化查询结果
 
-Configuring Celery requires defining a ``CELERY_CONFIG`` in your
-``superset_config.py``. Both the worker and web server processes should
-have the same configuration.
+
+配置 Celery 需要在您的 ``superset_config.py`` 中定义一个 ``CELERY_CONFIG``。
+worker 进程和 web 服务器进程应该具有相同的配置。
 
 .. code-block:: python
 
