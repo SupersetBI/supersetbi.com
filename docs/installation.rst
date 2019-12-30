@@ -728,8 +728,8 @@ Chrome 允许每个域一次最多打开6个连接。当 dashboard 中有6个以
 Middleware
 ----------
 
-Superset allows you to add your own middleware. To add your own middleware, update the ``ADDITIONAL_MIDDLEWARE`` key in
-your `superset_config.py`. ``ADDITIONAL_MIDDLEWARE`` should be a list of your additional middleware classes.
+Superset 允许您添加自己的中间件。要添加自己的中间件，请更新 `superset_config.py` 中的
+ ``ADDITIONAL_MIDDLEWARE`` key。``ADDITIONAL_MIDDLEWARE`` 应该是您附加的中间件类的列表。
 
 For example, to use AUTH_REMOTE_USER from behind a proxy server like nginx, you have to add a simple middleware class to
 add the value of ``HTTP_X_PROXY_REMOTE_USER`` (or any other custom header from the proxy) to Gunicorn's ``REMOTE_USER``
