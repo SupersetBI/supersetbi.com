@@ -883,13 +883,11 @@ worker 进程和 web 服务器进程应该具有相同的配置。
  如果出现任何问题，可以通过在配置中设置 ``RESULTS_BACKEND_USE_MSGPACK = False`` 来禁用此选项。
  升级现有环境时，请清除现有结果缓存存储。
 
-**Important notes**
+**注意事项**
 
-* It is important that all the worker nodes and web servers in
-  the Superset cluster share a common metadata database.
-  This means that SQLite will not work in this context since it has
-  limited support for concurrency and
-  typically lives on the local file system.
+* 重要的是，Superset 集群中的所有工作节点和 web 服务器共享一个公共元数据数据库。
+  这意味着 SQLite 将无法在此上下文中工作，因为它对并发性的支持有限，
+  并且通常位于本地文件系统上。
 
 * There should only be one instance of ``celery beat`` running in your
   entire setup. If not, background jobs can get scheduled multiple times
