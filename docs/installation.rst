@@ -749,8 +749,9 @@ Superset 允许您添加自己的中间件。要添加自己的中间件，请�
 Event Logging
 -------------
 
-Superset by default logs special action event on it's database. These log can be accessed on the UI navigating to
-"Security" -> "Action Log". You can freely customize these logs by implementing your own event log class.
+默认情况下，Superset 会在其数据库上记录特殊的操作事件。
+这些日志可以在导航到 "Security" -> "Action Log" 的 UI 上访问。
+您可以通过实现自己的事件日志类自由地自定义这些日志。
 
 Example of a simple JSON to Stdout class::
 
