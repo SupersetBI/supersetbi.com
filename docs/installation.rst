@@ -924,6 +924,7 @@ Email reports 允许用户安排电子邮件报告
 In order get picked up you need to configure a celery worker and a celery beat
 (see section above "Celery Tasks"). Your celery configuration also
 needs an entry ``email_reports.schedule_hourly`` for ``CELERYBEAT_SCHEDULE``.
+为了能够上手，你需要配置一个 celery worker 和一个 celery beat(参见 "Celery Tasks" 一节)。
 
 To send emails you need to configure SMTP settings in your configuration file. e.g.
 
