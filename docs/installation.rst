@@ -792,10 +792,8 @@ Upgrading
     superset db upgrade
     superset init
 
-We recommend to follow standard best practices when upgrading Superset, such
-as taking a database backup prior to the upgrade, upgrading a staging
-environment prior to upgrading production, and upgrading production while less
-users are active on the platform.
+我们建议在升级 Superset 时遵循标准的最佳实践，例如在升级之前进行数据库备份，
+在升级生产之前升级 staging 环境，以及在平台上活动用户较少的情况下升级生产。
 
 .. note ::
    Some upgrades may contain backward-incompatible changes, or require
