@@ -859,13 +859,11 @@ worker 进程和 web 服务器进程应该具有相同的配置。
 
     celery beat --app=superset.tasks.celery_app:app
 
-To setup a result backend, you need to pass an instance of a derivative
-of ``werkzeug.contrib.cache.BaseCache`` to the ``RESULTS_BACKEND``
-configuration key in your ``superset_config.py``. It's possible to use
-Memcached, Redis, S3 (https://pypi.python.org/pypi/s3werkzeugcache),
-memory or the file system (in a single server-type setup or for testing),
-or to write your own caching interface. Your ``superset_config.py`` may
-look something like:
+要设置 result backend，您需要将 ``werkzeug.contrib.cache.BaseCache`` 的派生实例
+传递到 ``superset_config.py`` 中的 ``RESULTS_BACKEND`` 配置键。
+可以使用 Memcached、Redis、S3 (https://pypi.python.org/pypi/s3werkzeugcache)、
+内存或文件系统（在单个服务器类型设置或测试中），
+也可以编写自己的缓存接口。您的 ``superset_config.py`` 可能看起来像：
 
 .. code-block:: python
 
