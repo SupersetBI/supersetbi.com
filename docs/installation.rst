@@ -786,7 +786,7 @@ Event Logging
 Upgrading
 ---------
 
-Upgrading should be as straightforward as running::
+升级应该和运行一样简单::
 
     pip install apache-superset --upgrade
     superset db upgrade
