@@ -1156,10 +1156,9 @@ StatsD logging
 Install Superset with helm in Kubernetes
 ----------------------------------------
 
-You can install Superset into Kubernetes with Helm <https://helm.sh/>. The chart is
-located in ``install/helm``.
+你可以用 Helm <https://helm.sh/> 将 Superset 安装到 Kubernetes 中。chart 位于 ``install/helm``。
 
-To install Superset into your Kubernetes:
+在你的 Kubernetes 中安装 Superset:
 
 .. code-block:: bash
 
