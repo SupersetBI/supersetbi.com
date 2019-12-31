@@ -962,12 +962,11 @@ Email reports 允许用户安排电子邮件报告
 
     celery worker --pool=prefork --max-tasks-per-child=128 ...
 
-* It is recommended to run separate workers for ``sql_lab`` and
-  ``email_reports`` tasks. Can be done by using ``queue`` field in ``CELERY_ANNOTATIONS``
+* 建议为 ``sql_lab`` 和 ``email_reports`` 任务运行单独的 worker。
+  可以通过在 ``CELERY_ANNOTATIONS`` 中使用 ``queue`` 字段来实现
 
-* Adjust ``WEBDRIVER_BASEURL`` in your config if celery workers can't access superset via its
-  default value ``http://0.0.0.0:8080/`` (notice the port number 8080, many other setups use
-  port 8088).
+* 在你的配置中调整 ``WEBDRIVER_BASEURL``，如果 celery workers 不能
+  通过它的默认值 ``http://0.0.0.0:8080/`` 访问 superset (请注意端口号8080，许多其他设置使用端口8088)。
 
 SQL Lab
 -------
