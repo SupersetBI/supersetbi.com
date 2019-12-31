@@ -1149,7 +1149,7 @@ StatsD logging
     from superset.stats_logger import StatsdStatsLogger
     STATS_LOGGER = StatsdStatsLogger(host='localhost', port=8125, prefix='superset')
 
-Note that it's also possible to implement you own logger by deriving
+请注意，也可以通过派生来实现自己的日志记录器
 ``superset.stats_logger.BaseStatsLogger``.
 
 
