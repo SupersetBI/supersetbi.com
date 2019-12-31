@@ -1225,7 +1225,8 @@ Custom OAuth2 configuration
                 return { 'name' : me['name'], 'email' : me['email'], 'id' : me['user_name'], 'username' : me['user_name'], 'first_name':'', 'last_name':''}
         ...
 
-This file must be located at the same directory than ``superset_config.py`` with the name ``custom_sso_security_manager.py``.
+
+该文件必须位于与 ``superset_config.py`` 相同的目录下，名称为 ``custom_sso_security_manager.py``。
 
 Then we can add this two lines to ``superset_config.py``:
 
