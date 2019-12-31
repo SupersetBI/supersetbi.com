@@ -978,7 +978,7 @@ SQL Lab 是一个强大的 SQL IDE，可以与所有 SQLAlchemy 兼容的数据�
 
 还要注意，SQL Lab 支持查询中的 Jinja 模板，并且可以通过在 superset 配置中定义 
 ``JINJA_CONTEXT_ADDONS`` 来重载环境中的默认 Jinja 上下文。
-本词典中引用的对象可供用户在其 SQL 中使用。
+这个 dictionary 中引用的对象可供用户在其 SQL 中使用。
 
 .. code-block:: python
 
