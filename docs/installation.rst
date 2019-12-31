@@ -977,6 +977,7 @@ request in your environment, whether it'd be a reverse proxy or the Superset
 server itself. In such cases, it is preferred to use ``celery`` to run the queries
 in the background. Please follow the examples/notes mentioned above to get your
 celery setup working.
+SQL Lab 是一个强大的 SQL IDE，可以与所有 SQLAlchemy 兼容的数据库一起工作。
 
 Also note that SQL Lab supports Jinja templating in queries and that it's
 possible to overload
