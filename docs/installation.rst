@@ -1228,7 +1228,7 @@ Custom OAuth2 configuration
 
 该文件必须位于与 ``superset_config.py`` 相同的目录下，名称为 ``custom_sso_security_manager.py``。
 
-Then we can add this two lines to ``superset_config.py``:
+然后我们可以将这两行添加到 ``superset_config.py`` 中:
 
 .. code-block:: python
 
