@@ -1001,11 +1001,11 @@ SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可
 
 **Scheduling queries**
 
-You can optionally allow your users to schedule queries directly in SQL Lab.
-This is done by addding extra metadata to saved queries, which are then picked
-up by an external scheduled (like [Apache Airflow](https://airflow.apache.org/)).
+您可以选择允许用户在 SQL Lab 中直接调度查询。
+这是通过向保存的查询添加额外的元数据来实现的，然后由外部调度来获取这些元数据
+(像 [Apache Airflow](https://airflow.apache.org/))。
 
-To allow scheduled queries, add the following to your `config.py`:
+要允许调度查询，请将以下内容添加到 `config.py`:
 
 .. code-block:: python
 
