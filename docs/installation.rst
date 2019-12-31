@@ -1164,7 +1164,7 @@ Install Superset with helm in Kubernetes
 
     helm upgrade --install superset ./install/helm/superset
 
-Note that the above command will install Superset into ``default`` namespace of your Kubernetes cluster.
+注意，上面的命令将把 Superset 安装到 Kubernetes 集群的 ``default`` 名称空间中。
 
 Custom OAuth2 configuration
 ---------------------------
