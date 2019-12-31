@@ -1172,7 +1172,7 @@ Custom OAuth2 configuration
 除了 FAB 支持的提供者(github, twitter, linkedin, google, azure)之外，
 它还可以轻松地将 Superset 与其他支持 "code" 授权的 OAuth2 授权服务器实现连接起来。
 
-The first step: Configure authorization in Superset ``superset_config.py``.
+第一步: 在 Superset ``superset_config.py`` 中配置授权。
 
 .. code-block:: python
 
