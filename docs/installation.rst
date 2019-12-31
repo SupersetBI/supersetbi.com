@@ -1118,7 +1118,7 @@ Building from source
 Blueprints
 ----------
 
-`Blueprints are Flask's reusable apps <https://flask.palletsprojects.com/en/1.0.x/tutorial/views/>`_.
+`Blueprints 是 Flask 的可复用的应用 <https://flask.palletsprojects.com/en/1.0.x/tutorial/views/>`_.
 Superset allows you to specify an array of Blueprints
 in your ``superset_config`` module. Here's
 an example of how this can work with a simple Blueprint. By doing
