@@ -1090,10 +1090,10 @@ SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可
         },
     }
 
-This feature flag is based on [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form),
-and will add a button called "Schedule Query" to SQL Lab. When the button is
-clicked, a modal will show up where the user can add the metadata required for
-scheduling the query.
+
+此特性标志基于 `react-jsonschema-form <https://github.com/mozilla-services/react-jsonschema-form>`_，
+并将向 SQL Lab 添加一个名为 "Schedule Query" 的按钮。
+单击按钮时，将显示一个模式，用户可以在其中添加调度查询所需的元数据。
 
 This information can then be retrieved from the endpoint `/savedqueryviewapi/api/read`
 and used to schedule the queries that have `scheduled_queries` in their JSON
