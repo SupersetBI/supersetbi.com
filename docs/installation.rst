@@ -976,11 +976,9 @@ SQL Lab 是一个强大的 SQL IDE，可以与所有 SQLAlchemy 兼容的数据�
 在这种情况下，最好使用 ``celery`` 在后台运行查询。
 请按照上面提到的例子/说明来设置你的 celery。
 
-Also note that SQL Lab supports Jinja templating in queries and that it's
-possible to overload
-the default Jinja context in your environment by defining the
-``JINJA_CONTEXT_ADDONS`` in your superset configuration. Objects referenced
-in this dictionary are made available for users to use in their SQL.
+还要注意，SQL Lab 支持查询中的 Jinja 模板，并且可以通过在 superset 配置中定义 
+``JINJA_CONTEXT_ADDONS`` 来重载环境中的默认 Jinja 上下文。
+本词典中引用的对象可供用户在其 SQL 中使用。
 
 .. code-block:: python
 
