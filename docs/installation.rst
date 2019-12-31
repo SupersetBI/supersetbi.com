@@ -955,8 +955,8 @@ Email reports 允许用户安排电子邮件报告
 
 **重要事项**
 
-* Be mindful of the concurrency setting for celery (using ``-c 4``).
-  Selenium/webdriver instances can consume a lot of CPU / memory on your servers.
+* 请注意 celery 的并发设置(使用 ``-c 4``)。
+  Selenium/webdriver 实例会消耗服务器上的大量 CPU/内存。
 
 * In some cases, if you notice a lot of leaked ``geckodriver`` processes, try running
   your celery processes with ::
