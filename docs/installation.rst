@@ -1301,8 +1301,8 @@ SIP-15
     SIP_15_ENABLED = True
     SIP_15_GRACE_PERIOD_END = date(<YYYY>, <MM>, <DD>)
 
-To aid with transparency the current endpoint behavior is explicitly called out in the chart time range (post SIP-15 this will be [start, end) for all connectors and databases). One can override the defaults on a per database level via the ``extra``
-parameter ::
+为了提高透明度，在图表时间范围内显式地调用当前端点行为( SIP-15 之后，对于所有连接器和数据库，这将是 [start, end] )。
+可以通过 ``extra`` 参数覆盖每个数据库级别上的默认值 ::
 
     {
         "time_range_endpoints": ["inclusive", "inclusive"]
