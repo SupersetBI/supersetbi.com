@@ -953,7 +953,7 @@ Email reports 允许用户安排电子邮件报告
     EMAIL_REPORTS_USER = 'username_with_permission_to_access_dashboards'
 
 
-**Important notes**
+**重要事项**
 
 * Be mindful of the concurrency setting for celery (using ``-c 4``).
   Selenium/webdriver instances can consume a lot of CPU / memory on your servers.
