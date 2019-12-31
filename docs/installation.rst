@@ -1238,7 +1238,9 @@ Custom OAuth2 configuration
 Feature Flags
 -------------
 
-Because of a wide variety of users, Superset has some features that are not enabled by default. For example, some users have stronger security restrictions, while some others may not. So Superset allow users to enable or disable some features by config. For feature owners, you can add optional functionalities in Superset, but will be only affected by a subset of users.
+由于用户种类繁多，Superset 有一些默认不启用的功能。例如，一些用户有更强的安全限制，而另一些用户可能没有。
+因此，Superset 允许用户通过配置来启用或禁用某些功能。对于特性所有者，您可以在 Superset 中添加可选的功能，
+但是只会受到一部分用户的影响。
 
 You can enable or disable features with flag from ``superset_config.py``:
 
