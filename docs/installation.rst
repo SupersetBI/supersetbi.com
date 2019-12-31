@@ -1139,8 +1139,8 @@ Superset 允许您在 ``superset_config`` 模块中指定 Blueprints 数组。
 StatsD logging
 --------------
 
-Superset is instrumented to log events to StatsD if desired. Most endpoints hit
-are logged as well as key events like query start and end in SQL Lab.
+如果需要，Superset 可用于将事件记录到 StatsD。
+大多数 endpoints hit 在 SQL Lab 中记录查询开始和结束等关键事件。
 
 To setup StatsD logging, it's a matter of configuring the logger in your
 ``superset_config.py``.
