@@ -997,7 +997,7 @@ SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可
          }
      }
 
-The available validators and names can be found in `sql_validators/`.
+可用的验证器和名称可以在 `sql_validators/` 中找到。
 
 **Scheduling queries**
 
