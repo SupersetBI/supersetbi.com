@@ -970,14 +970,11 @@ Email reports 允许用户安排电子邮件报告
 
 SQL Lab
 -------
-SQL Lab is a powerful SQL IDE that works with all SQLAlchemy compatible
-databases. By default, queries are executed in the scope of a web
-request so they may eventually timeout as queries exceed the maximum duration of a web
-request in your environment, whether it'd be a reverse proxy or the Superset
-server itself. In such cases, it is preferred to use ``celery`` to run the queries
-in the background. Please follow the examples/notes mentioned above to get your
-celery setup working.
 SQL Lab 是一个强大的 SQL IDE，可以与所有 SQLAlchemy 兼容的数据库一起工作。
+默认情况下，查询是在 web 请求的范围内执行的，因此当查询超过环境中 web 请求的最大持续时间时，
+查询可能最终超时，无论是 reverse proxy 还是 Superset 服务器本身。
+在这种情况下，最好使用 ``celery`` 在后台运行查询。
+请按照上面提到的例子/说明来设置你的 celery。
 
 Also note that SQL Lab supports Jinja templating in queries and that it's
 possible to overload
