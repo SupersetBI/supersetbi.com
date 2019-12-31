@@ -946,9 +946,9 @@ Email reports 允许用户安排电子邮件报告
 
 您需要在您的配置中相应地调整 ``EMAIL_REPORTS_WEBDRIVER``。
 
-You also need to specify on behalf of which username to render the dashboards. In general
-dashboards and charts are not accessible to unauthorized requests, that is why the
-worker needs to take over credentials of an existing user to take a snapshot. ::
+您还需要指定代表哪个 username 呈现仪表板。
+一般来说，仪表板和图表是不能被未授权的请求访问的，
+这就是为什么 worker 需要接管现有用户的凭证来获取快照。::
 
     EMAIL_REPORTS_USER = 'username_with_permission_to_access_dashboards'
 
