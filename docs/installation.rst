@@ -1269,7 +1269,7 @@ SIP-15
 
 `SIP-15 <https://github.com/apache/incubator-superset/issues/6360>`_ 的目的是确保以一致和透明的方式处理 Druid 和 SQLAlchemy 连接器的时间间隔。
 
-Prior to SIP-15 SQLAlchemy used inclusive endpoints however these may behave like exclusive for string columns (due to lexicographical ordering) if no formatting was defined and the column formatting did not conform to an ISO 8601 date-time (refer to the SIP for details).
+在 SIP-15 SQLAlchemy 使用包含端点之前，如果没有定义格式，并且列格式不符合 ISO 8601 日期-时间(请参阅 SIP 了解详细信息)，则这些端点可能表现为仅用于字符串列(由于字典排序)。
 
 To remedy this rather than having to define the date/time format for every non-IS0 8601 date-time column, once can define a default column mapping on a per database level via the ``extra`` parameter ::
 
