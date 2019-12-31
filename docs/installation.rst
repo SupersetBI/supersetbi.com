@@ -1242,7 +1242,7 @@ Feature Flags
 因此，Superset 允许用户通过配置来启用或禁用某些功能。对于特性所有者，您可以在 Superset 中添加可选的功能，
 但是只会受到一部分用户的影响。
 
-You can enable or disable features with flag from ``superset_config.py``:
+您可以使用 ``superset_config.py`` 中的标记启用或禁用特性:
 
 .. code-block:: python
 
@@ -1252,7 +1252,7 @@ You can enable or disable features with flag from ``superset_config.py``:
          'PRESTO_EXPAND_DATA': False,
      }
 
-Here is a list of flags and descriptions:
+以下是标志和描述的列表:
 
 * ENABLE_EXPLORE_JSON_CSRF_PROTECTION
 
