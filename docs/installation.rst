@@ -1267,7 +1267,7 @@ Feature Flags
 SIP-15
 ------
 
-`SIP-15 <https://github.com/apache/incubator-superset/issues/6360>`_ aims to ensure that time intervals are handled in a consistent and transparent manner for both the Druid and SQLAlchemy connectors.
+`SIP-15 <https://github.com/apache/incubator-superset/issues/6360>`_ 的目的是确保以一致和透明的方式处理 Druid 和 SQLAlchemy 连接器的时间间隔。
 
 Prior to SIP-15 SQLAlchemy used inclusive endpoints however these may behave like exclusive for string columns (due to lexicographical ordering) if no formatting was defined and the column formatting did not conform to an ISO 8601 date-time (refer to the SIP for details).
 
