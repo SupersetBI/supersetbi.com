@@ -1119,13 +1119,10 @@ Blueprints
 ----------
 
 `Blueprints 是 Flask 的可复用的应用 <https://flask.palletsprojects.com/en/1.0.x/tutorial/views/>`_.
-Superset allows you to specify an array of Blueprints
-in your ``superset_config`` module. Here's
-an example of how this can work with a simple Blueprint. By doing
-so, you can expect Superset to serve a page that says "OK"
-at the ``/simple_page`` url. This can allow you to run other things such
-as custom data visualization applications alongside Superset, on the
-same server.
+Superset 允许您在 ``superset_config`` 模块中指定 Blueprints 数组。
+下面是一个使用简单蓝图的例子。通过这样做，您可以期望 Superset 提供一个
+显示 "OK" 的页面在 ``/simple_page`` url 上。
+这可以让您在同一台服务器上运行自定义数据可视化应用程序和 Superset。
 
 .. code-block:: python
 
