@@ -1271,7 +1271,7 @@ SIP-15
 
 在 SIP-15 SQLAlchemy 使用包含端点之前，如果没有定义格式，并且列格式不符合 ISO 8601 日期-时间(请参阅 SIP 了解详细信息)，则这些端点可能表现为仅用于字符串列(由于字典排序)。
 
-To remedy this rather than having to define the date/time format for every non-IS0 8601 date-time column, once can define a default column mapping on a per database level via the ``extra`` parameter ::
+要解决这个问题，而不是必须为每个 non-IS0 8601 date-time 列定义 date/time 格式，once可以通过 ``extra`` 参数在每个数据库级别上定义默认的列映射 ::
 
     {
         "python_date_format_by_column_name": {
