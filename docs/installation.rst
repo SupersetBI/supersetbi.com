@@ -986,9 +986,8 @@ SQL Lab 是一个强大的 SQL IDE，可以与所有 SQLAlchemy 兼容的数据�
         'my_crazy_macro': lambda x: x*2,
     }
 
-SQL Lab also includes a live query validation feature with pluggable backends.
-You can configure which validation implementation is used with which database
-engine by adding a block like the following to your config.py:
+SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可以通过在 config.py 中添加如下所示
+的块来配置与哪个数据库引擎一起使用的验证实现:
 
 .. code-block:: python
 
