@@ -1258,7 +1258,7 @@ Feature Flags
 
   * 出于某些安全考虑，您可能需要对所有查询到 explore_json 端点的请求强制实施 CSRF 保护。在 Superset 中，我们使用 `flask-csrf <https://sjl.bitbucket.io/flask-csrf/>`_ 为所有 POST 请求添加 csrf 保护，但是这个保护不适用于 GET 方法。
   
-  * When ENABLE_EXPLORE_JSON_CSRF_PROTECTION is set to true, your users cannot make GET request to explore_json. The default value for this feature False (current behavior), explore_json accepts both GET and POST request. See `PR 7935 <https://github.com/apache/incubator-superset/pull/7935>`_ for more details.
+  * 当 ENABLE_EXPLORE_JSON_CSRF_PROTECTION 设置为 true 时，您的用户不能对 explore_json 发出 GET 请求。这个特性的默认值为 False (当前行为)，explore_json 同时接受 GET 和 POST 请求。详情请参阅 `PR 7935 <https://github.com/apache/incubator-superset/pull/7935>`_。
 
 * PRESTO_EXPAND_DATA
 
