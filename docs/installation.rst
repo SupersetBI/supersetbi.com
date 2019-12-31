@@ -1262,8 +1262,7 @@ Feature Flags
 
 * PRESTO_EXPAND_DATA
 
-  * When this feature is enabled, nested types in Presto will be expanded into extra columns and/or arrays. This is experimental, and doesn't work with all nested types.
-
+  * 启用此功能后，Presto 中的嵌套类型将扩展为额外的列 and/or 数组。这是实验性的，并不适用于所有嵌套类型。
 
 SIP-15
 ------
