@@ -1112,9 +1112,8 @@ and run via: ::
 Building from source
 ---------------------
 
-More advanced users may want to build Superset from sources. That
-would be the case if you fork the project to add features specific to
-your environment. See `CONTRIBUTING.md#setup-local-environment-for-development <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md#setup-local-environment-for-development>`_.
+更高级的用户可能希望从源代码构建 Superset。如果您通过派生项目向您的环境中添加特定的特性，就会出现这种情况。
+参阅 `CONTRIBUTING.md#setup-local-environment-for-development <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md#setup-local-environment-for-development>`_。
 
 Blueprints
 ----------
