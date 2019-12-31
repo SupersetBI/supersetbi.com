@@ -958,8 +958,7 @@ Email reports 允许用户安排电子邮件报告
 * 请注意 celery 的并发设置(使用 ``-c 4``)。
   Selenium/webdriver 实例会消耗服务器上的大量 CPU/内存。
 
-* In some cases, if you notice a lot of leaked ``geckodriver`` processes, try running
-  your celery processes with ::
+* 在某些情况下，如果您注意到大量泄漏的 ``geckodriver`` 进程，请尝试运行您的芹菜进程 ::
 
     celery worker --pool=prefork --max-tasks-per-child=128 ...
 
