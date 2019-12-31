@@ -1309,4 +1309,4 @@ SIP-15
     }
 
 
-Note in a future release the interim SIP-15 logic will be removed (including the ``time_grain_endpoints`` form-data field) via a code change and Alembic migration.
+注意，在将来的版本中，通过代码更改和 Alembic 迁移，临时的 SIP-15 逻辑将被删除(包括 ``time_grain_endpoints`` form-data 字段)。
