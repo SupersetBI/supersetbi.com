@@ -1281,7 +1281,7 @@ SIP-15
 
 **New deployments**
 
-All new Superset deployments should enable SIP-15 via,
+所有新的 Superset 部署都应该启用SIP-15, 通过
 
 .. code-block:: python
 
@@ -1289,9 +1289,10 @@ All new Superset deployments should enable SIP-15 via,
 
 **Existing deployments**
 
-Given that it is not apparent whether the chart creator was aware of the time range inconsistencies (and adjusted the endpoints accordingly) changing the behavior of all charts is overly aggressive. Instead SIP-15 proivides a soft transistion allowing producers (chart owners) to see the impact of the proposed change and adjust their charts accordingly.
+由于不清楚图表创建者是否意识到了时间范围的不一致性(并相应地调整了端点)，因此更改所有图表的行为是过于激进的。
+相反，SIP-15 提供了一个软传输，允许生产者(图表所有者)看到提议的变化的影响，并相应地调整他们的图表。
 
-Prior to enabling SIP-15 existing deployments should communicate to their users the impact of the change and define a grace period end date (exclusive of course) after which all charts will conform to the [start, end) interval, i.e.,
+在启用 SIP-15 之前，现有的部署应该向其用户传达更改的影响，并定义一个宽限期结束日期(当然不包括)，之后所有图表将遵循 [start, end) 间隔，即，
 
 .. code-block:: python
 
