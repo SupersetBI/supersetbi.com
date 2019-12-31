@@ -1207,7 +1207,7 @@ Custom OAuth2 configuration
     # The default user self registration role
     AUTH_USER_REGISTRATION_ROLE = "Public"
 
-Second step: Create a `CustomSsoSecurityManager` that extends `SupersetSecurityManager` and overrides `oauth_user_info`:
+第二步: 创建一个 `CustomSsoSecurityManager`，扩展 `SupersetSecurityManager` 并覆盖 `oauth_user_info`:
 
 .. code-block:: python
 
