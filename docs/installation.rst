@@ -1095,15 +1095,13 @@ SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可
 并将向 SQL Lab 添加一个名为 "Schedule Query" 的按钮。
 单击按钮时，将显示一个模式，用户可以在其中添加调度查询所需的元数据。
 
-This information can then be retrieved from the endpoint `/savedqueryviewapi/api/read`
-and used to schedule the queries that have `scheduled_queries` in their JSON
-metadata. For schedulers other than Airflow, additional fields can be easily
-added to the configuration file above.
+然后可以从 `/savedqueryviewapi/api/read` 检索此信息，
+并用于调度在 JSON 元数据中包含 `scheduled_queries` 的查询。
+对于除 Airflow 之外的调度器，可以很容易地将其他字段添加到上面的配置文件中。
 
 Celery Flower
 -------------
-Flower is a web based tool for monitoring the Celery cluster which you can
-install from pip: ::
+Flower 是一个基于 web 的工具，用于监控 Celery 集群，你可以安装从pip: ::
 
     pip install flower
 
