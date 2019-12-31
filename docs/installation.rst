@@ -1142,8 +1142,7 @@ StatsD logging
 如果需要，Superset 可用于将事件记录到 StatsD。
 大多数 endpoints hit 在 SQL Lab 中记录查询开始和结束等关键事件。
 
-To setup StatsD logging, it's a matter of configuring the logger in your
-``superset_config.py``.
+要设置 StatsD logging，只需在 ``superset_config.py`` 中配置日志记录器。
 
 .. code-block:: python
 
