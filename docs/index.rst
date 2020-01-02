@@ -75,8 +75,7 @@ Apache 软件基金会资源
 - 创建和共享 Dashboard
 - 企业级的身份验证，集成主要身份验证提供者（database, OpenID, LDAP, OAuth & REMOTE_USER 通过
   Flask AppBuilder）
-- An extensible, high-granularity security/permission model allowing
-  intricate rules on who can access individual features and the dataset
+- 可扩展的、高粒度的安全/权限模型，允许对谁可以访问单个特性和数据集制定复杂的规则
 - A simple semantic layer, allowing users to control how data sources are
   displayed in the UI by defining which fields should show up in which
   drop-down and which aggregation and function metrics are made available
