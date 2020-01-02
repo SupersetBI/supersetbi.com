@@ -76,12 +76,10 @@ Apache 软件基金会资源
 - 企业级的身份验证，集成主要身份验证提供者（database, OpenID, LDAP, OAuth & REMOTE_USER 通过
   Flask AppBuilder）
 - 可扩展的、高粒度的安全/权限模型，允许对谁可以访问单个特性和数据集制定复杂的规则
-- A simple semantic layer, allowing users to control how data sources are
-  displayed in the UI by defining which fields should show up in which
-  drop-down and which aggregation and function metrics are made available
-  to the user
-- Integration with most SQL-speaking RDBMS through SQLAlchemy
-- Deep integration with Druid.io
+- 一个简单的语义层，允许用户通过定义哪些字段应该显示在哪个下拉列表中，哪些聚合
+  和功能指标对用户可用来控制数据源在 UI 中的显示方式
+- 集成大多数 SQL-speaking RDBMS，通过 SQLAlchemy 
+- 深度集成 Druid.io
 
 Databases
 ---------
