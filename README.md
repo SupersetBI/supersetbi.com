@@ -1,6 +1,3 @@
-# Apache Superset 中文手册
+# Apache Superset 中文网
 
-```sh
-docker run -it -v "$(pwd)":/super supersetx/sphinx-doc-build
-cd cn-docs/docs && sh build.sh && exit
-```
+[supersetx.com](https://supersetx.com)
