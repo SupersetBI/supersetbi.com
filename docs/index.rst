@@ -113,10 +113,9 @@ Apache 软件基金会资源
 - `Vertica <https://www.vertica.com/>`_
 - `Hana <https://www.sap.com/products/hana.html>`_
 
-Other database engines with a proper DB-API driver and SQLAlchemy dialect should
-be supported as well.
+其他数据库引擎，使用合适的 DB-API driver 和 SQLAlchemy dialect 也被支持。
 
-Screenshots
+截图
 -----------
 
 .. image:: images/screenshots/bank_dash.png
@@ -136,7 +135,7 @@ Screenshots
 ------
 
 
-Contents
+目录
 --------
 
 .. toctree::
@@ -152,7 +151,7 @@ Contents
     faq
 
 
-Indices and tables
+索引和表
 ------------------
 
 * :ref:`genindex`
