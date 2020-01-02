@@ -1153,7 +1153,7 @@ StatsD 日志
 ``superset.stats_logger.BaseStatsLogger``.
 
 
-Install Superset with helm in Kubernetes
+Kubernetes 中使用 helm 安装 Superset
 ----------------------------------------
 
 你可以用 Helm <https://helm.sh/> 将 Superset 安装到 Kubernetes 中。chart 位于 ``install/helm``。
