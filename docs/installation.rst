@@ -1166,7 +1166,7 @@ Kubernetes 中使用 helm 安装 Superset
 
 注意，上面的命令将把 Superset 安装到 Kubernetes 集群的 ``default`` 名称空间中。
 
-Custom OAuth2 configuration
+自定义 OAuth2 配置
 ---------------------------
 
 除了 FAB 支持的提供者(github, twitter, linkedin, google, azure)之外，
