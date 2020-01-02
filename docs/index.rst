@@ -25,63 +25,56 @@
 .. |superset_img| image:: images/s.png
    :width: 25%
 
-Apache Superset (incubating)
+Apache Superset (孵化🐣中)
 ''''''''''''''''''''''''''''
 
-Apache Superset(incubating) 是一个现代的、企业级的商业智能 web 应用程序
+Apache Superset(孵化🐣中) 是一个现代的、企业级的商业智能 web 应用程序
 
 ----------------
 
-.. important::
+.. Important::
 
-    **Disclaimer**: Apache Superset is an effort undergoing incubation at The
-    Apache Software Foundation (ASF), sponsored by the Apache Incubator.
-    Incubation is required of all newly accepted projects until a further
-    review indicates that the infrastructure, communications, and
-    decision making process have stabilized in a manner consistent with
-    other successful ASF projects. While incubation status is not
-    necessarily a reflection of the completeness or stability of
-    the code, it does indicate that the project has yet to be fully
-    endorsed by the ASF.
+    **Disclaimer**: Apache Superset 是 Apache 软件基金会(ASF)正在孵化的项目，
+    由 Apache 孵化器赞助。所有新接受的项目都需要孵化，直到进一步的审查表明基础设施、
+    通信和决策过程已经以与其他成功的 ASF 项目一致的方式稳定下来。虽然孵化状态不一定
+    反映代码的完整性或稳定性，但它确实表明项目还没有得到 ASF 的完全认可。
 
-.. note:: Apache Superset, Superset, Apache, the Apache feather logo, and
-    the Apache Superset project logo are either registered trademarks or
-    trademarks of The Apache Software Foundation in the United States
-    and other countries.
+.. Note:: Apache Superset, Superset, Apache, Apache feather logo 和 
+    Apache Superset project logo 是 Apache 软件基金会在美国和其他国家的
+    注册商标或商标。
 
-Superset Resources
+Superset 资源
 ==================
-- `Superset's Github <https://github.com/apache/incubator-superset>`_, note
-  that `we use Github for issue tracking <https://github.com/apache/incubator-superset/issues>`_
-- Superset's
-  `contribution guidelines <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md>`_
-  and
-  `code of conduct <https://github.com/apache/incubator-superset/blob/master/CODE_OF_CONDUCT.md>`_
-  on Github.
-- Our `mailing list archives <https://lists.apache.org/list.html?dev@superset.apache.org>`_.
-  To subscribe, send an email to ``dev-subscribe@superset.apache.org``
-- `Join our Slack <https://join.slack.com/t/apache-superset/shared_invite/enQtNDMxMDY5NjM4MDU0LWJmOTcxYjlhZTRhYmEyYTMzOWYxOWEwMjcwZDZiNWRiNDY2NDUwNzcwMDFhNzE1ZmMxZTZlZWY0ZTQ2MzMyNTU>`_
+- `Superset 的 Github <https://github.com/apache/incubator-superset>`_, 注意
+  `我们使用 Github issue 跟踪问题 <https://github.com/apache/incubator-superset/issues>`_
+- Superset 的
+  `贡献的指南 <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md>`_
+  和
+  `代码规范 <https://github.com/apache/incubator-superset/blob/master/CODE_OF_CONDUCT.md>`_
+  在 Github 上。
+- 我们的 `邮件列表档案 <https://lists.apache.org/list.html?dev@superset.apache.org>`_.
+  要订阅, 请发送电子邮件到 ``dev-subscribe@superset.apache.org``
+- `加入我们的 Slack <https://join.slack.com/t/apache-superset/shared_invite/enQtNDMxMDY5NjM4MDU0LWJmOTcxYjlhZTRhYmEyYTMzOWYxOWEwMjcwZDZiNWRiNDY2NDUwNzcwMDFhNzE1ZmMxZTZlZWY0ZTQ2MzMyNTU>`_
 
-Apache Software Foundation Resources
+Apache 软件基金会资源
 ====================================
-- `The Apache Software Foundation Website <http://www.apache.org>`_
-- `Current Events <http://www.apache.org/events/current-event>`_
-- `License <https://www.apache.org/licenses/>`_
-- `Thanks <https://www.apache.org/foundation/thanks.html>`_ to the ASF's sponsors
-- `Sponsor Apache! <http://www.apache.org/foundation/sponsorship.html>`_
+- `Apache 软件基金会网站 <http://www.apache.org>`_
+- `时事 <http://www.apache.org/events/current-event>`_
+- `许可 <https://www.apache.org/licenses/>`_
+- `感谢 <https://www.apache.org/foundation/thanks.html>`_ ASF 的赞助商
+- `赞助 Apache! <http://www.apache.org/foundation/sponsorship.html>`_
 
-Overview
+简介
 ========
 
-Features
+功能
 --------
 
-- A rich set of data visualizations
-- An easy-to-use interface for exploring and visualizing data
-- Create and share dashboards
-- Enterprise-ready authentication with integration with major authentication
-  providers (database, OpenID, LDAP, OAuth & REMOTE_USER through
-  Flask AppBuilder)
+- 丰富的数据可视化
+- 易于使用的界面，用于探索和可视化数据
+- 创建和共享 Dashboard
+- 企业级的身份验证，集成主要身份验证提供者（database, OpenID, LDAP, OAuth & REMOTE_USER 通过
+  Flask AppBuilder）
 - An extensible, high-granularity security/permission model allowing
   intricate rules on who can access individual features and the dataset
 - A simple semantic layer, allowing users to control how data sources are
