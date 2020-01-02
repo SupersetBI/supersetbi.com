@@ -24,7 +24,7 @@
 Superset 已经弃用支持 Python ``2.*`` 并且只支持 ``~=3.6`` ，以充分利用Python的新特性，
 减少支持以前版本的负担。我们在``3.6``上运行我们的测试套件，同时也完全支持 ``3.7``。
 
-Cloud-native（云原生）!
+云原生
 -------------
 
 Superset 被设计成高可用。它是 "cloud-native" 因为它已经被设计成大规模横向可扩展，
@@ -75,7 +75,7 @@ OSX指令: https://docs.docker.com/docker-for-mac/#advanced (Search for memory)
 
 参阅 `docker/README.md <https://github.com/apache/incubator-superset/blob/master/docker/README.md>`_
 
-OS 依赖
+系统依赖
 ---------------
 
 Superset将数据库连接信息存储在其元数据数据库中。
@@ -141,7 +141,7 @@ Python virtualenv
 
 一旦你激活了你的 virtualenv，你所做的一切都被限制在 virtualenv 里面了。要退出 virtualenv，只需键入 ``deactivate``。
 
-Python 的 setup tools 和 pip
+Python 设置工具和 pip
 ----------------------------
 获得最新的 ``pip`` 和 ``setuptools`` 库，把所有的机会都放在您这一边。::
 
@@ -214,7 +214,7 @@ Flask-AppBuilder 权限
   superset init
   gunicorn -w 10 ... superset:app
 
- Load Balancer 背后的配置
+负载均衡后的配置
 ------------------------------------
 
 如果您在 load balancer 或 reverse proxy（如 AWS 上的 NGINX 或 ELB）后面运行 Superset，
@@ -290,7 +290,7 @@ Superset 使用的 web 框架提供了很多配置设置。有关如何配置它
 
 .. _ref_database_deps:
 
-Database dependencies
+数据库依赖
 ---------------------
 
 除了 Sqlite (Python标准库的一部分)之外，Superset 没有绑定到数据库的连接。
@@ -519,7 +519,7 @@ Drill 的基本连接字符串如下 ::
 有关如何在 Superset 中使用 Apache Drill 的完整教程，请参阅本教程:
 `Visualize Anything with Superset and Drill <http://thedataist.com/visualize-anything-with-superset-and-drill/>`_
 
-Caching
+缓存
 -------
 
 Superset使用 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ 进行缓存。
@@ -585,7 +585,7 @@ Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存
 对于其他策略，请查看 `superset/tasks/cache.py` 文件。
 
 
-Deeper SQLAlchemy integration
+更深层次的 SQLAlchemy 集成
 -----------------------------
 
 
@@ -614,7 +614,7 @@ Postgres 和 Redshift 以及其他数据库使用 **schema** 的概念作为 **d
 对于要连接到特定 schema 的 Superset，可以在 table 表单中设置 **schema** 参数。
 
 
-External Password store for SQLAlchemy connections
+用于 SQLAlchemy 连接的外部密码存储
 --------------------------------------------------
 可以为数据库密码使用外部存储。如果您正在运行一个自定义秘密分布式框架，
 并且不希望将秘密存储在 Superset 的元数据库中，那么这是非常有用的。
@@ -641,7 +641,7 @@ External Password store for SQLAlchemy connections
     SQLALCHEMY_CUSTOM_PASSWORD_STORE = example_password_as_env_var
 
 
-SSL Access to databases
+对数据库的 SSL 访问
 -----------------------
 这个例子使用了一个需要 SSL 的 MySQL 数据库。
 配置可能与其他后端不同。这是放在 ``extra`` 参数中的 ::
@@ -725,7 +725,7 @@ Chrome 允许每个域一次最多打开6个连接。当 dashboard 中有6个以
 * ``SUPERSET_WEBSERVER_DOMAINS``: domain sharding 功能允许的主机名列表。 默认 `None`
 
 
-Middleware
+中间件
 ----------
 
 Superset 允许您添加自己的中间件。要添加自己的中间件，请更新 `superset_config.py` 中的
