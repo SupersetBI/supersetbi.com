@@ -17,7 +17,7 @@ services:
     labels:
       - "traefik.docker.network=web"
       - "traefik.enable=true"
-      - "traefik.basic.frontend.rule=Host:superset.lotteryjs.com"
+      - "traefik.basic.frontend.rule=Host:supersetx.com"
       - "traefik.basic.port=8043"
       - "traefik.basic.protocol=http"
 networks:
