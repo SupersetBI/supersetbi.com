@@ -1235,7 +1235,7 @@ Kubernetes 中使用 helm 安装 Superset
   from custom_sso_security_manager import CustomSsoSecurityManager
   CUSTOM_SECURITY_MANAGER = CustomSsoSecurityManager
 
-Feature Flags
+功能标记
 -------------
 
 由于用户种类繁多，Superset 有一些默认不启用的功能。例如，一些用户有更强的安全限制，而另一些用户可能没有。
