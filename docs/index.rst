@@ -81,10 +81,10 @@ Apache 软件基金会资源
 - 集成大多数 SQL-speaking RDBMS，通过 SQLAlchemy 
 - 深度集成 Druid.io
 
-Databases
+数据库
 ---------
 
-The following RDBMS are currently supported:
+目前支持以下 RDBMS:
 
 - `Amazon Athena <https://aws.amazon.com/athena/>`_
 - `Amazon Redshift <https://aws.amazon.com/redshift/>`_
