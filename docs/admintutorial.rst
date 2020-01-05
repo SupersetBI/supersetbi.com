@@ -51,11 +51,8 @@
 .. image:: images/tutorial/tutorial_04_sqlalchemy_connection_string.png
    :scale: 70%
 
-This example shows the connection string for our test weather database. 
-As noted in the text below the URI, you should refer to the SQLAlchemy 
-documentation on 
-`creating new connection URIs <https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-urls>`_
-for your target database.
+这个例子显示了测试天气数据库的连接字符串。正如 URI 下面的文本中所指出的，
+您应该参考 SQLAlchemy 文档，了解如何为目标数据库`创建新的连接 URI<https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-urls>`_。
 
 Click the **Test Connection** button to confirm things work end to end. 
 Once Superset can successfully connect and authenticate, you should see 
