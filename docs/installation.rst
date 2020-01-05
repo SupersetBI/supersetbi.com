@@ -362,7 +362,7 @@ Athena 的连接字符串如下 ::
 
     s3://... -> s3%3A//...
 
-您还可以像这样使用 `PyAthena` 库（不需要java）::
+您还可以像这样使用 `PyAthena` 库（不需要 java）::
 
     awsathena+rest://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&...
 
@@ -375,10 +375,8 @@ BigQuery 的连接字符串如下 ::
 
     bigquery://{project_id}
 
-此外，您还需要通过服务帐户配置身份验证。通过谷歌云平台控制面板创建服务帐户，
-为其提供对适当的 BigQuery 数据集的访问，并下载服务帐户的 JSON 配置文件。
-在 Superset 中，使用以下格式将 JSON blob 添加到
-数据库配置页中的 “Secure Extra” 字段 ::
+此外，您还需要通过服务帐户配置身份验证。通过谷歌云平台控制面板创建服务帐户，为其提供对适当的 BigQuery 数据集的访问，并下载服务帐户的 JSON 配置文件。
+在 Superset 中，使用以下格式将 JSON blob 添加到数据库配置页中的 “Secure Extra” 字段 ::
 
     {
         "credentials_info": <contents of credentials JSON file>
@@ -403,7 +401,7 @@ BigQuery 的连接字符串如下 ::
 
 然后，您应该能够连接到您的 BigQuery 数据集。
 
-能够上传数据, e.g. 样本数据，python库 `pandas_gbq` 是必需的。
+能够上传数据, 例: 样本数据，python 库 `pandas_gbq` 是必需的。
 
 Elasticsearch
 -------------
@@ -417,13 +415,11 @@ Elasticsearch 的连接字符串如下 ::
     elasticsearch+https://{user}:{password}@{host}:9200/
 
 
-Elasticsearch 默认限制为 10000 行，因此可以在集群中增加这个限制，
-或者在 config 中增加 set Superset 的行限制 ::
-
+Elasticsearch 默认限制为 10000 行，因此可以在集群中增加这个限制，或者在 config 中增加 set Superset 的行限制 ::
 
     ROW_LIMIT = 10000
 
-例如，您可以在SQLLab上查询多个索引 ::
+例如，您可以在 SQLLab 上查询多个索引 ::
 
     select timestamp, agent from "logstash-*"
 
@@ -445,13 +441,11 @@ Snowflake 的连接字符串如下 ::
 
     snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&warehouse={warehouse}
 
-连接字符串中不需要 schema，因为它是按 table/query 定义的。
-如果为用户定义了默认值，可以省略角色和仓库, i.e.
+连接字符串中不需要 schema，因为它是按 table/query 定义的。如果为用户定义了默认值，可以省略角色和仓库, 即：
 
     snowflake://{user}:{password}@{account}.{region}/{database}
 
-确保用户有权访问和使用所有必需的 databases/schemas/tables/views/warehouses，
-因为 Snowflake SQLAlchemy 引擎在创建引擎期间不测试用户权限。
+确保用户有权访问和使用所有必需的 databases/schemas/tables/views/warehouses，因为 Snowflake SQLAlchemy 引擎在创建引擎期间不测试用户权限。
 
 参看 `Snowflake SQLAlchemy <https://github.com/snowflakedb/snowflake-sqlalchemy>`_.
 
@@ -473,8 +467,7 @@ Teradata 的连接字符串如下 ::
 
 Apache Drill
 ------------
-在编写本文时，pypi 上没有 SQLAlchemy Dialect，并且必须在此处下载:
-`SQLAlchemy Drill <https://github.com/JohnOmernik/sqlalchemy-drill>`_
+在编写本文时，pypi 上没有 SQLAlchemy Dialect，并且必须在此处下载: `SQLAlchemy Drill <https://github.com/JohnOmernik/sqlalchemy-drill>`_
 
 或者，您可以从命令行完全安装它，如下所示: ::
 
@@ -493,8 +486,7 @@ Drill 的基本连接字符串如下 ::
 
     drill+jdbc://{username}:{password}@{host}:{port}/{storage_plugin}
 
-有关如何在 Superset 中使用 Apache Drill 的完整教程，请参阅本教程:
-`Visualize Anything with Superset and Drill <http://thedataist.com/visualize-anything-with-superset-and-drill/>`_
+有关如何在 Superset 中使用 Apache Drill 的完整教程，请参阅本教程: `Visualize Anything with Superset and Drill <http://thedataist.com/visualize-anything-with-superset-and-drill/>`_
 
 缓存
 -------
@@ -502,11 +494,9 @@ Drill 的基本连接字符串如下 ::
 Superset使用 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ 进行缓存。
 配置缓存后端就像在 ``superset_config.py`` 中提供一个符合 Flask-Cache 规范的 ``CACHE_CONFIG`` 常量一样简单。
 
-
-Flask-Cache 支持多个缓存后端 (Redis, Memcached,
-SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memcached，
-请使用 `pylibmc` 客户端库，因为 `python-memcached` 不能正确存储二进制数据。
-如果您使用的是 Redis，请安装 `redis <https://pypi.python.org/pypi/redis>`_ Python包: ::
+Flask-Cache 支持多个缓存后端 (Redis, Memcached, SimpleCache (in-memory), 或者本地文件系统)。
+如果您打算使用 Memcached ，请使用 `pylibmc` 客户端库，因为 `python-memcached` 不能正确存储二进制数据。
+如果您使用的是 Redis，请安装 `redis <https://pypi.python.org/pypi/redis>`_ Python 包: ::
 
     pip install redis
 
@@ -523,8 +513,7 @@ SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memca
     }
 
 
-也可以在配置中传递自定义缓存初始化函数来处理额外的缓存用例。
-该函数必须返回一个与 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ API 兼容的对象。
+也可以在配置中传递自定义缓存初始化函数来处理额外的缓存用例。该函数必须返回一个与 `Flask-Cache <https://pythonhosted.org/Flask-Cache/>`_ API 兼容的对象。
 
 
 .. code-block:: python
@@ -541,8 +530,7 @@ SimpleCache (in-memory), 或者本地文件系统)。如果您打算使用 Memca
 
     CACHE_CONFIG = init_cache
 
-Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存。
-要使用它，请将以下内容添加到 `config.py` 中的 `CELERYBEAT_SCHEDULE` 部分：
+Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存。要使用它，请将以下内容添加到 `config.py` 中的 `CELERYBEAT_SCHEDULE` 部分：
 
 .. code-block:: python
 
@@ -558,26 +546,20 @@ Superset 有一个 Celery 任务，它将根据不同的策略定期预热缓存
         },
     }
 
-这将每小时将所有图表缓存在前5个最受欢迎的仪表板中。
-对于其他策略，请查看 `superset/tasks/cache.py` 文件。
-
+这将每小时将所有图表缓存在前5个最受欢迎的仪表板中。对于其他策略，请查看 `superset/tasks/cache.py` 文件。
 
 更深层次的 SQLAlchemy 集成
 -----------------------------
 
 
-可以使用 SQLAlchemy 公开的参数调整数据库连接信息。
-在 ``Database`` edit 视图中，您将发现一个 ``extra`` 的字段作为 ``JSON`` blob。
-
+可以使用 SQLAlchemy 公开的参数调整数据库连接信息。在 ``Database`` edit 视图中，您将发现一个 ``extra`` 的字段作为 ``JSON`` blob。
 
 .. image:: images/tutorial/add_db.png
    :scale: 30 %
 
-
-这个JSON字符串包含额外的配置元素。``engine_params`` 对象被解压到 `sqlalchemy.create_engine <https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine>`_ 调用中，
+这个 JSON 字符串包含额外的配置元素。``engine_params`` 对象被解压到 `sqlalchemy.create_engine <https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine>`_ 调用中，
 而 ``metadata_params`` 被解压到 `sqlalchemy.MetaData <https://docs.sqlalchemy.org/en/rel_1_2/core/metadata.html#sqlalchemy.schema.MetaData>`_ 调用中。
 有关更多信息，请参阅 SQLAlchemy 文档。
-
 
 .. Note:: 如果您在 SQLLab 和 PostgreSQL 上使用 CTAS
     请查看 :ref:`ref_ctas_engine_config` 对于特定的 ``engine_params``。
@@ -593,8 +575,8 @@ Postgres 和 Redshift 以及其他数据库使用 **schema** 的概念作为 **d
 
 用于 SQLAlchemy 连接的外部密码存储
 --------------------------------------------------
-可以为数据库密码使用外部存储。如果您正在运行一个自定义秘密分布式框架，
-并且不希望将秘密存储在 Superset 的元数据库中，那么这是非常有用的。
+可以为数据库密码使用外部存储。如果您正在运行一个自定义 secret distribution 框架，
+并且不希望将 secrets 存储在 Superset 的元数据库中，那么这是非常有用的。
 
 
 示例：
@@ -608,6 +590,7 @@ Postgres 和 Redshift 以及其他数据库使用 **schema** 的概念作为 **d
     SQLALCHEMY_CUSTOM_PASSWORD_STORE = example_lookup_password
 
 一种常见的模式是使用环境变量来提供 secrets。
+
 ``SQLALCHEMY_CUSTOM_PASSWORD_STORE`` 也可以用于这个目的。 ::
 
     def example_password_as_env_var(url):
