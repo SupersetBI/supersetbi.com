@@ -217,16 +217,12 @@
 
 .. image:: images/tutorial/tutorial_28_bar_chart.png
 
-Our filter on Maximum temperature measurements was retained, but the query and 
-formatting options are dependent on the chart type, so you’ll have to set the 
-values again:
+我们对最高温度测量的过滤器被保留，但查询和格式选项取决于图表类型，所以你必须再次设置值:
 
 .. image:: images/tutorial/tutorial_29_bar_chart_series_metrics.png
 
-You should note the extensive formatting options for this chart: the ability to 
-set axis labels, margins, ticks, etc. To make the data presentable to a broad 
-audience, you’ll want to apply many of these to slices that end up in dashboards. 
-For now, though, we run our query and get the following chart:
+您应该注意这个图表的扩展格式选项: 能够设置轴标签、边距、刻度等。要使数据能够呈现给广大用户，
+您需要将其中许多应用到最终出现在看板中的片上。现在，我们运行查询并得到以下图表:
 
 .. image:: images/tutorial/tutorial_30_bar_chart_results.png
    :scale: 70%
