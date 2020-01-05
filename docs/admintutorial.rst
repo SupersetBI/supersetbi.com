@@ -85,24 +85,21 @@
 .. image:: images/tutorial/tutorial_09_add_new_table.png
    :scale: 70%
 
-You only need a few pieces of information to add a new table to Superset:
+你只需要几条信息来添加一个新的表到 Superset:
 
-* The name of the table
+* 表的名称
 
 .. image:: images/tutorial/tutorial_10_table_name.png
    :scale: 70%
 
-* The target database from the **Database** drop-down menu (i.e. the one 
-  you just added above)
+* **Database** 下拉菜单中的目标数据库(即您刚刚添加的那个)
 
 .. image:: images/tutorial/tutorial_11_choose_db.png
    :scale: 70%
 
-* Optionally, the database schema. If the table exists in the “default” schema 
-  (e.g. the *public* schema in PostgreSQL or Redshift), you can leave the schema 
-  field blank.
+* 数据库模式也是可选的。如果表存在于 “default” schema 中(例如 PostgreSQL 或 Redshift 中的 *public* schema)，您可以将 schema 字段留空。
 
-Click on the **Save** button to save the configuration:
+点击 **Save** 按钮保存配置:
 
 .. image:: images/tutorial/tutorial_07_save_button.png
    :scale: 70%
