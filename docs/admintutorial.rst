@@ -232,8 +232,7 @@
 
 这种观点可能会引起研究人员的兴趣，所以让我们保存它。在 Superset 中，保存的查询称为 **Slice**。
 
-To create a slice, click the **Save as** button near the top-left of the 
-explore:
+要创建一个 slice，点击 explore 左上角附近的 **Save as** 按钮:
 
 .. image:: images/tutorial/tutorial_19_click_query.png
 
