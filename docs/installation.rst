@@ -197,17 +197,17 @@ Flask-AppBuilder 权限
 
   superset init gunicorn -w 10 ... superset:app
 
-负载均衡后的配置
+负载均衡器后的配置
 ------------------------------------
 
-如果您在 load balancer 或 reverse proxy（如 AWS 上的 NGINX 或 ELB）后面运行 Superset，
-则可能需要使用 healthcheck 端点，以便您的 load balancer 知道您的 Superset 实例是否正在运行。
-这是在``/health``提供的，如果 webserver 正在运行，它将返回一个包含 "OK" 的200响应。
+如果您在`负载均衡器`或`反向代理`（如 AWS 上的 NGINX 或 ELB）后面运行 Superset，
+则可能需要使用 healthcheck 端点，以便您的`负载均衡器`知道您的 Superset 实例是否正在运行。
+这是在 ``/health`` 提供的，如果 webserver 正在运行，它将返回一个包含 "OK" 的 200 响应。
 
-如果 load balancer 正在插入 X-Forwarded-For/X-Forwarded-Proto 头，
+如果`负载均衡器`正在插入 X-Forwarded-For/X-Forwarded-Proto 头，
 则应在 superset 配置文件中设置 `ENABLE_PROXY_FIX = True` 以提取和使用头。
 
-如果 reverse proxy 用于提供 ssl 加密，则可能需要 `X-Forwarded-Proto` 的显式定义。
+如果`反向代理`用于提供 ssl 加密，则可能需要 `X-Forwarded-Proto` 的显式定义。
 对于 Apache webserver，可以如下设置: ::
 
     RequestHeader set X-Forwarded-Proto "https"
@@ -215,11 +215,11 @@ Flask-AppBuilder 权限
 配置
 -------------
 
-要配置应用程序，您需要创建一个文件（module）``superset_config.py``，并确保它位于 PYTHONPATH 中。
+要配置应用程序，您需要创建一个文件（module） ``superset_config.py`` ，并确保它位于 PYTHONPATH 中。
 以下是可以在该配置模块中 copy / paste 的一些参数: ::
 
     #---------------------------------------------------------
-    # Superset specific config
+    # Superset 具体配置
     #---------------------------------------------------------
     ROW_LIMIT = 5000
 
@@ -227,30 +227,27 @@ Flask-AppBuilder 权限
     #---------------------------------------------------------
 
     #---------------------------------------------------------
-    # Flask App Builder configuration
+    # Flask App Builder 配置
     #---------------------------------------------------------
-    # Your App secret key
+    # 你的 App secret key
     SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'
 
-    # The SQLAlchemy connection string to your database backend
-    # This connection defines the path to the database that stores your
-    # superset metadata (slices, connections, tables, dashboards, ...).
-    # Note that the connection information to connect to the datasources
-    # you want to explore are managed directly in the web UI
+    # 到你数据库后端的 SQLAlchemy 连接字符串
+    # 此连接定义了到你存储 superset 元数据的数据库路径(slices, connections, tables, dashboards, ...)
+    # 注意，要连接到你想要浏览的数据源的连接信息是在 web UI 中直接管理的
     SQLALCHEMY_DATABASE_URI = 'sqlite:////path/to/superset.db'
 
-    # Flask-WTF flag for CSRF
+    # Flask-WTF 标记，针对 CSRF
     WTF_CSRF_ENABLED = True
-    # Add endpoints that need to be exempt from CSRF protection
+    # 添加需要免除 CSRF 保护的端点
     WTF_CSRF_EXEMPT_LIST = []
-    # A CSRF token that expires in 1 year
+    # 1 年到期的 CSRF 令牌
     WTF_CSRF_TIME_LIMIT = 60 * 60 * 24 * 365
 
-    # Set this API key to enable Mapbox visualizations
+    # 设置此 API key 以启用 Mapbox 可视化
     MAPBOX_API_KEY = ''
 
-https://github.com/apache/incubator-superset/blob/master/superset/config.py 
-中定义的所有参数和默认值都可以在本地``superset_config.py``中更改。
+https://github.com/apache/incubator-superset/blob/master/superset/config.py 中定义的所有参数和默认值都可以在本地 ``superset_config.py`` 中更改。
 管理员将希望通读该文件，以了解可以在本地配置的内容以及现有的默认值。
 
 由于 ``superset_config.py`` 充当一个 Flask 配置模块，它可以用来改变 Flask 本身的设置，
