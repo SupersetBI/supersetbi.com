@@ -149,17 +149,16 @@
 
 时间的上限，**Until** 过滤器，默认为 "now"，这可能是你想要的，也可能不是。
 
-Look for the Metrics section under the **GROUP BY** header, and start typing "Count" 
-- you’ll see a list of metrics matching what you type:
+查找 **GROUP BY** header 下的指标部分，并开始键入 “Count”
+- 你会看到一个匹配你输入内容的指标列表:
 
 .. image:: images/tutorial/tutorial_18_choose_metric.png
 
-Select the *COUNT(\*)* metric, then click the green **Query** button near the top 
-of the explore:
+选择 *COUNT(\*)* 指标, 然后点击探索顶部附近的绿色 **Query** 按钮::
 
 .. image:: images/tutorial/tutorial_19_click_query.png
 
-You’ll see your results in the table:
+您将在表格中看到结果:
 
 .. image:: images/tutorial/tutorial_20_count_star_result.png
 
