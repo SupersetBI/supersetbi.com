@@ -200,23 +200,16 @@
 
 .. image:: images/tutorial/tutorial_27_top_10_max_temps.png
 
-In this dataset, the maximum temperature is recorded in tenths of a degree Celsius. 
-The top value of 1370, measured in the middle of Nevada, is equal to 137 C, or roughly 
-278 degrees F. It’s unlikely this value was correctly recorded. We’ve already been able 
-to investigate some outliers with Superset, but this just scratches the surface of what 
-we can do.
+在这个数据集中，最高温度以十分之一摄氏度记录。1370的最高值，测量在 Nevada 中部，等于137 C，或大约 278 华氏度，
+这个值不太可能被正确记录。我们已经能够用超集来研究一些异常值，但这只是我们所能做的事情的皮毛。
 
-You may want to do a couple more things with this measure:
+您可能想要用这个度量做更多的事情:
 
-* The default formatting shows values like 1.37k, which may be difficult for some 
-  users to read. It’s likely you may want to see the full, comma-separated value. 
-  You can change the formatting of any measure by editing its config (*Edit Table 
-  Config > List Sql Metric > Edit Metric > D3Format*)
-* Moreover, you may want to see the temperature measurements in plain degrees C, 
-  not tenths of a degree. Or you may want to convert the temperature to degrees 
-  Fahrenheit. You can change the SQL that gets executed against the database, baking 
-  the logic into the measure itself (*Edit Table Config > List Sql Metric > Edit 
-  Metric > SQL Expression*)
+* 默认的格式显示类似 1.37k 的值，这可能会让一些用户难以阅读。您可能希望看到完整的、逗号分隔的值。
+  您可以通过编辑任何度量的配置来更改其格式(*Edit Table Config > List Sql Metric > Edit Metric > D3Format*)
+
+* 此外，您可能希望看到的温度测量单位是摄氏度，而不是十分之一度。或者你可能想把温度转换成华氏温度。
+  您可以更改针对数据库执行的SQL，将逻辑放入度量本身(Edit Table Config > List Sql Metric > Edit Metric > SQL Expression)
 
 For now, though, let’s create a better visualization of these data and add it to 
 a dashboard.
