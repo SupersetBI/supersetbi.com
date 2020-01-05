@@ -104,17 +104,14 @@
 .. image:: images/tutorial/tutorial_07_save_button.png
    :scale: 70%
 
-When redirected back to the list of tables, you should see a message indicating 
-that your table was created:
+当重定向回表列表时，您应该会看到一条消息，指示您的表已经创建:
 
 .. image:: images/tutorial/tutorial_12_table_creation_success_msg.png
    :scale: 70%
 
-This message also directs you to edit the table configuration. We’ll edit a limited 
-portion of the configuration now - just to get you started - and leave the rest for 
-a more advanced tutorial.
+此消息还指示您编辑表配置。现在，我们将编辑配置中有限的一部分 — 只是为了让您入门 — 剩下的部分留给更高级的教程。
 
-Click on the edit button next to the table you’ve created:
+点击你创建的表格旁边的编辑按钮:
 
 .. image:: images/tutorial/tutorial_13_edit_table_config.png
    :scale: 70%
