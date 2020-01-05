@@ -60,23 +60,20 @@
 .. image:: images/tutorial/tutorial_05_connection_popup.png
    :scale: 50%
 
-Moreover, you should also see the list of tables Superset can read from 
-the schema you’re connected to, at the bottom of the page:
+此外，你还应该看到 Superset 可以从你连接的 schema 中读取的表列表，在页面的底部:
 
 .. image:: images/tutorial/tutorial_06_list_of_tables.png
    :scale: 70%
 
-If the connection looks good, save the configuration by clicking the **Save** 
-button at the bottom of the page:
+如果连接看起来正常，点击页面底部的 **Save** 按钮保存配置:
 
 .. image:: images/tutorial/tutorial_07_save_button.png
    :scale: 70%
 
-Adding a new table
+添加新表
 ------------------
 
-Now that you’ve configured a database, you’ll need to add specific tables 
-to Superset that you’d like to query.
+既然已经配置了数据库，就需要向 Superset 添加你想要查询的特定的表。
 
 Under the **Sources** menu, select the *Tables* option:
 
