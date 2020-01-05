@@ -166,10 +166,8 @@ Superset 安装和初始化
 一个合适的 WSGI HTTP 服务器
 -----------------------------
 
-虽然可以将 Superset 设置为在 Nginx 或 Apache 上运行，但很多都使用 Gunicorn，
-最好是在 **async mode** 下，这甚至可以实现令人印象深刻的并发性，而且相当容易安装和配置。
-请参考您首选技术的文档，以在您的环境中正常工作的方式设置此 Flask WSGI 应用程序。
-以下是一个在生产中运行良好的 **async** 设置: ::
+虽然可以将 Superset 设置为在 Nginx 或 Apache 上运行，但很多都使用 Gunicorn，最好是在 **async mode** 下，这甚至可以实现令人印象深刻的并发性，而且相当容易安装和配置。
+请参考您首选技术的文档，以在您的环境中正常工作的方式设置此 Flask WSGI 应用程序。以下是一个在生产中运行良好的 **async** 设置: ::
 
  　gunicorn \
         -w 10 \
@@ -185,22 +183,19 @@ Superset 安装和初始化
 
 请注意，开发环境 web 服务器（`superset run` or `flask run`）不准备用在生产环境。
 
-如果不使用 gunicorn，你或许想要禁用 flask-compress 的使用，可以通过在你的 `superset_config.py`
-中设置 `ENABLE_FLASK_COMPRESS = False`。
+如果不使用 gunicorn，你或许想要禁用 flask-compress 的使用，可以通过在你的 `superset_config.py` 中设置 `ENABLE_FLASK_COMPRESS = False`。
 
 Flask-AppBuilder 权限
 ----------------------------
 
-默认情况下，每次初始化 Flask-AppBuilder (FAB) 应用程序时，
-权限和视图都会自动添加到后端并与 ‘Admin’ 角色关联。但是，问题是，当您运行多个并发 worker 时，
+默认情况下，每次初始化 Flask-AppBuilder (FAB) 应用程序时，权限和视图都会自动添加到后端并与 ‘Admin’ 角色关联。但是，问题是，当您运行多个并发 worker 时，
 这会在定义权限和视图时创建大量争用和竞争条件。
 
-为了缓解这个问题，可以通过设置`FAB_UPDATE_PERMS = False`(默认为True)来禁用权限的自动更新。
+为了缓解这个问题，可以通过设置 `FAB_UPDATE_PERMS = False` (默认为 True )来禁用权限的自动更新。
 
 在生产环境中，初始化可以采用以下形式：
 
-  superset init
-  gunicorn -w 10 ... superset:app
+  superset init gunicorn -w 10 ... superset:app
 
 负载均衡后的配置
 ------------------------------------
