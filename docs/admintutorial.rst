@@ -196,7 +196,7 @@
 
 .. image:: images/tutorial/tutorial_26_row_limit.png
 
-We click **Query** and get the following results:
+点击 **Query**，得到如下结果:
 
 .. image:: images/tutorial/tutorial_27_top_10_max_temps.png
 
