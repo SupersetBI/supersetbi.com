@@ -122,10 +122,8 @@
 * 如果您希望用户根据特定字段对指标进行分组，请将其标记为 **Groupable**。
 * 如果需要对特定字段进行筛选，请将其标记为 **Filterable**。
 * 这个字段是你想要明确计数的字段吗?选中 **Count Distinct** 框。
-* Is this a metric you want to sum, or get basic summary statistics for? The **Sum**, 
-  **Min**, and **Max** columns will help.
-* The **is temporal** field should be checked for any date or time fields. We’ll cover 
-  how this manifests itself in analyses in a moment.
+* 您是想要求和的度量，还是得到基本的汇总统计信息? **Sum** 、 **Min** 和 **Max** 列将有所帮助。
+* **is temporal** 字段应该检查任何日期或时间字段。我们一会儿会讲到它是如何在分析中表现出来的。
 
 Here’s how we’ve configured fields for the weather data. Even for measures like the 
 weather measurements (precipitation, snowfall, etc.), it’s ideal to group and filter 
