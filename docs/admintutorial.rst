@@ -162,12 +162,12 @@
 
 .. image:: images/tutorial/tutorial_20_count_star_result.png
 
-Let’s group this by the *weather_description* field to get the count of records by 
-the type of weather recorded by adding it to the *Group by* section:
+让我们通过 *weather_description* 字段对其进行分组，以通过将其添加到 *Group by* 部分
+获得记录的天气类型的记录计数:
 
 .. image:: images/tutorial/tutorial_21_group_by.png
 
-and run the query:
+并运行查询:
 
 .. image:: images/tutorial/tutorial_22_group_by_result.png
 
