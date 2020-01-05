@@ -678,8 +678,7 @@ Domain Sharding
 ---------------
 
 Chrome 允许每个域一次最多打开6个连接。当 dashboard 中有6个以上的 slice 时，
-很多时候获取请求会排队等待下一个可用的 socket。
-`PR 5039 <https://github.com/apache/incubator-superset/pull/5039>`_ 将域分片添加到 Superset 中，
+很多时候获取请求会排队等待下一个可用的 socket。`PR 5039 <https://github.com/apache/incubator-superset/pull/5039>`_ 将域分片添加到 Superset 中，
 并且该功能将仅通过配置来启用(默认情况下 Superset 不允许跨域请求)。
 
 * ``SUPERSET_WEBSERVER_DOMAINS``: domain sharding 功能允许的主机名列表。 默认 `None`
@@ -764,14 +763,12 @@ Superset 允许您添加自己的中间件。要添加自己的中间件，请�
 Celery 任务
 ------------
 
-在大型分析数据库中，通常运行执行数分钟或数小时的查询。
-为了支持在典型的 web 请求超时(30-60秒)之外执行的长时间运行的查询，
+在大型分析数据库中，通常运行执行数分钟或数小时的查询。为了支持在典型的 web 请求超时(30-60秒)之外执行的长时间运行的查询，
 需要为 Superset 配置一个异步后端，它包括:
 
-* 一个或多个 Superset worker(作为 Celery worker 的实现)，
-  可以使用 ``celery worker`` 命令启动，
-  运行 ``celery worker --help`` 查看相关选项。
-* celery broker(消息队列)，我们建议使用 Redis 或 RabbitMQ
+* 一个或多个 Superset worker (作为 Celery worker 的实现)，
+  可以使用 ``celery worker`` 命令启动，运行 ``celery worker --help`` 查看相关选项。
+* celery broker (消息队列)，我们建议使用 Redis 或 RabbitMQ
 * results backend，它定义工作人员将在何处持久化查询结果
 
 
