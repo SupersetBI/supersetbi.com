@@ -142,9 +142,8 @@
 
 .. image:: images/tutorial/tutorial_16_datasource_chart_type.png
 
-Let’s walk through a basic query to get the count of all records in our table. 
-First, we’ll need to change the **Since** filter to capture the range of our data. 
-You can use simple phrases to apply these filters, like "3 years ago":
+让我们遍历一个基本查询来获得表中所有记录的计数。首先，我们需要更改 **Since** 过滤器来捕获数据的范围。
+你可以使用简单的短语来应用这些过滤器，比如“3年前”:
 
 .. image:: images/tutorial/tutorial_17_choose_time_range.png
 
