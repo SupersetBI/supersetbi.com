@@ -242,8 +242,7 @@
 .. image:: images/tutorial/tutorial_31_save_slice_to_dashboard.png
    :scale: 70%
 
-Click Save, which will direct you back to your original query. We see that 
-our slice and dashboard were successfully created:
+单击 Save，它将引导您返回原始查询。我们看到我们的 slice 和 dashboard 被成功创建:
 
 .. image:: images/tutorial/tutorial_32_save_slice_confirmation.png
    :scale: 70%
