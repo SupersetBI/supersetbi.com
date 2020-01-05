@@ -75,12 +75,12 @@
 
 既然已经配置了数据库，就需要向 Superset 添加你想要查询的特定的表。
 
-Under the **Sources** menu, select the *Tables* option:
+在 **Sources** 菜单下，选择 *Tables* 选项:
 
 .. image:: images/tutorial/tutorial_08_sources_tables.png
    :scale: 70%
 
-On the resulting page, click on the green plus sign, near the top left:
+在结果页面上，单击左上角附近的绿色加号:
 
 .. image:: images/tutorial/tutorial_09_add_new_table.png
    :scale: 70%
