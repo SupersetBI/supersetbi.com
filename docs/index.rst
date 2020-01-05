@@ -36,7 +36,7 @@ Apache Superset 是一个现代的、企业级的商业智能 web 应用程序
 
     **Disclaimer**: Apache Superset 是 Apache 软件基金会(ASF)正在孵化的项目，
     由 Apache 孵化器赞助。所有新接受的项目都需要孵化，直到进一步的审查表明基础设施、
-    通信和决策过程已经以与其他成功的 ASF 项目一致的方式稳定下来。虽然孵化状态不一定
+    通讯和决策过程已经与其他成功的 ASF 项目一致的方式稳定下来。虽然孵化状态不一定
     反映代码的完整性或稳定性，但它确实表明项目还没有得到 ASF 的完全认可。
 
 .. Note:: Apache Superset, Superset, Apache, Apache feather logo 和 
