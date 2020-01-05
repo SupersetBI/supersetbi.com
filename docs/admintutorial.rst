@@ -147,8 +147,7 @@
 
 .. image:: images/tutorial/tutorial_17_choose_time_range.png
 
-The upper limit for time, the **Until** filter, defaults to "now", which may or may 
-not be what you want.
+时间的上限，**Until** 过滤器，默认为 "now"，这可能是你想要的，也可能不是。
 
 Look for the Metrics section under the **GROUP BY** header, and start typing "Count" 
 - you’ll see a list of metrics matching what you type:
