@@ -247,15 +247,15 @@
 .. image:: images/tutorial/tutorial_32_save_slice_confirmation.png
    :scale: 70%
 
-Let’s check out our new dashboard. We click on the **Dashboards** menu:
+让我们看看我们的新看板。我们点击 **Dashboards** 菜单:
 
 .. image:: images/tutorial/tutorial_33_dashboard.png
 
-and find the dashboard we just created:
+找到我们刚刚创建的看板:
 
 .. image:: images/tutorial/tutorial_34_weather_dashboard.png
 
-Things seemed to have worked - our slice is here!
+事情似乎成功了——我们的 slice 到了!
 
 .. image:: images/tutorial/tutorial_35_slice_on_dashboard.png
    :scale: 70%
