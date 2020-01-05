@@ -260,16 +260,13 @@
 .. image:: images/tutorial/tutorial_35_slice_on_dashboard.png
    :scale: 70%
 
-But it’s a bit smaller than we might like. Luckily, you can adjust the size 
-of slices in a dashboard by clicking, holding and dragging the bottom-right 
-corner to your desired dimensions:
+但它比我们想要的要小一些。幸运的是，您可以通过单击、按住并拖动右下角到所需的尺寸来
+调整仪表板中的 slice 的大小:
 
 .. image:: images/tutorial/tutorial_36_adjust_dimensions.gif
    :scale: 120%
 
-After adjusting the size, you’ll be asked to click on the icon near the 
-top-right of the dashboard to save the new configuration.
+在调整大小之后，将要求您单击看板右上角附近的图标以保存新配置。
 
-Congrats! You’ve successfully linked, analyzed, and visualized data in Superset. 
-There are a wealth of other table configuration and visualization options, so 
-please start exploring and creating slices and dashboards of your own.
+恭喜!您已经在 Superset 中成功地链接、分析和可视化了数据。还有大量其他的表配置和可视化选项，
+所以请开始研究和创建您自己的 slices 和 dashboards。
