@@ -21,38 +21,29 @@
 入门指南
 ---------------
 
-Superset 已经弃用支持 Python ``2.*`` 并且只支持 ``~=3.6`` ，以充分利用Python的新特性，
-减少支持以前版本的负担。我们在``3.6``上运行我们的测试套件，同时也完全支持 ``3.7``。
+Superset 已经弃用支持 Python ``2.*`` 并且只支持 ``~=3.6`` ，以充分利用 Python 的新特性，减少支持以前版本的负担。我们在 ``3.6`` 上运行我们的测试套件，同时也完全支持 ``3.7``。
 
 云原生
 -------------
 
-Superset 被设计成高可用。它是 "cloud-native" 因为它已经被设计成大规模横向可扩展，
-分布式环境，并且在容器内工作良好。
-尽管您可以在适中的设置下或仅在笔记本电脑上就能轻松测试驱动Superset，
-但实际上扩展这个平台几乎没有任何限制。
+Superset 被设计成高可用。它是 "cloud-native" 因为它已经被设计成大规模横向可扩展，分布式环境，并且在容器内工作良好。
+尽管您可以在适中的设置下或仅在笔记本电脑上就能轻松测试驱动Superset，但实际上扩展这个平台几乎没有任何限制。
 Superset 也是云原生的，因为它很灵活，允许你选择你的 Web 服务器 (Gunicorn, Nginx, Apache)，
-你的元数据数据库引擎 (MySQL, Postgres, MariaDB, ...)，
-你的消息队列 (Redis, RabbitMQ, SQS, ...)，
-你的结果后端 (S3, Redis, Memcached, ...)，
-你的缓存层 (Memcached, Redis, ...)，可以很好地与 NewRelic、StatsD 和 DataDog 等服务协同工作，
+你的元数据数据库引擎 (MySQL, Postgres, MariaDB, ...)，你的消息队列 (Redis, RabbitMQ, SQS, ...)，
+你的结果后端 (S3, Redis, Memcached, ...)，你的缓存层 (Memcached, Redis, ...)，可以很好地与 NewRelic、StatsD 和 DataDog 等服务协同工作，
 并且能够在最流行的数据库技术上运行分析工作负载。
 
-Superset 在有数百个并发用户的大型环境中进行了测试。
-Airbnb 的生产环境在 Kubernetes 内部运行，
-每天为600多名活跃用户提供超过10万张图表的浏览服务。
+Superset 在有数百个并发用户的大型环境中进行了测试。Airbnb 的生产环境在 Kubernetes 中运行，每天为600多名活跃用户提供超过10万张图表的浏览服务。
 
-Superset web 服务器和 Superset Celery workers（可选）是无状态的，
-因此您可以根据需要在多个服务器上运行来进行扩展。
+Superset web 服务器和 Superset Celery workers（可选）是无状态的，因此您可以根据需要在多个服务器上运行来进行扩展。
 
 从 Docker 开始
 -----------------
 
 .. note ::
-    与 docker 相关的文件和文档由项目中的核心提交者积极维护和管理。
-    欢迎围绕 Docker 的帮助和贡献！
+    与 docker 相关的文件和文档由项目中的核心提交者积极维护和管理。欢迎围绕 Docker 的帮助和贡献！
 
-如果你了解docker，那么你是幸运的，我们为你提供了初始化开发环境的捷径: ::
+如果你了解 docker，那么你是幸运的，我们为你提供了初始化开发环境的捷径: ::
 
     git clone https://github.com/apache/incubator-superset/
     cd incubator-superset
@@ -61,10 +52,9 @@ Superset web 服务器和 Superset Celery workers（可选）是无状态的，
 
 几分钟后，superset 初始化完成，您可以打开浏览器并查看 `http://localhost:8088` 来开始你的旅程。
 
-然后，容器服务器将在修改 Superset python 和 javascript 源代码时重新加载。
-不过，不要忘记重新加载页面以考虑新的前端。
+然后，容器服务器将在修改 Superset python 和 javascript 源代码时重新加载。不过，不要忘记重新加载页面以考虑新的前端。
 
-参阅 `CONTRIBUTING.md#building <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md#building>`_,提供另一种服务前端的方式。
+参阅 `CONTRIBUTING.md#building <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md#building>`_, 提供另一种服务前端的方式。
 
 目前不建议在生产环境中运行 docker-compose。
 
