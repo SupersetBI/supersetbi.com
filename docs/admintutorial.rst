@@ -236,9 +236,8 @@
 
 .. image:: images/tutorial/tutorial_19_click_query.png
 
-A popup should appear, asking you to name the slice, and optionally add it to a 
-dashboard. Since we haven’t yet created any dashboards, we can create one and 
-immediately add our slice to it. Let’s do it:
+应该会出现一个弹出窗口，要求您命名 slice，并可选地将其添加到看板中。因为我们还没有创建任何看板，
+所以我们可以创建一个并立即将 slice 添加到它。让我们做:
 
 .. image:: images/tutorial/tutorial_31_save_slice_to_dashboard.png
    :scale: 70%
