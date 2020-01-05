@@ -116,14 +116,12 @@
 .. image:: images/tutorial/tutorial_13_edit_table_config.png
    :scale: 70%
 
-On the resulting page, click on the **List Table Column** tab. Here, you’ll define the 
-way you can use specific columns of your table when exploring your data. We’ll run 
-through these options to describe their purpose:
+在结果页面上，单击 **List Table Column** 选项卡。在这里，您将定义在研究数据时使用表的特定列的方式。
+我们将通过这些选项来描述它们的用途:
 
-* If you want users to group metrics by a specific field, mark it as **Groupable**.
-* If you need to filter on a specific field, mark it as **Filterable**.
-* Is this field something you’d like to get the distinct count of? Check the **Count 
-  Distinct** box.
+* 如果您希望用户根据特定字段对指标进行分组，请将其标记为 **Groupable**。
+* 如果需要对特定字段进行筛选，请将其标记为 **Filterable**。
+* 这个字段是你想要明确计数的字段吗?选中 **Count Distinct** 框。
 * Is this a metric you want to sum, or get basic summary statistics for? The **Sum**, 
   **Min**, and **Max** columns will help.
 * The **is temporal** field should be checked for any date or time fields. We’ll cover 
