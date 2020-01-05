@@ -22,16 +22,12 @@
 我们将向您展示如何将 Superset 连接到一个新数据库并在该数据库中配置一个表以进行分析。
 您还将研究公开的数据，并将可视化添加到看板中，以获得端到端用户体验的感觉。
 
-Connecting to a new database
+连接到新数据库
 ----------------------------
 
-We assume you already have a database configured and can connect to it from the 
-instance on which you’re running Superset. If you’re just testing Superset and
-want to explore sample data, you can load some
-`sample PostgreSQL datasets <https://wiki.postgresql.org/wiki/Sample_Databases>`_
-into a fresh DB, or configure the
-`example weather data <https://github.com/dylburger/noaa-ghcn-weather-data>`_
-we use here.
+我们假设您已经配置了一个数据库，并且可以从运行 Superset 的实例连接到它。
+如果您只是测试 Superset 并希望研究示例数据，您可以将一些`示例 PostgreSQL 数据集<https://wiki.postgresql.org/wiki/Sample_Databases>`_加载到一个新的数据库中，
+或者配置我们在这里使用的`示例天气数据 <https://github.com/dylburger/noaa-ghcn-weather-data>`_。
 
 Under the **Sources** menu, select the *Databases* option:
 
