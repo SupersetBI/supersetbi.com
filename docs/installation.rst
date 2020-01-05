@@ -952,7 +952,7 @@ SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可
 
 您可以选择允许用户在 SQL Lab 中直接调度查询。
 这是通过向保存的查询添加额外的元数据来实现的，然后由外部调度来获取这些元数据
-(像 [Apache Airflow](https://airflow.apache.org/))。
+(像 `Apache Airflow <https://airflow.apache.org/>`_)。
 
 要允许调度查询，请将以下内容添加到 `config.py`:
 
