@@ -34,26 +34,15 @@ Apache Superset 是一个现代的、企业级的商业智能 web 应用程序
 
 .. Important::
 
-    **Disclaimer**: Apache Superset 是 Apache 软件基金会(ASF)正在孵化的项目，
-    由 Apache 孵化器赞助。所有新接受的项目都需要孵化，直到进一步的审查表明基础设施、
-    通讯和决策过程已经与其他成功的 ASF 项目一致的方式稳定下来。虽然孵化状态不一定
-    反映代码的完整性或稳定性，但它确实表明项目还没有得到 ASF 的完全认可。
+    **Disclaimer**: Apache Superset 是 Apache 软件基金会(ASF)正在孵化的项目，由 Apache 孵化器赞助。所有新接受的项目都需要孵化，直到进一步的审查表明基础设施、通讯和决策过程已经与其他成功的 ASF 项目一致的方式稳定下来。虽然孵化状态不一定反映代码的完整性或稳定性，但它确实表明项目还没有得到 ASF 的完全认可。
 
-.. Note:: Apache Superset, Superset, Apache, Apache feather logo 和 
-    Apache Superset project logo 是 Apache 软件基金会在美国和其他国家的
-    注册商标或商标。
+.. Note:: Apache Superset, Superset, Apache, Apache feather logo 和 Apache Superset project logo 是 Apache 软件基金会在美国和其他国家的注册商标或商标。
 
 Superset 资源
 ==================
-- `Superset 的 Github <https://github.com/apache/incubator-superset>`_, 注意
-  `我们使用 Github issue 跟踪问题 <https://github.com/apache/incubator-superset/issues>`_
-- Superset 的
-  `贡献的指南 <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md>`_
-  和
-  `代码规范 <https://github.com/apache/incubator-superset/blob/master/CODE_OF_CONDUCT.md>`_
-  在 Github 上。
-- 我们的 `邮件列表档案 <https://lists.apache.org/list.html?dev@superset.apache.org>`_.
-  要订阅, 请发送电子邮件到 ``dev-subscribe@superset.apache.org``
+- `Superset 的 Github <https://github.com/apache/incubator-superset>`_, 注意`我们使用 Github issue 跟踪问题 <https://github.com/apache/incubator-superset/issues>`_
+- Superset 的`贡献的指南 <https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md>`_和`代码规范 <https://github.com/apache/incubator-superset/blob/master/CODE_OF_CONDUCT.md>`_在 Github 上。
+- 我们的 `邮件列表档案 <https://lists.apache.org/list.html?dev@superset.apache.org>`_.要订阅, 请发送电子邮件到 ``dev-subscribe@superset.apache.org``
 - `加入我们的 Slack <https://join.slack.com/t/apache-superset/shared_invite/enQtNDMxMDY5NjM4MDU0LWJmOTcxYjlhZTRhYmEyYTMzOWYxOWEwMjcwZDZiNWRiNDY2NDUwNzcwMDFhNzE1ZmMxZTZlZWY0ZTQ2MzMyNTU>`_
 
 Apache 软件基金会资源
@@ -73,11 +62,9 @@ Apache 软件基金会资源
 - 丰富的数据可视化
 - 易于使用的界面，用于探索和可视化数据
 - 创建和共享 Dashboard
-- 企业级的身份验证，集成主要身份验证提供者（database, OpenID, LDAP, OAuth & REMOTE_USER 通过
-  Flask AppBuilder）
-- 可扩展的、高粒度的安全/权限模型，允许对谁可以访问单个特性和数据集制定复杂的规则
-- 一个简单的语义层，允许用户通过定义哪些字段应该显示在哪个下拉列表中，哪些聚合
-  和功能指标对用户可用来控制数据源在 UI 中的显示方式
+- 企业级的身份验证，集成主要身份验证提供者（database, OpenID, LDAP, OAuth & REMOTE_USER 通过 Flask AppBuilder）
+- 可扩展的、高粒度的安全/权限模型，允许对谁可以访问单个功能和数据集制定复杂的规则
+- 一个简单的语义层，允许用户通过定义哪些字段应该显示在哪个下拉列表中，哪些聚合和功能指标对用户可用来控制数据源在 UI 中的方式
 - 集成大多数 SQL-speaking RDBMS，通过 SQLAlchemy 
 - 深度集成 Druid.io
 
