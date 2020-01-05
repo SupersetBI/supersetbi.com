@@ -125,13 +125,11 @@
 * 您是想要求和的度量，还是得到基本的汇总统计信息? **Sum** 、 **Min** 和 **Max** 列将有所帮助。
 * **is temporal** 字段应该检查任何日期或时间字段。我们一会儿会讲到它是如何在分析中表现出来的。
 
-Here’s how we’ve configured fields for the weather data. Even for measures like the 
-weather measurements (precipitation, snowfall, etc.), it’s ideal to group and filter 
-by these values:
+下面是我们如何为天气数据配置字段。即使是天气测量(降水、降雪等)，也应该根据以下值进行分组和筛选:
 
 .. image:: images/tutorial/tutorial_14_field_config.png
 
-As with the configurations above, click the **Save** button to save these settings.
+与上面的配置一样，单击 **Save** 按钮来保存这些设置。
 
 Exploring your data
 -------------------
