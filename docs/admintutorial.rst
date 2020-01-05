@@ -15,14 +15,12 @@
     specific language governing permissions and limitations
     under the License.
 
-Creating your first dashboard
+创建您的第一个看板
 =============================
 
-This tutorial targets someone who wants to create charts and dashboards
-in Superset. We'll show you how to connect Superset
-to a new database and configure a table in that database for analysis. You'll
-also explore the data you've exposed and add a visualization to a dashboard
-so that you get a feel for the end-to-end user experience.
+本教程的目标读者是希望在 Superset 中创建图表和看板的人。
+我们将向您展示如何将 Superset 连接到一个新数据库并在该数据库中配置一个表以进行分析。
+您还将研究公开的数据，并将可视化添加到看板中，以获得端到端用户体验的感觉。
 
 Connecting to a new database
 ----------------------------
