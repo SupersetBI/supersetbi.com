@@ -34,7 +34,7 @@
 .. image:: images/tutorial/tutorial_01_sources_database.png
    :scale: 70%
 
-On the resulting page, click on the green plus sign, near the top right:
+在结果页面上，单击右上角的绿色加号:
 
 .. image:: images/tutorial/tutorial_02_add_database.png
    :scale: 70%
