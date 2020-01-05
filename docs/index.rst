@@ -71,7 +71,7 @@ Apache 软件基金会资源
 数据库
 ---------
 
-目前支持以下 RDBMS:
+目前支持以下 RDBMS(关系型数据库管理系统):
 
 - `Amazon Athena <https://aws.amazon.com/athena/>`_
 - `Amazon Redshift <https://aws.amazon.com/redshift/>`_
@@ -138,7 +138,7 @@ Apache 软件基金会资源
     faq
 
 
-索引和表
+索引以及表格
 ------------------
 
 * :ref:`genindex`
