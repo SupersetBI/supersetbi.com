@@ -182,20 +182,17 @@
 
 .. image:: images/tutorial/tutorial_24_max_metric.png
 
-The *max__measurement_flag* metric was created when we checked the box under **Max** and 
-next to the *measurement_flag* field, indicating that this field was numeric and that 
-we wanted to find its maximum value when grouped by specific fields.
+*max__measurement_flag* 指标是在我们在 **Max** 和 *measurement_flag* 字段旁边选中方框时创建的，
+这表明该字段是数值型的，我们希望根据特定字段分组时找到它的最大值。
 
-In our case, *measurement_flag* is the value of the measurement taken, which clearly 
-depends on the type of measurement (the researchers recorded different values for 
-precipitation and temperature). Therefore, we must filter our query only on records 
-where the *weather_description* is equal to "Maximum temperature", which we do in 
-the **Filters** section at the bottom of the explore:
+
+在我们的例子中，*measurement_flag* 是测量的值，它显然取决于测量的类型(研究人员记录了降水和温度的不同值)。
+因此，我们必须只对 *weather_description* 等于“最高温度”的记录进行筛选，我们在 explore 底部的
+**Filters** 部分进行了如下操作:
 
 .. image:: images/tutorial/tutorial_25_max_temp_filter.png
 
-Finally, since we only care about the top 10 measurements, we limit our results to 
-10 records using the *Row limit* option under the **Options** header:
+最后，由于我们只关心前10个度量值，所以我们使用 **Options** 标题下的 *Row limit* 选项将结果限制为10条记录:
 
 .. image:: images/tutorial/tutorial_26_row_limit.png
 
