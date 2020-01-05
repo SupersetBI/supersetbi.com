@@ -26,8 +26,8 @@
 ----------------------------
 
 我们假设您已经配置了一个数据库，并且可以从运行 Superset 的实例连接到它。
-如果您只是测试 Superset 并希望研究示例数据，您可以将一些 `示例 PostgreSQL 数据集<https://wiki.postgresql.org/wiki/Sample_Databases>`_ 加载到一个新的数据库中，
-或者配置我们在这里使用的 `示例天气数据 <https://github.com/dylburger/noaa-ghcn-weather-data>`_ 。
+如果您只是测试 Superset 并希望研究示例数据，您可以将一些 `示例 PostgreSQL 数据集 <https://wiki.postgresql.org/wiki/Sample_Databases>`_加载到一个新的数据库中，
+或者配置我们在这里使用的 `示例天气数据 <https://github.com/dylburger/noaa-ghcn-weather-data>`_。
 
 在 **Sources** 菜单下，选择 *Databases* 选项:
 
@@ -52,7 +52,7 @@
    :scale: 70%
 
 这个例子显示了测试天气数据库的连接字符串。正如 URI 下面的文本中所指出的，
-您应该参考 SQLAlchemy 文档，了解如何为目标数据库 `创建新的连接 URI<https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-urls>`_ 。
+您应该参考 SQLAlchemy 文档，了解如何为目标数据库 `创建新的连接URI <https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-urls>`_。
 
 单击 **Test Connection** 按钮，确认端到端工作的内容。一旦 Superset 可以成功连接和认证，
 你应该看到这样的弹出窗口:
