@@ -131,15 +131,14 @@
 
 与上面的配置一样，单击 **Save** 按钮来保存这些设置。
 
-Exploring your data
+探索你的数据
 -------------------
 
-To start exploring your data, simply click on the table name you just created in 
-the list of available tables:
+要开始研究数据，只需单击在可用表列表中创建的表名:
 
 .. image:: images/tutorial/tutorial_15_click_table_name.png
 
-By default, you’ll be presented with a Table View:
+默认情况下，你会看到一个表格视图:
 
 .. image:: images/tutorial/tutorial_16_datasource_chart_type.png
 
