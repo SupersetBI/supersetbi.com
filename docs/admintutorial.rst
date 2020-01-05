@@ -26,8 +26,8 @@
 ----------------------------
 
 我们假设您已经配置了一个数据库，并且可以从运行 Superset 的实例连接到它。
-如果您只是测试 Superset 并希望研究示例数据，您可以将一些 `示例 PostgreSQL 数据集 <https://wiki.postgresql.org/wiki/Sample_Databases>`_加载到一个新的数据库中，
-或者配置我们在这里使用的 `示例天气数据 <https://github.com/dylburger/noaa-ghcn-weather-data>`_。
+如果您只是测试 Superset 并希望研究示例数据，您可以将一些 `示例 PostgreSQL 数据集 <https://wiki.postgresql.org/wiki/Sample_Databases>`_ 加载到一个新的数据库中，
+或者配置我们在这里使用的 `示例天气数据 <https://github.com/dylburger/noaa-ghcn-weather-data>`_ 。
 
 在 **Sources** 菜单下，选择 *Databases* 选项:
 
