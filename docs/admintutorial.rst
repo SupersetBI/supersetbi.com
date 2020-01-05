@@ -171,15 +171,14 @@
 
 .. image:: images/tutorial/tutorial_22_group_by_result.png
 
-Let’s find a more useful data point: the top 10 times and places that recorded the 
-highest temperature in 2015.
+让我们来找一个更有用的数据点: 2015年气温最高的10次和地点。
 
-We replace *weather_description* with *latitude*, *longitude* and *measurement_date* in the 
-*Group by* section:
+我们将 *weather_description* 替换为 *latitude* ，*longitude* 和 *measurement_date* 
+在 *Group by* 中:
 
 .. image:: images/tutorial/tutorial_23_group_by_more_dimensions.png
 
-And replace *COUNT(\*)* with *max__measurement_flag*:
+用 *max__measurement_flag* 替换 *COUNT(\*)*:
 
 .. image:: images/tutorial/tutorial_24_max_metric.png
 
