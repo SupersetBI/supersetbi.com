@@ -211,8 +211,7 @@
 * 此外，您可能希望看到的温度测量单位是摄氏度，而不是十分之一度。或者你可能想把温度转换成华氏温度。
   您可以更改针对数据库执行的SQL，将逻辑放入度量本身(Edit Table Config > List Sql Metric > Edit Metric > SQL Expression)
 
-For now, though, let’s create a better visualization of these data and add it to 
-a dashboard.
+现在，让我们创建这些数据的更好的可视化，并将其添加到看板中。
 
 We change the Chart Type to "Distribution - Bar Chart":
 
