@@ -58,8 +58,8 @@ Superset web 服务器和 Superset Celery workers（可选）是无状态的，�
 
 目前不建议在生产环境中运行 docker-compose。
 
-如果你试图在Mac上构建，它有137个退出，你需要增加你的docker资源。
-OSX指令: https://docs.docker.com/docker-for-mac/#advanced (Search for memory)
+如果你试图在Mac上构建，它有137个退出，你需要增加你的 docker 资源。
+OSX 指令: https://docs.docker.com/docker-for-mac/#advanced (Search for memory)
 
 或者如果你很好奇，想要自底向上安装superset，那就继续吧。
 
