@@ -41,12 +41,12 @@
 
 您可以在这个页面上配置许多高级选项，但是对于本演练，您只需要做**两件事**:
 
-1. Name your database connection:
+1. 命名您的数据库连接:
 
 .. image:: images/tutorial/tutorial_03_database_name.png
    :scale: 70%
 
-2. Provide the SQLAlchemy Connection URI and test the connection:
+2. 提供 SQLAlchemy 连接 URI 并测试连接:
 
 .. image:: images/tutorial/tutorial_04_sqlalchemy_connection_string.png
    :scale: 70%
