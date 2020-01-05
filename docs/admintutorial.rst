@@ -213,7 +213,7 @@
 
 现在，让我们创建这些数据的更好的可视化，并将其添加到看板中。
 
-We change the Chart Type to "Distribution - Bar Chart":
+我们将图表类型改为 "Distribution - Bar Chart":
 
 .. image:: images/tutorial/tutorial_28_bar_chart.png
 
