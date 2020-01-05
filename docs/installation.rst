@@ -251,18 +251,16 @@ https://github.com/apache/incubator-superset/blob/master/superset/config.py 中�
 管理员将希望通读该文件，以了解可以在本地配置的内容以及现有的默认值。
 
 由于 ``superset_config.py`` 充当一个 Flask 配置模块，它可以用来改变 Flask 本身的设置，
-也可以用来改变 Flask 的扩展，比如``flask-wtf``, ``flask-cache``,
-``flask-migrate`` 和 ``flask-appbuilder``。Flask App Builder, 
-Superset 使用的 web 框架提供了很多配置设置。有关如何配置它的更多信息，
-请参阅`Flask App Builder Documentation
-<https://flask-appbuilder.readthedocs.org/en/latest/config.html>`_。
+也可以用来改变 Flask 的扩展，比如 ``flask-wtf`` , ``flask-cache`` , ``flask-migrate`` 和 ``flask-appbuilder`` 。
+Flask App Builder, Superset 使用的 web 框架提供了很多配置设置。有关如何配置它的更多信息，
+请参阅`Flask App Builder Documentation <https://flask-appbuilder.readthedocs.org/en/latest/config.html>`_ 。
 
 一定要换的配置:
 
 * *SQLALCHEMY_DATABASE_URI*, 默认情况下，它存储在 *~/.superset/superset.db*
 * *SECRET_KEY*, 一个长而随机的字符串
 
-如果您需要免除CSRF的端点，e.g. 您正在运行一个自定义的 auth postback 端点，
+如果您需要免除 CSRF 的端点，e.g. 您正在运行一个自定义的 auth postback 端点，
 您可以将它们添加到 *WTF_CSRF_EXEMPT_LIST*
 
      WTF_CSRF_EXEMPT_LIST = ['']
