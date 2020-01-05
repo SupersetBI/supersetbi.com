@@ -58,22 +58,21 @@ Superset web 服务器和 Superset Celery workers（可选）是无状态的，�
 
 目前不建议在生产环境中运行 docker-compose。
 
-如果你试图在Mac上构建，它有137个退出，你需要增加你的 docker 资源。
-OSX 指令: https://docs.docker.com/docker-for-mac/#advanced (Search for memory)
+如果你试图在 Mac 上构建，它有 137 个退出，你需要增加你的 docker 资源。
+OSX 指令: https://docs.docker.com/docker-for-mac/#advanced (搜索 memory)
 
-或者如果你很好奇，想要自底向上安装superset，那就继续吧。
+或者如果你很好奇，想要自底向上安装 superset，那就继续吧。
 
 参阅 `docker/README.md <https://github.com/apache/incubator-superset/blob/master/docker/README.md>`_
 
 系统依赖
 ---------------
 
-Superset将数据库连接信息存储在其元数据数据库中。
+Superset 将数据库连接信息存储在其元数据数据库中。
 为此，我们使用 ``cryptography`` Python 库来加密连接密码。
 不幸的是，这个库具有操作系统级依赖项。
 
-您可能想尝试下一步
-(“Superset安装和初始化”)，如果遇到错误，请回到这一步。
+您可能想尝试下一步(" Superset 安装和初始化 ")，如果遇到错误，请回到这一步。
 
 下面是如何安装它们:
 
@@ -81,7 +80,7 @@ Superset将数据库连接信息存储在其元数据数据库中。
 
     sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev
 
-**Ubuntu 18.04** 如果你已经安装了 python3.6和 python2.7，这是 **Ubuntu 18.04 LTS** 的默认设置, 你也可以运行这个命令: ::
+**Ubuntu 18.04** 如果你已经安装了 python3.6 和 python2.7，这是 **Ubuntu 18.04 LTS** 的默认设置, 你也可以运行这个命令: ::
 
     sudo apt-get install build-essential libssl-dev libffi-dev python3.6-dev python-pip libsasl2-dev libldap2-dev
 
@@ -92,13 +91,12 @@ Superset将数据库连接信息存储在其元数据数据库中。
     sudo yum upgrade python-setuptools
     sudo yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel openssl-devel cyrus-sasl-devel openldap-devel
 
-**Mac OS X** 如果可能的话，您应该升级到最新版本的OS X，因为该版本的问题更有可能得到解决。
-您 **可能需要** 最新版本的 XCode 来支持您安装的 OS X 版本。
+**Mac OS X** 如果可能的话，您应该升级到最新版本的OS X，因为该版本的问题更有可能得到解决。您 **可能需要** 最新版本的 XCode 来支持您安装的 OS X 版本。
 您还应该安装 XCode 命令行工具: ::
 
     xcode-select --install
 
-不推荐使用 System python。Homebrew 的 python 也附带了 pip: ::
+不推荐使用系统 python。Homebrew 的 python 也附带了 pip: ::
 
     brew install pkg-config libffi openssl python
     env LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" pip install cryptography==2.4.2
