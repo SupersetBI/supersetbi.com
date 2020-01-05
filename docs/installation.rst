@@ -1053,7 +1053,7 @@ Flower 是一个基于 web 的工具，用于监控 Celery 集群，你可以安
 
     pip install flower
 
-and run via: ::
+并且通过以下运行: ::
 
     celery flower --app=superset.tasks.celery_app:app
 
@@ -1219,7 +1219,7 @@ SIP-15
 
 在 SIP-15 SQLAlchemy 使用包含端点之前，如果没有定义格式，并且列格式不符合 ISO 8601 日期-时间(请参阅 SIP 了解详细信息)，则这些端点可能表现为仅用于字符串列(由于字典排序)。
 
-要解决这个问题，而不是必须为每个 non-IS0 8601 date-time 列定义 date/time 格式，once可以通过 ``extra`` 参数在每个数据库级别上定义默认的列映射 ::
+要解决这个问题，而不是必须为每个 non-IS0 8601 date-time 列定义 date/time 格式，once 可以通过 ``extra`` 参数在每个数据库级别上定义默认的列映射 ::
 
     {
         "python_date_format_by_column_name": {
@@ -1227,7 +1227,7 @@ SIP-15
         }
     }
 
-**New deployments**
+**新部署**
 
 所有新的 Superset 部署都应该启用SIP-15, 通过
 
@@ -1235,7 +1235,7 @@ SIP-15
 
     SIP_15_ENABLED = True
 
-**Existing deployments**
+**现有部署**
 
 由于不清楚图表创建者是否意识到了时间范围的不一致性(并相应地调整了端点)，因此更改所有图表的行为是过于激进的。
 相反，SIP-15 提供了一个软传输，允许生产者(图表所有者)看到提议的变化的影响，并相应地调整他们的图表。
