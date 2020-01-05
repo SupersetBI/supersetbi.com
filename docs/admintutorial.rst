@@ -39,8 +39,7 @@
 .. image:: images/tutorial/tutorial_02_add_database.png
    :scale: 70%
 
-You can configure a number of advanced options on this page, but for 
-this walkthrough, you’ll only need to do **two things**:
+您可以在这个页面上配置许多高级选项，但是对于本演练，您只需要做**两件事**:
 
 1. Name your database connection:
 
