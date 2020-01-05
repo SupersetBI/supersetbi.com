@@ -812,14 +812,12 @@ worker 进程和 web 服务器进程应该具有相同的配置。
     celery worker --app=superset.tasks.celery_app:app --pool=prefork -O fair -c 4
 
 
-* 启动一个安排定期后台作业的作业，请运行 ::
+* 启动一个安排定期后台作业的任务，请运行 ::
 
     celery beat --app=superset.tasks.celery_app:app
 
-要设置 result backend，您需要将 ``werkzeug.contrib.cache.BaseCache`` 的派生实例
-传递到 ``superset_config.py`` 中的 ``RESULTS_BACKEND`` 配置键。
-可以使用 Memcached、Redis、S3 (https://pypi.python.org/pypi/s3werkzeugcache)、
-内存或文件系统（在单个服务器类型设置或测试中），
+要设置 result backend，您需要将 ``werkzeug.contrib.cache.BaseCache`` 的派生实例传递到 ``superset_config.py`` 中的 ``RESULTS_BACKEND`` 配置键。
+可以使用 Memcached、Redis、S3 (https://pypi.python.org/pypi/s3werkzeugcache)、内存或文件系统（在单个服务器类型设置或测试中），
 也可以编写自己的缓存接口。您的 ``superset_config.py`` 可能看起来像：
 
 .. code-block:: python
@@ -843,11 +841,9 @@ worker 进程和 web 服务器进程应该具有相同的配置。
 **注意事项**
 
 * 重要的是，Superset 集群中的所有工作节点和 web 服务器共享一个公共元数据数据库。
-  这意味着 SQLite 将无法在此上下文中工作，因为它对并发性的支持有限，
-  并且通常位于本地文件系统上。
+  这意味着 SQLite 将无法在此上下文中工作，因为它对并发性的支持有限，并且通常位于本地文件系统上。
 
-* 在你的整个设置中应该只有一个 ``celery beat`` 运行的实例。
-  如果不是，后台作业可能会被多次调度，从而导致一些奇怪的行为，
+* 在你的整个设置中应该只有一个 ``celery beat`` 运行的实例。如果不是，后台作业可能会被多次调度，从而导致一些奇怪的行为，
   如重复提交报告、比预期的负载/流量高等等。
 
 * 如果在数据库设置中启用 "Asynchronous Query Execution" ，SQL Lab 将仅异步运行查询。
@@ -860,7 +856,7 @@ Email reports 允许用户安排电子邮件报告
 * 图表和仪表板可视化（附件或内联）
 * 图表数据（内联表上的 CSV 附件）
 
-**Setup**
+**设置**
 
 请确保在配置文件中启用电子邮件报告
 
@@ -874,11 +870,10 @@ Email reports 允许用户安排电子邮件报告
 * Manage -> Dashboard Emails
 * Manage -> Chart Email Schedules
 
-计划以 crontab 格式定义，每个计划可以有一个收件人列表
-（所有收件人都可以接收一封邮件或单独的邮件）。
+计划以 crontab 格式定义，每个计划可以有一个收件人列表（所有收件人都可以接收一封邮件或单独的邮件）。
 出于审核目的，所有外发邮件都可以具有必填密件抄送。
 
-为了能够上手，你需要配置一个 celery worker 和一个 celery beat(参见 "Celery Tasks" 一节)。
+为了能够上手，你需要配置一个 celery worker 和一个 celery beat (参见 "Celery Tasks" 一节)。
 您的 celery 配置还需要一个条目 ``email_reports.schedule_hourly`` 针对 ``CELERYBEAT_SCHEDULE``。
 
 要发送电子邮件，您需要在您的配置文件中配置 SMTP 设置。如：
@@ -903,8 +898,7 @@ Email reports 允许用户安排电子邮件报告
 
 您需要在您的配置中相应地调整 ``EMAIL_REPORTS_WEBDRIVER``。
 
-您还需要指定代表哪个 username 呈现仪表板。
-一般来说，仪表板和图表是不能被未授权的请求访问的，
+您还需要指定代表哪个 username 呈现仪表板。一般来说，仪表板和图表是不能被未授权的请求访问的，
 这就是为什么 worker 需要接管现有用户的凭证来获取快照。::
 
     EMAIL_REPORTS_USER = 'username_with_permission_to_access_dashboards'
@@ -912,10 +906,9 @@ Email reports 允许用户安排电子邮件报告
 
 **重要事项**
 
-* 请注意 celery 的并发设置(使用 ``-c 4``)。
-  Selenium/webdriver 实例会消耗服务器上的大量 CPU/内存。
+* 请注意 celery 的并发设置(使用 ``-c 4``)。 Selenium/webdriver 实例会消耗服务器上的大量 CPU/内存。
 
-* 在某些情况下，如果您注意到大量泄漏的 ``geckodriver`` 进程，请尝试运行您的芹菜进程 ::
+* 在某些情况下，如果您注意到大量泄漏的 ``geckodriver`` 进程，请尝试运行您的 celery 进程 ::
 
     celery worker --pool=prefork --max-tasks-per-child=128 ...
 
@@ -929,8 +922,7 @@ SQL Lab
 -------
 SQL Lab 是一个强大的 SQL IDE，可以与所有 SQLAlchemy 兼容的数据库一起工作。
 默认情况下，查询是在 web 请求的范围内执行的，因此当查询超过环境中 web 请求的最大持续时间时，
-查询可能最终超时，无论是 reverse proxy 还是 Superset 服务器本身。
-在这种情况下，最好使用 ``celery`` 在后台运行查询。
+查询可能最终超时，无论是反向代理还是 Superset 服务器本身。在这种情况下，最好使用 ``celery`` 在后台运行查询。
 请按照上面提到的例子/说明来设置你的 celery。
 
 还要注意，SQL Lab 支持查询中的 Jinja 模板，并且可以通过在 superset 配置中定义 
