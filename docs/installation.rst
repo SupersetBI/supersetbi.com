@@ -959,10 +959,9 @@ SQL Lab 还包括一个带有可插入后端的实时查询验证功能。您可
 .. code-block:: python
 
     FEATURE_FLAGS = {
-        # Configuration for scheduling queries from SQL Lab. This information is
-        # collected when the user clicks "Schedule query", and saved into the `extra`
-        # field of saved queries.
-        # See: https://github.com/mozilla-services/react-jsonschema-form
+        # 配置从 SQL Lab 调度查询。当用户单击 "Schedule query" 时，
+        # 将收集此信息，并将其保存到 saved queries 的 `extra` 字段中。
+        # 参看：https://github.com/mozilla-services/react-jsonschema-form
         'SCHEDULED_QUERIES': {
             'JSONSCHEMA': {
                 'title': 'Schedule',
