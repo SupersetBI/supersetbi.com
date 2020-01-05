@@ -54,9 +54,8 @@
 这个例子显示了测试天气数据库的连接字符串。正如 URI 下面的文本中所指出的，
 您应该参考 SQLAlchemy 文档，了解如何为目标数据库`创建新的连接 URI<https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-urls>`_。
 
-Click the **Test Connection** button to confirm things work end to end. 
-Once Superset can successfully connect and authenticate, you should see 
-a popup like this:
+单击 **Test Connection** 按钮，确认端到端工作的内容。一旦 Superset 可以成功连接和认证，
+你应该看到这样的弹出窗口:
 
 .. image:: images/tutorial/tutorial_05_connection_popup.png
    :scale: 50%
