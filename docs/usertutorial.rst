@@ -55,21 +55,18 @@
 
 .. image:: images/usertutorial/csv_to_database_configuration.png
 
-Next enter the text `Travel Date` into the
-:guilabel:`Parse Dates` field.
+接下来，在 :guilabel:`Parse Dates` 字段中输入文本 `Travel Date`。
 
 .. image:: images/usertutorial/parse_dates_column.png
 
-Leaving all the other options in their default settings, select
-:guilabel:`Save` at the bottom of the page.
+将所有其他选项保留为默认设置，然后选择页面底部的 :guilabel:`Save` 。
 
-Table Visualization
+表格可视化
 -------------------
 
-In this section, we’ll create our first visualization: a table to show
-the number of flights and cost per travel class.
+在本部分中，我们将创建我们的第一个可视化文件：一个表格，以显示航班数量和每次旅行的费用。
 
-To create a new chart, select the :menuselection:`New --> Chart`.
+要创建新图表，请选择 :menuselection:`New --> Chart`。
 
 .. image:: images/usertutorial/add_new_chart.png
 
