@@ -115,10 +115,8 @@
 否则，您可以通过选择顶部菜单上的 :guilabel:`Dashboards` ，
 然后从看板列表中选择 :guilabel:`Tutorial dashboard` 来导航到看板。
 
-On this dashboard you should see the table you created in the previous
-section. Select :guilabel:`Edit dashboard` and then hover over the
-table. By selecting the bottom right hand corner of the table (the
-cursor will change too), you can resize it by dragging and dropping.
+在该看板上，您应该看到在上一节中创建的表。选择 :guilabel:`Edit dashboard` ，然后将鼠标悬停在表格上。
+通过选择表格的右下角（光标也会改变），您可以通过拖放来调整其大小。
 
 .. image:: images/usertutorial/resize_tutorial_table_on_dashboard.png
 
