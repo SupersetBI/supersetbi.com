@@ -21,17 +21,15 @@
 在本教程中，我们将通过研究一个真实的数据集来介绍 Apache Superset 中的关键概念，
 该数据集包含一个英国组织的员工在2011年的飞行。每趟航班的信息如下:
 
--  The traveller's department. For the purposes of this tutorial the
-   departments have been renamed Orange, Yellow and Purple.
--  The cost of the ticket.
--  The travel class (Economy, Premium Economy, Business and First
-   Class).
--  Whether the ticket was a single or return.
--  The date of travel.
--  Information about the origin and destination.
--  The distance between the origin and destination, in kilometers (km).
+-  旅客部门。在本教程中，部门已重命名为“橙色”，“黄色”和“紫色”。
+-  机票费用。
+-  旅游舱（经济舱，高级经济舱，商务舱和头等舱）。
+-  票是单张还是回程。
+-  旅行日期。
+-  有关始发地和目的地的信息。
+-  起点和终点之间的距离，以公里（km）为单位。
 
-Enabling Upload a CSV Functionality
+启用上传 CSV 功能
 -----------------------------------
 
 You may need to enable the functionality to upload a CSV to your
