@@ -89,12 +89,9 @@
 现在，我们要使用 :guilabel:`Group by` 选项在表中指定行。由于在此示例中，
 我们想了解不同的旅行舱位，因此在此菜单中选择 :guilabel:`Travel Class` 。
 
-Next, we can specify the metrics we would like to see in our table with
-the :guilabel:`Metrics` option. :guilabel:`Count(*)`, which represents the number of
-rows in the table (in this case corresponding to the number of flights
-since we have a row per flight), is already there. To add cost, within
-:guilabel:`Metrics`, select :guilabel:`Cost`. :guilabel:`Save` the
-default aggregation option, which is to sum the column.
+接下来，我们可以使用 :guilabel:`Metrics` 选项指定我们希望在表格中看到的指标。
+:guilabel:`Count(*)` 已经存在，它表示表中的行数（在这种情况下，它对应于航班数，因为我们每个航班都有一行）。 
+要添加成本，请在 :guilabel:`Metrics` 中选择 :guilabel:`Cost`。:guilabel:`Save` 默认的聚合选项，即对列求和。
 
 .. image:: images/usertutorial/sum_cost_column.png
 
