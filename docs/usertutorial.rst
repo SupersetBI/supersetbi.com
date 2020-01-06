@@ -120,8 +120,7 @@
 
 .. image:: images/usertutorial/resize_tutorial_table_on_dashboard.png
 
-Finally, save your changes by selecting :guilabel:`Save changes` in the
-top right.
+最后，通过选择右上角的 :guilabel:`Save changes` 来保存更改。
 
 Pivot Table
 -----------
