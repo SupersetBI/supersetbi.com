@@ -155,12 +155,12 @@
 
 .. image:: images/usertutorial/tutorial_pivot_table.png
 
-You should see months in the rows and Department and Travel Class in the
-columns. To get this in our dashboard, select :guilabel:`Save`, name the
-chart Tutorial Pivot and using
-:guilabel:`Add chart to existing dashboard` select 
-:guilabel:`Tutorial Dashboard`, and then finally
-:guilabel:`Save & go to dashboard`.
+您应该在行中看到 months，在列中看到 Department 和 Travel Class。
+在我们的看板中，选择 :guilabel:`Save` ，
+命名图表 Tutorial Pivot 并使用
+:guilabel:`Add chart to existing dashboard`
+选择 :guilabel:`Tutorial Dashboard`,
+最后 :guilabel:`Save & go to dashboard`。
 
 Line Chart
 ----------
