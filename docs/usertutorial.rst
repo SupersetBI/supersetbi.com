@@ -40,7 +40,7 @@
 
 在 :guilabel:`Edit Database` 页面中，选中 :guilabel:`Allow Csv Upload` 复选框。
 
-Finally, save by selecting :guilabel:`Save` at the bottom of the page.
+最后，通过选择页面底部的 :guilabel:`Save` 进行保存。
 
 Obtaining and loading the data
 ------------------------------
