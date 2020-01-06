@@ -122,7 +122,7 @@
 
 最后，通过选择右上角的 :guilabel:`Save changes` 来保存更改。
 
-Pivot Table
+透视表
 -----------
 
 In this section, we will extend our analysis using a more complex
