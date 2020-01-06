@@ -138,8 +138,8 @@
 将 :guilabel:`Time Grain` 选择为 month，因为每天的数据过于精细而无法查看模式。
 然后，通过单击 :guilabel:`Time Range` 部分中的 Last week，
 将时间范围选择为2011年的前六个月，然后在 :guilabel:`Custom` 中直接输入日期
-或使用日历小部件分别选择 1\ :sup:`st` January 2011 和
-30\ :sup:`th` June 2011 的 :guilabel:`Start / end` （通过选择月份名称然后选择年份，可以更快地移动到较远的日期）。
+或使用日历小部件分别选择 :guilabel:`Start / end`, 1\ :sup:`st` January 2011 和
+30\ :sup:`th` June 2011（通过选择月份名称然后选择年份，可以更快地移动到较远的日期）。
 
 .. image:: images/usertutorial/select_dates_pivot_table.png
 
