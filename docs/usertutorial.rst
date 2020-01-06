@@ -184,10 +184,9 @@
 这个看起来怎么样? 嗯，我们可以看到平均成本在12月上升。
 但是，将单程票和回程票合并在一起可能没有意义，而是为每种类型的票分别显示两行。
 
-Let’s do this by selecting :guilabel:`Ticket Single or Return` in the
-:guilabel:`Group by` box, and the selecting :guilabel:`Run Query` again.
-Nice! We can see that on average single tickets are cheaper than returns
-and that the big spike in December is caused by return tickets.
+为此，请在 :guilabel:`Group by` 框中选择 :guilabel:`Ticket Single or Return`，
+然后再次选择 :guilabel:`Run Query`。真好！我们可以看到，平均而言，单程机票比往返机票便宜，
+而12月的大幅上涨是由往返机票造成的。
 
 Our chart is looking pretty good already, but let’s customize some more
 by going to the :guilabel:`Customize` tab on the left hand pane. Within
