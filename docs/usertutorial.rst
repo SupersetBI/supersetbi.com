@@ -147,9 +147,8 @@
 请注意，Apache Superset 将通过列表左侧列上的符号指示度量标准的类型
 （ABC 表示字符串，＃ 表示数字，a clock face 表示时间等等）。
 
-In :guilabel:`Group by` select :guilabel:`Time`: this will automatically
-use the Time Column and Time Grain selections we defined in the Time
-section.
+在 :guilabel:`Group by` 中选择 :guilabel:`Time`：
+这将自动使用 Time Column 和我们在 Time 部分中定义的 Time Grain selections。
 
 Within :guilabel:`Columns`, select first :guilabel:`Department` and then
 :guilabel:`Travel Class`. All set – let’s :guilabel:`Run Query` to see
