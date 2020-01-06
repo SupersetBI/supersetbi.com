@@ -133,16 +133,13 @@
 选择 :guilabel:`Pivot Table` 可视化（可以通过在搜索框中输入文本进行筛选），
 然后 :guilabel:`Create a new chart`。
 
-In the :guilabel:`Time` section, keep the Time Column as Travel Date
-(this is selected automatically as we only have one time column in our
-dataset). Then select :guilabel:`Time Grain` to be month as having daily
-data would be too granular to see patterns from. Then select the time
-range to be the first six months of 2011 by click on Last week in the
-:guilabel:`Time Range` section, then in :guilabel:`Custom` selecting a
-:guilabel:`Start / end` of 1\ :sup:`st` January 2011 and 30\ :sup:`th`
-June 2011 respectively by either entering directly the dates or using
-the calendar widget (by selecting the month name and then the year, you
-can move more quickly to far away dates).
+在 :guilabel:`Time` 部分中，将 Time Column 保留为 Travel Date
+（由于我们的数据集中只有一个时间列，因此会自动选择该列）。然后，
+将 :guilabel:`Time Grain` 选择为 month，因为每天的数据过于精细而无法查看模式。
+然后，通过单击 :guilabel:`Time Range` 部分中的 Last week，
+将时间范围选择为2011年的前六个月，然后在 :guilabel:`Custom` 中直接输入日期
+或使用日历小部件分别选择 1\ :sup:`st` January 2011 和
+30\ :sup:`th` June 2011 的 :guilabel:`Start / end` （通过选择月份名称然后选择年份，可以更快地移动到较远的日期）。
 
 .. image:: images/usertutorial/select_dates_pivot_table.png
 
