@@ -70,9 +70,7 @@
 
 .. image:: images/usertutorial/add_new_chart.png
 
-Once in the :guilabel:`Create a new chart` dialogue, select
-:guilabel:`tutorial_flights` from the :guilabel:`Chose a datasource`
-dropdown.
+在 `Create a new chart` 对话框中，从 :guilabel:`Chose a datasource` 下拉列表中选择 :guilabel:`tutorial_flights` 。
 
 .. image:: images/usertutorial/chose_a_datasource.png
 
