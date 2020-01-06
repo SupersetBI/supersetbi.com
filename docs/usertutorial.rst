@@ -150,9 +150,8 @@
 在 :guilabel:`Group by` 中选择 :guilabel:`Time`：
 这将自动使用 Time Column 和我们在 Time 部分中定义的 Time Grain selections。
 
-Within :guilabel:`Columns`, select first :guilabel:`Department` and then
-:guilabel:`Travel Class`. All set – let’s :guilabel:`Run Query` to see
-some data!
+在 :guilabel:`Columns` 中，首先选择 :guilabel:`Department`，
+然后选择 :guilabel:`Travel Class`。全部设置好了 - 让我们 :guilabel:`Run Query` 来查看一些数据！
 
 .. image:: images/usertutorial/tutorial_pivot_table.png
 
