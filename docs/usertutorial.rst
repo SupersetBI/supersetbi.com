@@ -162,7 +162,7 @@
 选择 :guilabel:`Tutorial Dashboard`,
 最后 :guilabel:`Save & go to dashboard`。
 
-Line Chart
+折线图
 ----------
 
 In this section, we are going to create a line chart to understand the
