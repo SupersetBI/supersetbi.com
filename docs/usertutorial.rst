@@ -179,7 +179,7 @@
 
 .. image:: images/usertutorial/average_aggregate_for_cost.png
 
-Next, select :guilabel:`Run Query` to show the data on the chart.
+接下来，选择 :guilabel:`Run Query` 来显示图表上的数据。
 
 How does this look? Well, we can see that the average cost goes up in
 December. However, perhaps it doesn’t make sense to combine both single
