@@ -165,21 +165,17 @@
 折线图
 ----------
 
-In this section, we are going to create a line chart to understand the
-average price of a ticket by month across the entire dataset. As before,
-select :menuselection:`New --> Chart`, and then
-:guilabel:`tutorial_flights` as the datasource and
-:guilabel:`Line Chart` as the visualization type.
+在本节中，我们将创建一个折线图，以了解整个数据集上按月计算的机票平均价格。
+和之前一样，选择 :menuselection:`New --> Chart` ,然后
+:guilabel:`tutorial_flights` 作为数据源和 :guilabel:`Line Chart` 作为可视化类型。
 
-In the Time section, as before, keep the :guilabel:`Time Column` as
-Travel Date and :guilabel:`Time Grain` as month but this time for the
-:guilabel:`Time range` select :guilabel:`No filter` as we want to look
-at entire dataset.
+与以前一样，在 Time 部分中，将 :guilabel:`Time Column` 保留为 Travel Date，
+将 :guilabel:`Time Grain` 保留为 month，但是这次在 :guilabel:`Time range` 中
+选择 :guilabel:`No filter`，因为我们要查看整个数据集。
 
-Within :guilabel:`Metrics`, remove the default :guilabel:`COUNT(*)` and
-add :guilabel:`Cost`. This time, we want to change how this column is
-aggregated to show the mean value: we can do this by selecting
-:guilabel:`AVG` in the :guilabel:`aggregate` dropdown.
+在 :guilabel:`Metrics` 中，删除默认的 :guilabel:`COUNT(*)` 并添加 :guilabel:`Cost`。
+这一次，我们希望更改这个列的聚合方式，以显示平均值:
+我们可以通过在 :guilabel:`aggregate` 下拉菜单中选择 :guilabel:`AVG` 来实现这一点。
 
 .. image:: images/usertutorial/average_aggregate_for_cost.png
 
