@@ -80,12 +80,9 @@
 
 然后，选择 :guilabel:`Create new chart` 以进入图表视图。
 
-By default, Apache Superset only shows the last week of data: in our
-example, we want to look at all the data in the dataset. No problem -
-within the :guilabel:`Time` section, remove the filter on
-:guilabel:`Time range` by selecting on :guilabel:`Last week` then
-changing the selection to :guilabel:`No filter`, with a final
-:guilabel:`OK` to confirm your selection.
+默认情况下，Apache Superset 仅显示数据的最后一周：在我们的示例中，我们要查看数据集中的所有数据。 
+没问题 - 在 :guilabel:`Time` 部分中，通过选择 :guilabel:`Last week` 然后将选择更改
+为 :guilabel:`No filter`，从而在 :guilabel:`Time range` 上删除过滤器，最后按 :guilabel:`OK` 确认选择。
 
 .. image:: images/usertutorial/no_filter_on_time_filter.png
 
