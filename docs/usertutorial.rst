@@ -15,13 +15,11 @@
     specific language governing permissions and limitations
     under the License.
 
-Exploring data with Apache Superset
+使用 Apache Superset 研究数据
 ===================================
 
-In this tutorial, we will introduce key concepts in Apache Superset
-through the exploration of a real dataset which contains the flights
-made by employees of a UK-based organization in 2011. The following
-information about each flight is given:
+在本教程中，我们将通过研究一个真实的数据集来介绍 Apache Superset 中的关键概念，
+该数据集包含一个英国组织的员工在2011年的飞行。每趟航班的信息如下:
 
 -  The traveller's department. For the purposes of this tutorial the
    departments have been renamed Orange, Yellow and Purple.
