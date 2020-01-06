@@ -42,18 +42,16 @@
 
 最后，通过选择页面底部的 :guilabel:`Save` 进行保存。
 
-Obtaining and loading the data
+获取并加载数据
 ------------------------------
 
-Download the data for this tutorial to your computer from
-`Github <https://raw.githubusercontent.com/apache-superset/examples-data/master/tutorial_flights.csv>`__.
+从 `Github <https://raw.githubusercontent.com/apache-superset/examples-data/master/tutorial_flights.csv>`__ 将本教程的数据下载到您的计算机。
 
-In the top menu, select :menuselection:`Sources --> Upload a CSV`.
+在顶部菜单中，选择 :menuselection:`Sources --> Upload a CSV` 。
 
 .. image:: images/usertutorial/upload_a_csv.png
 
-Then, enter the :guilabel:`Table name` as `tutorial_flights`
-and select the :guilabel:`CSV file` from your computer.
+然后，输入 :guilabel:`Table name` 为 `tutorial_flights` ，然后从计算机中选择 :guilabel:`CSV file` 。
 
 .. image:: images/usertutorial/csv_to_database_configuration.png
 
