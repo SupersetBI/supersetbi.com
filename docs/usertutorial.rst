@@ -32,9 +32,7 @@
 启用上传 CSV 功能
 -----------------------------------
 
-You may need to enable the functionality to upload a CSV to your
-database. The following section explains how to enable this
-functionality for the examples database.
+您可能需要启用将 CSV 上传到数据库的功能。以下部分说明了如何为示例数据库启用此功能。
 
 In the top menu, select :menuselection:`Sources --> Databases`. Find the
 :guilabel:`examples` database in the list and select the edit record
