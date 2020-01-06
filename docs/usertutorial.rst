@@ -143,11 +143,9 @@
 
 .. image:: images/usertutorial/select_dates_pivot_table.png
 
-Next, within the :guilabel:`Query` section, remove the default COUNT(*)
-and add Cost, keeping the default SUM aggregate. Note that Apache
-Superset will indicate the type of the metric by the symbol on the left
-hand column of the list (ABC for string, # for number, a clock face for
-time, etc.).
+接下来，在 :guilabel:`Query` 部分中，删除默认的 COUNT(*) 并添加 Cost，以保持默认的 SUM aggregate。
+请注意，Apache Superset 将通过列表左侧列上的符号指示度量标准的类型
+（ABC 表示字符串，＃ 表示数字，a clock face 表示时间等等）。
 
 In :guilabel:`Group by` select :guilabel:`Time`: this will automatically
 use the Time Column and Time Grain selections we defined in the Time
