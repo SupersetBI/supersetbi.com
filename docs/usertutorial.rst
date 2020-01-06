@@ -74,11 +74,11 @@
 
 .. image:: images/usertutorial/chose_a_datasource.png
 
-Next, select the visualization type as :guilabel:`Table`.
+接下来，选择可视化类型为 :guilabel:`Table` 。
 
 .. image:: images/usertutorial/select_table_visualization_type.png
 
-Then, select :guilabel:`Create new chart` to go into the chart view.
+然后，选择 :guilabel:`Create new chart` 以进入图表视图。
 
 By default, Apache Superset only shows the last week of data: in our
 example, we want to look at all the data in the dataset. No problem -
