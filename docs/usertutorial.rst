@@ -101,12 +101,10 @@
 
 恭喜，您已经在 Apache Superset 中创建了您的第一个可视化！
 
-To save the visualization, click on :guilabel:`Save` in the top left of
-the screen. Select the :guilabel:`Save as` option, and enter the chart
-name as Tutorial Table (you will be able to find it again through the
-:guilabel:`Charts` screen, accessible in the top menu). Similarly,
-select :guilabel:`Add to new dashboard` and enter `Tutorial Dashboard`.
-Finally, select :guilabel:`Save & go to dashboard`.
+要保存可视化，请单击屏幕左上方的 :guilabel:`Save` 。选择 :guilabel:`Save as` 选项，
+然后将图表名称输入为 Tutorial Table（您将能够通过 :guilabel:`Charts` 屏再次找到它，可从顶部菜单访问）。
+同样，选择 :guilabel:`Add to new dashboard` ，然后输入 `Tutorial Dashboard`。
+最后，选择 :guilabel:`Save & go to dashboard`。
 
 .. image:: images/usertutorial/save_tutorial_table.png
 
