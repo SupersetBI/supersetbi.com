@@ -34,14 +34,11 @@
 
 您可能需要启用将 CSV 上传到数据库的功能。以下部分说明了如何为示例数据库启用此功能。
 
-In the top menu, select :menuselection:`Sources --> Databases`. Find the
-:guilabel:`examples` database in the list and select the edit record
-button.
+在顶部菜单中，`Sources --> Databases`。 在列表中找到 :guilabel:`examples` ，然后选择编辑记录按钮。
 
 .. image:: images/usertutorial/edit-record.png
 
-Within the :guilabel:`Edit Database` page, check the
-:guilabel:`Allow Csv Upload` checkbox.
+在 :guilabel:`Edit Database` 页面中，选中 :guilabel:`Allow Csv Upload` 复选框。
 
 Finally, save by selecting :guilabel:`Save` at the bottom of the page.
 
