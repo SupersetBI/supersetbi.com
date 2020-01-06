@@ -95,12 +95,11 @@
 
 .. image:: images/usertutorial/sum_cost_column.png
 
-Finally, select :guilabel:`Run Query` to see the results of the table.
+最后，选择 :guilabel:`Run Query` 以查看表的结果。
 
 .. image:: images/usertutorial/tutorial_table.png
 
-Congratulations, you have created your first visualization in Apache
-Superset!
+恭喜，您已经在 Apache Superset 中创建了您的第一个可视化！
 
 To save the visualization, click on :guilabel:`Save` in the top left of
 the screen. Select the :guilabel:`Save as` option, and enter the chart
