@@ -128,12 +128,10 @@
 在本节中，我们将使用更复杂的可视化数据透视表扩展分析。
 在本节的最后，您将创建了一个表，该表显示按部门，按旅行舱划分的前六个月的每月航班支出。
 
-As before, create a new visualization by selecting
-:menuselection:`New --> Chart` on the top menu. Choose tutorial_flights
-again as a datasource, then click on the visualization type to get to
-the visualization menu. Select the :guilabel:`Pivot Table` visualization
-(you can filter by entering text in the search box) and then
-:guilabel:`Create a new chart`.
+和以前一样，通过选择顶部菜单上的 :menuselection:`New --> Chart` 来创建新的可视化。
+再次选择 tutorial_flights 作为数据源，然后单击可视化类型以转到可视化菜单。
+选择 :guilabel:`Pivot Table` 可视化（可以通过在搜索框中输入文本进行筛选），
+然后 :guilabel:`Create a new chart`。
 
 In the :guilabel:`Time` section, keep the Time Column as Travel Date
 (this is selected automatically as we only have one time column in our
