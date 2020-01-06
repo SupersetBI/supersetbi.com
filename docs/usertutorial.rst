@@ -108,14 +108,12 @@
 
 .. image:: images/usertutorial/save_tutorial_table.png
 
-Dashboard basics
+看板基础
 ----------------
 
-Next, we are going to explore the dashboard interface. If you’ve
-followed the previous section, you should already have the dashboard
-open. Otherwise, you can navigate to the dashboard by selecting
-:guilabel:`Dashboards` on the top menu, then :guilabel:`Tutorial dashboard`
-from the list of dashboards.
+接下来，我们将探索看板界面。如果您已按照上一节进行操作，则应该已经打开了看板。
+否则，您可以通过选择顶部菜单上的 :guilabel:`Dashboards` ，
+然后从看板列表中选择 :guilabel:`Tutorial dashboard` 来导航到看板。
 
 On this dashboard you should see the table you created in the previous
 section. Select :guilabel:`Edit dashboard` and then hover over the
