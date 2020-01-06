@@ -125,10 +125,8 @@
 透视表
 -----------
 
-In this section, we will extend our analysis using a more complex
-visualization, Pivot Table. By the end of this section, you will have
-created a table that shows the monthly spend on flights for the first
-six months, by department, by travel class.
+在本节中，我们将使用更复杂的可视化数据透视表扩展分析。
+在本节的最后，您将创建了一个表，该表显示按部门，按旅行舱划分的前六个月的每月航班支出。
 
 As before, create a new visualization by selecting
 :menuselection:`New --> Chart` on the top menu. Choose tutorial_flights
