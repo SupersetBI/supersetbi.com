@@ -188,12 +188,9 @@
 然后再次选择 :guilabel:`Run Query`。真好！我们可以看到，平均而言，单程机票比往返机票便宜，
 而12月的大幅上涨是由往返机票造成的。
 
-Our chart is looking pretty good already, but let’s customize some more
-by going to the :guilabel:`Customize` tab on the left hand pane. Within
-this pane, try changing the :guilabel:`Color Scheme`, removing the range
-filter by selecting No in the :guilabel:`Show Range Filter` drop down
-and adding some labels using :guilabel:`X Axis Label` and
-:guilabel:`Y Axis Label`.
+我们的图表看起来已经不错，但让我们通过转到左侧窗格上的 :guilabel:`Customize` 标签自定义更多内容。
+在此窗格中，尝试更改 :guilabel:`Color Scheme` ，通过在 :guilabel:`Show Range Filter` 下拉列表中
+选择 No 来删除范围过滤器，并使用 :guilabel:`X Axis Label` 和 :guilabel:`Y Axis Label` 添加一些标签。
 
 .. image:: images/usertutorial/tutorial_line_chart.png
 
