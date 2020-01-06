@@ -181,10 +181,8 @@
 
 接下来，选择 :guilabel:`Run Query` 来显示图表上的数据。
 
-How does this look? Well, we can see that the average cost goes up in
-December. However, perhaps it doesn’t make sense to combine both single
-and return tickets, but rather show two separate lines for each ticket
-type.
+这个看起来怎么样? 嗯，我们可以看到平均成本在12月上升。
+但是，将单程票和回程票合并在一起可能没有意义，而是为每种类型的票分别显示两行。
 
 Let’s do this by selecting :guilabel:`Ticket Single or Return` in the
 :guilabel:`Group by` box, and the selecting :guilabel:`Run Query` again.
