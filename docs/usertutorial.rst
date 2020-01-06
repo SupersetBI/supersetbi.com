@@ -194,10 +194,8 @@
 
 .. image:: images/usertutorial/tutorial_line_chart.png
 
-Once you’re done, :guilabel:`Save` as Tutorial Line Chart, use
-:guilabel:`Add chart to
-existing dashboard` to add this chart to the previous ones on the
-Tutorial Dashboard and then :guilabel:`Save & go to dashboard`.
+完成后，:guilabel:`Save` 为 Tutorial Line Chart，使用 :guilabel:`Add chart to
+existing dashboard` 将该图表添加到 Tutorial Dashboard 看板上，然后 :guilabel:`Save & go to dashboard`。
 
 Markup
 ------
