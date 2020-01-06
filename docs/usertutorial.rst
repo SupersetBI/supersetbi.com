@@ -86,10 +86,8 @@
 
 .. image:: images/usertutorial/no_filter_on_time_filter.png
 
-Now, we want to specify the rows in our table by using the
-:guilabel:`Group by` option. Since in this example, we want to
-understand different Travel Classes, we select :guilabel:`Travel Class`
-in this menu.
+现在，我们要使用 :guilabel:`Group by` 选项在表中指定行。由于在此示例中，
+我们想了解不同的旅行舱位，因此在此菜单中选择 :guilabel:`Travel Class` 。
 
 Next, we can specify the metrics we would like to see in our table with
 the :guilabel:`Metrics` option. :guilabel:`Count(*)`, which represents the number of
