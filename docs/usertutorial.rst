@@ -250,10 +250,8 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 发布你的看板
 -------------------------
 
-If you have followed all of the steps outlined in the previous section,
-you should have a dashboard that looks like the below. If you would
-like, you can rearrange the elements of the dashboard by selecting
-:guilabel:`Edit dashboard` and dragging and dropping.
+如果您已按照上一节中概述的所有步骤进行操作，则应该拥有一个如下所示的看板。
+如果愿意，可以通过选择 :guilabel:`Edit dashboard` 并拖放来重新排列看板的元素。
 
 If you would like to make your dashboard available to other users,
 simply select :guilabel:`Draft` next to the title of your dashboard on
