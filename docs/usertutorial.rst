@@ -229,9 +229,7 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 然后选择 :guilabel:`tutorial_flights` 作为数据源，
 然后选择 :guilabel:`Filter Box` 作为可视化类型
 
-First of all, in the :guilabel:`Time` section, remove the filter from
-the :guilabel:`Time
-range` selection by selecting :guilabel:`No filter`.
+首先，在 :guilabel:`Time` 部分，通过选择 :guilabel:`No filter`，从 :guilabel:`Time range` 选择中删除过滤器。
 
 Next, in :guilabel:`Filters Configurations` first add a new filter by
 selecting the plus sign and then edit the newly created filter by
