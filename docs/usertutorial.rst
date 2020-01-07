@@ -291,7 +291,7 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 .. image:: images/usertutorial/annotation_settings.png
 
-Select :guilabel:`Apply` to see your annotation shown on the chart.
+选择 :guilabel:`Apply` 以查看图表上显示的注释。
 
 .. image:: images/usertutorial/annotation.png
 
