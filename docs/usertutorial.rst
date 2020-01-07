@@ -197,14 +197,13 @@
 完成后，:guilabel:`Save` 为 Tutorial Line Chart，使用 :guilabel:`Add chart to
 existing dashboard` 将该图表添加到 Tutorial Dashboard 看板上，然后 :guilabel:`Save & go to dashboard`。
 
-Markup
+标记
 ------
 
-In this section, we will add some text to our dashboard. If you’re there
-already, you can navigate to the dashboard by selecting
-:guilabel:`Dashboards` on the top menu, then
-:guilabel:`Tutorial dashboard` from the list of dashboards. Got into
-edit mode by selecting :guilabel:`Edit dashboard`.
+在本节中，我们将向看板添加一些文本。
+如果您已经在那里了，您可以通过在顶部菜单中选择 :guilabel:`Dashboards` 来导航到 dashboard，
+然后从 dashboards 列表中选择 :guilabel:`Tutorial dashboard`。
+通过选择 :guilabel:`Edit dashboard` 进入编辑模式。
 
 Within the Insert components pane, drag and drop a :guilabel:`Markdown`
 box on the dashboard. Look for the blue lines which indicate the anchor
