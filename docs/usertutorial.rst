@@ -285,9 +285,9 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 然后选择 :guilabel:`Add Annotation Layer` 。在此对话框中：
 
 - 将该层命名为 `Volcanic Eruptions`
-- change the :guilabel:`Annotation Layer Type` to :guilabel:`Event`
-- set the :guilabel:`Annotation Source` as :guilabel:`Superset annotation` 
-- specify the :guilabel:`Annotation Layer` as :guilabel:`Volcanic Eruptions`
+- 将 :guilabel:`Annotation Layer Type` 更改为 :guilabel:`Event`
+- 将 :guilabel:`Annotation Source` 设置为 :guilabel:`Superset annotation`
+- 将 :guilabel:`Annotation Layer` 指定为 :guilabel:`Volcanic Eruptions`
 
 .. image:: images/usertutorial/annotation_settings.png
 
