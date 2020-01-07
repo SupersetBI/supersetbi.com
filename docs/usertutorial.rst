@@ -242,14 +242,10 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 .. image:: images/usertutorial/filter_on_origin_country.png
 
-Finally, select :guilabel:`Save`, name the chart as Tutorial Filter, add
-the chart to our existing Tutorial Dashboard and then
-:guilabel:`Save & go to
-dashboard`. Once on the Dashboard, try using the filter to show only
-those flights that departed from the United Kingdom – you will see the
-filter is applied to all of the other visualizations on the dashboard.
+
 最后，选择 :guilabel:`Save`，将图表命名为 Tutorial Filter，
 将图表添加到我们现有的 Tutorial Dashboard 中，然后单击 :guilabel:`Save & go to dashboard`。
+进入看板后，尝试使用过滤器仅显示从英国起飞的那些航班 - 您将看到过滤器已应用于看板上的所有其他可视化对象。
 
 
 Publishing your dashboard
