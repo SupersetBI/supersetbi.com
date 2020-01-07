@@ -295,12 +295,10 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 .. image:: images/usertutorial/annotation.png
 
-If you wish, you can change how your annotation looks by changing the
-settings in the :guilabel:`Display configuration` section. Otherwise,
-select :guilabel:`OK` and finally :guilabel:`Save` to save your chart.
-If you keep the default selection to overwrite the chart, your
-annotation will be saved to the chart and also appear automatically in
-the Tutorial Dashboard.
+
+如果需要，可以通过更改 :guilabel:`Display configuration` 部分中的设置来更改批注的外观。
+否则，选择确定，最后选择 :guilabel:`Save` 以保存图表。如果保留默认选择以覆盖图表，
+则注释将保存到图表中，并自动出现在 Tutorial Dashboard 中。
 
 Advanced Analytics
 ------------------
