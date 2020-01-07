@@ -258,32 +258,25 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 .. image:: images/usertutorial/publish_dashboard.png
 
-Taking your dashboard further
+进一步扩展您的看板
 -----------------------------
 
-In the following sections, we will look at more advanced Apache Superset
-topics.
+在以下各节中，我们将介绍更高级的 Apache Superset 主题。
 
-Annotations
+注解
 -----------
 
-Annotations allow you to add additional context to your chart. In this
-section, we will add an annotation to the Tutorial Line Chart we made in
-a previous section. Specifically, we will add the dates when some
-flights were cancelled by the UK's Civil Aviation Authority in response
-to the eruption of the Grímsvötn volcano in Iceland (23-25 May 2011).
+注释使您可以向图表添加其他上下文。在本节中，我们将为上一节中的教程折线图添加注释。
+具体来说，我们将添加一些日期，以回应英国民航局因冰岛格林斯沃特火山喷发而取消某些航班的日期
+（2011年5月23日至25日）。
 
-First, add an annotation layer by navigating to
-:menuselection:`Manage --> Annotation Layers`. Add a new annotation
-layer by selecting the green plus sign to add a new record. Enter the
-name Volcanic Eruptions and save. We can use this layer to refer to a
-number of different annotations.
+首先，通过导航到 :menuselection:`Manage --> Annotation Layers` 来添加注释层。
+通过选择绿色加号来添加新记录，以添加新注释层。 输入名称火山爆发并且保存。
+我们可以使用这一层来引用许多不同的注释。
 
-Next, add an annotation by navigating to
-:menuselection:`Manage --> Annotations` and then create a new annotation
-by selecting the green plus sign. Then, select the
-:guilabel:`Volcanic Eruptions` layer, add a short description Grímsvötn
-and the eruption dates (23-25 May 2011) before finally saving.
+接下来，通过导航到 :menuselection:`Manage --> Annotations` 添加一个注释，然后通过选择绿色加号创建一个新的注释。
+然后，选择 :guilabel:`Volcanic Eruptions` 层，
+添加简短描述 Grímsvötn 和喷发日期（2011年5月23日至25日），然后最后保存。
 
 .. image:: images/usertutorial/edit_annotation.png
 
