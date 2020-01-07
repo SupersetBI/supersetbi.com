@@ -231,9 +231,8 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 首先，在 :guilabel:`Time` 部分，通过选择 :guilabel:`No filter`，从 :guilabel:`Time range` 选择中删除过滤器。
 
-Next, in :guilabel:`Filters Configurations` first add a new filter by
-selecting the plus sign and then edit the newly created filter by
-selecting the pencil icon.
+接下来，在 :guilabel:`Filters Configurations` 中，首先通过选择加号添加新的过滤器，
+然后通过选择铅笔图标来编辑新创建的过滤器。
 
 For our use case, it makes most sense to present a list of countries in
 alphabetical order. First, enter the column as
