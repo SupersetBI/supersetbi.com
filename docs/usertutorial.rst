@@ -253,10 +253,8 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 如果您已按照上一节中概述的所有步骤进行操作，则应该拥有一个如下所示的看板。
 如果愿意，可以通过选择 :guilabel:`Edit dashboard` 并拖放来重新排列看板的元素。
 
-If you would like to make your dashboard available to other users,
-simply select :guilabel:`Draft` next to the title of your dashboard on
-the top left to change your dashboard to be in :guilabel:`Published`
-state. You can also favorite this dashboard by selecting the star.
+如果您想使看板可供其他用户使用，只需在左上方的看板标题旁边选择 :guilabel:`Draft`，
+即可将看板更改为 :guilabel:`Published` 状态。您也可以通过选择星号来收藏此看板。
 
 .. image:: images/usertutorial/publish_dashboard.png
 
