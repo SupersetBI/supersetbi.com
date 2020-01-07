@@ -247,8 +247,7 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 将图表添加到我们现有的 Tutorial Dashboard 中，然后单击 :guilabel:`Save & go to dashboard`。
 进入看板后，尝试使用过滤器仅显示从英国起飞的那些航班 - 您将看到过滤器已应用于看板上的所有其他可视化对象。
 
-
-Publishing your dashboard
+发布你的看板
 -------------------------
 
 If you have followed all of the steps outlined in the previous section,
