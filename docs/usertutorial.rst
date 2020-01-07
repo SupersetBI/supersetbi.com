@@ -224,10 +224,10 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 在本节中，您将学习如何向看板添加过滤器。具体来说，我们将创建一个过滤器，
 使我们能够查看那些离开特定国家/地区的航班。
 
-A filter box visualization can be created as any other visualization by
-selecting :menuselection:`New --> Chart`, and then
-:guilabel:`tutorial_flights` as the datasource and
-:guilabel:`Filter Box` as the visualization type.
+可以像创建其他任何可视化类型一样创建 filter box 可视化类型
+通过选择 :menuselection:`New --> Chart` ，
+然后选择 :guilabel:`tutorial_flights` 作为数据源，
+然后选择 :guilabel:`Filter Box` 作为可视化类型
 
 First of all, in the :guilabel:`Time` section, remove the filter from
 the :guilabel:`Time
