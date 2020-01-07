@@ -216,16 +216,13 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 .. image:: images/usertutorial/markdown.png
 
-
 要退出，请选择看板的任何其他部分。最后，不要忘记使用 :guilabel:`Save changes` 来保存更改。
 
-
-Filter box
+筛选盒
 ----------
 
-In this section, you will learn how to add a filter to your dashboard.
-Specifically, we will create a filter that allows us to look at those
-flights that depart from a particular country.
+在本节中，您将学习如何向看板添加过滤器。具体来说，我们将创建一个过滤器，
+使我们能够查看那些离开特定国家/地区的航班。
 
 A filter box visualization can be created as any other visualization by
 selecting :menuselection:`New --> Chart`, and then
