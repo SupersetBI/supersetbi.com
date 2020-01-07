@@ -234,13 +234,11 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 接下来，在 :guilabel:`Filters Configurations` 中，首先通过选择加号添加新的过滤器，
 然后通过选择铅笔图标来编辑新创建的过滤器。
 
-For our use case, it makes most sense to present a list of countries in
-alphabetical order. First, enter the column as
-:guilabel:`Origin Country` and keep all other options the same and then
-select :guilabel:`Run Query`. This gives us a preview of our filter.
+对于我们的用例，以字母顺序显示国家/地区列表是最有意义的。
+首先，在 :guilabel:`Origin Country` 列中输入所有其他选项，然后选择 :guilabel:`Run Query`。
+这为我们提供了过滤器的预览。
 
-Next, remove the date filter by unchecking the :guilabel:`Date Filter`
-checkbox.
+接下来，通过取消选中 :guilabel:`Date Filter` 复选框来删除日期过滤器。
 
 .. image:: images/usertutorial/filter_on_origin_country.png
 
@@ -250,6 +248,9 @@ the chart to our existing Tutorial Dashboard and then
 dashboard`. Once on the Dashboard, try using the filter to show only
 those flights that departed from the United Kingdom – you will see the
 filter is applied to all of the other visualizations on the dashboard.
+最后，选择 :guilabel:`Save`，将图表命名为 Tutorial Filter，
+将图表添加到我们现有的 Tutorial Dashboard 中，然后单击 :guilabel:`Save & go to dashboard`。
+
 
 Publishing your dashboard
 -------------------------
