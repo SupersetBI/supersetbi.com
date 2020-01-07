@@ -280,13 +280,11 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 .. image:: images/usertutorial/edit_annotation.png
 
-Then, navigate to the line chart by going to :guilabel:`Charts` then
-selecting :guilabel:`Tutorial
-Line Chart` from the list. Next, go to the
-:guilabel:`Annotations and Layers` section and select
-:guilabel:`Add Annotation Layer`. Within this dialogue:
+然后，通过转到 :guilabel:`Charts` ，然后从列表中选择 :guilabel:`Tutorial Line Chart`，导航到折线图。
+接下来，转到 :guilabel:`Annotations and Layers` 部分，
+然后选择 :guilabel:`Add Annotation Layer` 。在此对话框中：
 
-- name the layer as `Volcanic Eruptions`
+- 将该层命名为 `Volcanic Eruptions`
 - change the :guilabel:`Annotation Layer Type` to :guilabel:`Event`
 - set the :guilabel:`Annotation Source` as :guilabel:`Superset annotation` 
 - specify the :guilabel:`Annotation Layer` as :guilabel:`Volcanic Eruptions`
