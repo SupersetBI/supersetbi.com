@@ -205,23 +205,20 @@ existing dashboard` 将该图表添加到 Tutorial Dashboard 看板上，然后 
 然后从 dashboards 列表中选择 :guilabel:`Tutorial dashboard`。
 通过选择 :guilabel:`Edit dashboard` 进入编辑模式。
 
-Within the Insert components pane, drag and drop a :guilabel:`Markdown`
-box on the dashboard. Look for the blue lines which indicate the anchor
-where the box will go.
+在 Insert 组件窗格中，在看板上拖放一个 :guilabel:`Markdown` 框。
+寻找蓝色的线，它指示了方框的定位位置。
 
 .. image:: images/usertutorial/blue_bar_insert_component.png
 
-Now, to edit the text, select the box. You can enter text, in markdown
-format (see `this Markdown
-Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
-for more information about this format). You can toggle between
-:guilabel:`Edit` and :guilabel:`Preview` using the menu on the top of
-the box.
+现在，要编辑文本，选择方框。您可以以 markdown 格式输入文本(有关此格式的详细信息，请参阅 `this Markdown
+Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__ )。
+您可以使用框顶部的菜单在 :guilabel:`Edit` 和 :guilabel:`Preview` 之间切换。
 
 .. image:: images/usertutorial/markdown.png
 
-To exit, select any other part of the dashboard. Finally, don’t forget
-to keep your changes using :guilabel:`Save changes`.
+
+要退出，请选择看板的任何其他部分。最后，不要忘记使用 :guilabel:`Save changes` 来保存更改。
+
 
 Filter box
 ----------
