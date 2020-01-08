@@ -21,14 +21,11 @@ Superset 中的安全性由 Flask AppBuilder (FAB) 处理。FAB 是“基于 Fla
 FAB 提供身份验证，用户管理，权限和角色。请阅读其 `Security documentation
 <https://flask-appbuilder.readthedocs.io/en/latest/security.html>`_。
 
-Provided Roles
+提供角色
 --------------
-Superset ships with a set of roles that are handled by Superset itself.
-You can assume that these roles will stay up-to-date as Superset evolves.
-Even though it's possible for ``Admin`` users to do so, it is not recommended
-that you alter these roles in any way by removing
-or adding permissions to them as these roles will be re-synchronized to
-their original values as you run your next ``superset init`` command.
+Superset 附带了一组角色，这些角色由 Superset 本身处理。您可以假设这些角色将随着 Superset 的发展而保持最新状态。
+即使 ``Admin`` 用户可以这样做，也不建议您通过删除或添加权限来更改这些角色，
+因为在运行下一个 ``superset init`` 命令时，这些角色将重新同步为其原始值。
 
 Since it's not recommended to alter the roles described here, it's right
 to assume that your security strategy should be to compose user access based
