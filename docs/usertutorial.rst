@@ -375,18 +375,15 @@ Query`。现在，我们只能再次看到一个系列，这一次显示了我�
 在本部分中，我们将对数据进行重新采样，以便获取每周数据而不是每日数据。
 与上一节一样，重新打开 Tutorial Advanced Analytics 基本图表。
 
-Next, in the :guilabel:`Python Functions` subsection of
-:guilabel:`Advanced Analytics`, enter 7D, corresponding to seven days,
-in the :guilabel:`Rule` and median as the :guilabel:`Method` and show
-the chart by selecting :guilabel:`Run Query`.
+接下来，在 :guilabel:`Advanced Analytics` 的 :guilabel:`Python Functions` 小节中，
+在 :guilabel:`Rule` 和中位数中输入与7天相对应的7D作为 :guilabel:`Method`，
+然后选择 :guilabel:`Run Query` 以显示图表。
 
 .. image:: images/usertutorial/resample.png
 
-Note that now we have a single data point every 7 days. In our case, the
-value showed corresponds to the median value within the seven daily data
-points. For more information on the meaning of the various options in
-this section, refer to the `Pandas
-documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html>`__.
+请注意，现在我们每7天就有一个数据点。在我们的案例中，显示的值对应于七个每日数据点内的中位数。
+有关本节中各个选项含义的更多信息，请参阅 `Pandas
+documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html>`__ 。
 
 Lastly, save your chart as Tutorial Resample and add it to the Tutorial
 Dashboard. Go to the tutorial dashboard to see the four charts side by
