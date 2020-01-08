@@ -45,7 +45,7 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 --------------
 - 敲击 ``alt + enter`` 来作为键盘快捷方式去运行你的查询
 
-Templating with Jinja
+用 Jinja 制作模板
 ---------------------
 
 .. code-block:: sql
