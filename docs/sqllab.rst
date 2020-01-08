@@ -39,7 +39,7 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
   - 支持定义一个 "results backend" 以保留查询结果
 
 - 一个搜索引擎去查找过去执行的查询
-- 支持使用 `Jinja templating language <http://jinja.pocoo.org/docs/dev/>`_ 进行模板，该语言允许在SQL代码中使用宏
+- 支持使用 `Jinja templating language <http://jinja.pocoo.org/docs/dev/>`_ 进行模板，该语言允许在 SQL 代码中使用宏
 
 Extra features
 --------------
