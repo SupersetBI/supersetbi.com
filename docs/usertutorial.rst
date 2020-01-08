@@ -351,12 +351,10 @@ Python 函数
 时间比较
 ~~~~~~~~~~~~~~~
 
-In this section, we will compare values in our time series to the value
-a week before. Start off by opening the Tutorial Advanced Analytics Base
-chart, by going to :guilabel:`Charts` in the top menu and then selecting
-the visualization name in the list (alternatively, find the chart in the
-Tutorial Dashboard and select Explore chart from the menu for that
-visualization).
+在本节中，我们将比较时间序列中的值与一周前的值。
+首先打开 Tutorial Advanced Analytics 基本图表，转到顶部菜单中的 :guilabel:`Charts`，
+然后在列表中选择可视化名称（或者，在 Tutorial Dashboard 中找到该图表，
+然后从该可视化菜单中选择 Explore chart）。
 
 Next, in the :guilabel:`Time Comparison` subsection of
 :guilabel:`Advanced Analytics`, enter the :guilabel:`Time Shift` by
