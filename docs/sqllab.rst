@@ -54,11 +54,9 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
     FROM some_table
     WHERE partition_key = '{{ presto.first_latest_partition('some_table') }}'
 
-Templating unleashes the power and capabilities of a
-programming language within your SQL code.
+模板释放了 SQ L代码中编程语言的强大功能。
 
-Templates can also be used to write generic queries that are
-parameterized so they can be re-used easily.
+模板还可用于编写已参数化的通用查询，以便可以轻松地重用它们。
 
 
 Available macros
