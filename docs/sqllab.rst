@@ -87,14 +87,12 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 .. autoclass:: superset.jinja_context.HiveTemplateProcessor
     :members:
 
-Extending macros
+扩展的宏
 ''''''''''''''''
 
-As mentioned in the `Installation & Configuration <https://superset.incubator.apache.org/installation.html#installation-configuration>`_ documentation,
-it's possible for administrators to expose more more macros in their
-environment using the configuration variable ``JINJA_CONTEXT_ADDONS``.
-All objects referenced in this dictionary will become available for users
-to integrate in their queries in **SQL Lab**.
+正如 `Installation & Configuration <https://superset.incubator.apache.org/installation.html#installation-configuration>`_ 文档中提到的，
+管理员可以使用配置变量 ``JINJA_CONTEXT_ADDONS`` 在其环境中公开更多的宏。
+本字典中引用的所有对象都可以在 **SQL Lab** 中集成到用户的查询中。
 
 Query cost estimation
 '''''''''''''''''''''
