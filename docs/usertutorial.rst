@@ -327,8 +327,7 @@ Python 函数
 
 .. image:: images/usertutorial/advanced_analytics_base.png
 
-Finally, save the visualization as Tutorial Advanced Analytics Base,
-adding it to the Tutorial Dashboard.
+最后，将可视化保存为 Tutorial Advanced Analytics Base，将其添加到 Tutorial Dashboard。
 
 Rolling mean
 ~~~~~~~~~~~~
