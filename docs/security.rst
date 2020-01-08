@@ -65,23 +65,17 @@ Public
 
 按数据源访问管理 Gamma
 -------------------------------------
-Here's how to provide users access to only specific datasets. First make
-sure the users with limited access have [only] the Gamma role assigned to
-them. Second, create a new role (``Menu -> Security -> List Roles``) and
-click the ``+`` sign.
 以下是向用户提供仅访问特定数据集的方法。首先，请确保具有有限访问权限的用户具有[仅]分配给他们的 Gamma 角色。
 其次，创建一个新角色（``Menu -> Security -> List Roles``），然后单击 ``+`` 号。
 
 .. image:: images/create_role.png
    :scale: 50 %
 
-This new window allows you to give this new role a name, attribute it to users
-and select the tables in the ``Permissions`` dropdown. To select the data
-sources you want to associate with this role, simply click on the dropdown
-and use the typeahead to search for your table names.
 
-You can then confirm with your Gamma users that they see the objects
-(dashboards and slices) associated with the tables related to their roles.
+这个新窗口使您可以给这个新角色命名，将其归于用户，然后在 ``Permissions`` 下拉列表中选择表。
+要选择要与此角色关联的数据源，只需单击下拉列表，然后使用预输入来搜索表名。
+
+然后，您可以与 Gamma 用户确认他们是否看到与与其角色相关的表相关联的对象（dashboards 和 slices）。
 
 
 Customizing
