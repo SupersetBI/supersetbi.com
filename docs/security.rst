@@ -27,23 +27,18 @@ Superset 附带了一组角色，这些角色由 Superset 本身处理。您可�
 即使 ``Admin`` 用户可以这样做，也不建议您通过删除或添加权限来更改这些角色，
 因为在运行下一个 ``superset init`` 命令时，这些角色将重新同步为其原始值。
 
-Since it's not recommended to alter the roles described here, it's right
-to assume that your security strategy should be to compose user access based
-on these base roles and roles that you create. For instance you could
-create a role ``Financial Analyst`` that would be made of a set of permissions
-to a set of data sources (tables) and/or databases. Users would then be
-granted ``Gamma``, ``Financial Analyst``, and perhaps ``sql_lab``.
+由于不建议您更改此处描述的角色，因此正确地假设您的安全策略应基于这些基本角色和您创建的角色来组成用户访问权限。
+例如，您可以创建一个角色 ``Financial Analyst`` ，该角色将由对一组数据源（表）和/或 数据库的一组权限组成。
+然后，将为用户授予 ``Gamma`` ，``Financial Analyst`` ，以及 ``sql_lab`` 。
 
 Admin
 """""
-Admins have all possible rights, including granting or revoking rights from
-other users and altering other people's slices and dashboards.
+管理员拥有所有可能的权限，包括授予或撤销其他用户的权限以及更改其他人的 slices 和 dashboards。
 
 Alpha
 """""
-Alpha users have access to all data sources, but they cannot grant or revoke access
-from other users. They are also limited to altering the objects that they
-own. Alpha users can add and alter data sources.
+Alpha 用户有权访问所有数据源，但不能授予或撤消其他用户的访问权限。它们还仅限于更改其拥有的对象。
+Alpha 用户可以添加和更改数据源。
 
 Gamma
 """""
