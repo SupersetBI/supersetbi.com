@@ -59,11 +59,9 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 模板还可用于编写已参数化的通用查询，以便可以轻松地重用它们。
 
 
-Available macros
+可用的宏
 ''''''''''''''''
-
-We expose certain modules from Python's standard library in
-Superset's Jinja context:
+我们在 Superset 的 Jinja 上下文中公开了 Python 标准库中的某些模块:
 
 - ``time``: ``time``
 - ``datetime``: ``datetime.datetime``
@@ -71,7 +69,7 @@ Superset's Jinja context:
 - ``random``: ``random``
 - ``relativedelta``: ``dateutil.relativedelta.relativedelta``
 
-`Jinja's builtin filters <http://jinja.pocoo.org/docs/dev/templates/>`_ can be also be applied where needed.
+`Jinja's builtin filters <http://jinja.pocoo.org/docs/dev/templates/>`_ 也可以应用在需要的地方。
 
 .. autofunction:: superset.jinja_context.current_user_id
 
