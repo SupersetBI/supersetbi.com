@@ -63,12 +63,14 @@ Public
 仍然需要对特定数据集进行显式授予，这意味着您需要编辑 ``Public`` 角色并将 Public 数据源手动添加到角色。
 
 
-Managing Gamma per data source access
+按数据源访问管理 Gamma
 -------------------------------------
 Here's how to provide users access to only specific datasets. First make
 sure the users with limited access have [only] the Gamma role assigned to
 them. Second, create a new role (``Menu -> Security -> List Roles``) and
 click the ``+`` sign.
+以下是向用户提供仅访问特定数据集的方法。首先，请确保具有有限访问权限的用户具有[仅]分配给他们的 Gamma 角色。
+其次，创建一个新角色（``Menu -> Security -> List Roles``），然后单击 ``+`` 号。
 
 .. image:: images/create_role.png
    :scale: 50 %
