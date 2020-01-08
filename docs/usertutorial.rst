@@ -367,8 +367,7 @@ Query`。现在，我们只能再次看到一个系列，这一次显示了我�
 
 .. image:: images/usertutorial/time_comparison_absolute_difference.png
 
-Save the chart as Tutorial Time Comparison and add it to the Tutorial
-Dashboard.
+将图表另存为 Tutorial Time Comparison，并将其添加到 Tutorial Dashboard 中。
 
 Resampling the data
 ~~~~~~~~~~~~~~~~~~~
