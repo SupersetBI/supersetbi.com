@@ -100,10 +100,8 @@ FAB 公开的权限非常精细，可以进行很大程度的自定义。FAB 自
   并能够加载该页面。
 - **Data source**: 对于每个数据源，都会创建一个权限。如果用户未授予 ``all_datasource_access`` 权限，
   则该用户将只能查看 Slices 或浏览授予他们的数据源。
-- **Database**: Granting access to a database allows for the user to access
-  all data sources within that database, and will enable the user to query
-  that database in SQL Lab, provided that the SQL Lab specific permission
-  have been granted to the user
+- **Database**: 授予对数据库的访问权限后，用户便可以访问该数据库中的所有数据源，
+  并且只要已授予该用户特定于 SQL Lab 的权限，该用户就可以在SQL Lab中查询该数据库。
 
 
 Restricting access to a subset of data sources
