@@ -329,7 +329,7 @@ Python 函数
 
 最后，将可视化保存为 Tutorial Advanced Analytics Base，将其添加到 Tutorial Dashboard。
 
-Rolling mean
+滚动平均值
 ~~~~~~~~~~~~
 
 There is quite a lot of variation in the data, which makes it difficult
@@ -344,6 +344,9 @@ that on the 7th October 2011 the value shown would correspond to the
 first seven days of October 2011. Lastly, by specifying
 :guilabel:`Min Periods` as 7, we ensure that our mean is always
 calculated on 7 days and we avoid any ramp up period.
+数据差异很大，因此很难识别任何趋势。我们可以采用的一种方法是显示时间序列的滚动平均值。
+为此，请在 :guilabel:`Advanced Analytics` 的 :guilabel:`Moving Average` 小节中
+的 :guilabel:`Rolling` 框中选择均值，然后在 Periods 和 Min Periods 中输入7。
 
 After displaying the chart by selecting :guilabel:`Run Query` you will
 see that the data is less variable and that the series starts later as
