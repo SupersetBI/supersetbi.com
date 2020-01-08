@@ -96,12 +96,10 @@ FAB 公开的权限非常精细，可以进行很大程度的自定义。FAB 自
 - **Model & action**: 模型是 ``Dashboard`` ，``Slice`` 或 ``User`` 之类的实体。每个模型都有一组固定的权限，
   例如 ``can_edit`` ， ``can_show`` ， ``can_delete`` ， ``can_list`` ， ``can_add`` 等。
   通过将 ``can_delete on Dashboard`` 添加到角色，并将该角色授予用户，该用户将能够删除看板。
-- **Views**: views are individual web pages, like the ``explore`` view or the
-  ``SQL Lab`` view. When granted to a user, he/she will see that view in its menu items, and be able to load that page.
-- **Data source**: For each data source, a permission is created. If the user
-  does not have the ``all_datasource_access`` permission granted, the user
-  will only be able to see Slices or explore the data sources that are granted
-  to them
+- **Views**: 视图是单个网页，例如 ``explore`` 视图或 ``SQL Lab`` 视图。授予用户后，他/她将在其菜单项中看到该视图，
+  并能够加载该页面。
+- **Data source**: 对于每个数据源，都会创建一个权限。如果用户未授予 ``all_datasource_access`` 权限，
+  则该用户将只能查看 Slices 或浏览授予他们的数据源。
 - **Database**: Granting access to a database allows for the user to access
   all data sources within that database, and will enable the user to query
   that database in SQL Lab, provided that the SQL Lab specific permission
