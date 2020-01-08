@@ -104,7 +104,7 @@ FAB 公开的权限非常精细，可以进行很大程度的自定义。FAB 自
   并且只要已授予该用户特定于 SQL Lab 的权限，该用户就可以在SQL Lab中查询该数据库。
 
 
-Restricting access to a subset of data sources
+限制对一部分数据源的访问
 """"""""""""""""""""""""""""""""""""""""""""""
 
 The best way to go is probably to give user ``Gamma`` plus one or many other
