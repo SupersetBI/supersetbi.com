@@ -348,7 +348,7 @@ Python 函数
 
 将图表保存为 Tutorial Rolling Mean，并将其添加到 Tutorial Dashboard。
 
-Time Comparison
+时间比较
 ~~~~~~~~~~~~~~~
 
 In this section, we will compare values in our time series to the value
