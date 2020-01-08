@@ -107,18 +107,12 @@ FAB 公开的权限非常精细，可以进行很大程度的自定义。FAB 自
 限制对一部分数据源的访问
 """"""""""""""""""""""""""""""""""""""""""""""
 
-The best way to go is probably to give user ``Gamma`` plus one or many other
-roles that would add access to specific data sources. We recommend that you
-create individual roles for each access profile. Say people in your finance
-department might have access to a set of databases and data sources, and
-these permissions can be consolidated in a single role. Users with this
-profile then need to be attributed ``Gamma`` as a foundation to the models
-and views they can access, and that ``Finance`` role that is a collection
-of permissions to data objects.
+最好的方法可能是给用户 ``Gamma`` 加上一个或多个其他角色，这些角色将增加对特定数据源的访问。
+我们建议您为每个访问配置文件创建单独的角色。假设您的财务部门的人员可能有权访问一组数据库和数据源，
+并且这些权限可以合并为一个角色。然后，需要将具有此配置文件的用户归因于 ``Gamma``，
+作为他们可以访问的模型和视图的基础，以及将 ``Finance`` 角色作为对数据对象权限的集合。
 
-One user can have many roles, so a finance executive could be granted
-``Gamma``, ``Finance``, and perhaps another ``Executive`` role that gather
-a set of data sources that power dashboards only made available to executives.
-When looking at its dashboard list, this user will only see the
-list of dashboards it has access to, based on the roles and
-permissions that were attributed.
+
+一个用户可以担任多个角色，因此可以向财务主管授予 ``Gamma`` ，``Finance`` 角色，
+也可以授予另一个财务主管 ``Executive`` 角色，这些角色收集了一组数据源，这些数据源仅对执行人员可用。
+当查看其看板列表时，该用户将仅根据其角色和权限查看其有权访问的看板列表。
