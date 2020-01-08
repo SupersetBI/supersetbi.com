@@ -341,9 +341,8 @@ Python 函数
 最后，通过将 :guilabel:`Min Periods` 指定为7，我们可以确保我们的均值始终以7天计算，
 因此我们避免了任何爬坡期。
 
-After displaying the chart by selecting :guilabel:`Run Query` you will
-see that the data is less variable and that the series starts later as
-the ramp up period is excluded.
+通过选择 :guilabel:`Run Query` 来显示图表之后，您将看到数据的变量更少，
+并且由于排除了爬坡期，该系列将在稍后开始。
 
 .. image:: images/usertutorial/rolling_mean.png
 
