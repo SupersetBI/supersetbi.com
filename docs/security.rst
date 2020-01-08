@@ -15,13 +15,11 @@
     specific language governing permissions and limitations
     under the License.
 
-Security
+安全
 ========
-Security in Superset is handled by Flask AppBuilder (FAB). FAB is a
-"Simple and rapid application development framework, built on top of Flask.".
-FAB provides authentication, user management, permissions and roles.
-Please read its `Security documentation
-<https://flask-appbuilder.readthedocs.io/en/latest/security.html>`_.
+Superset 中的安全性由 Flask AppBuilder (FAB) 处理。FAB 是“基于 Flask 构建的简单，快速的应用程序开发框架。” 
+FAB 提供身份验证，用户管理，权限和角色。请阅读其 `Security documentation
+<https://flask-appbuilder.readthedocs.io/en/latest/security.html>`_。
 
 Provided Roles
 --------------
