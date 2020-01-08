@@ -302,14 +302,12 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 高级分析
 ------------------
 
-In this section, we are going to explore the Advanced Analytics feature
-of Apache Superset that allows you to apply additional transformations
-to your data. The three types of transformation are:
+在本节中，我们将探讨 Apache Superset 的高级分析功能，它允许您对数据应用额外的转换。
+这三种类型的转换是:
 
-Moving Average
-  Select a rolling window [#f1]_, and then apply a calculation on it (mean,
-  sum or standard deviation). The fourth option, cumsum, calculates the
-  cumulative sum of the series [#f2]_.
+移动平均数
+  选择滚动窗口 [#f1]_ ，然后对其进行计算（均值，总和或标准差）。
+  第四个选项 cumsum 计算序列 [#f2]_ 的累加和。
 
 Time Comparison
   Shift your data in time and, optionally, apply a calculation to compare the
