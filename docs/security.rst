@@ -47,8 +47,7 @@ Gamma 用户的访问权限受到限制。他们只能使用来自其他角色�
 当前，Gamma 用户无法更改或添加数据源。尽管他们可以创建 slices 和 dashboards ，
 但我们假设他们主要是内容消费者。
 
-Also note that when Gamma users look at the dashboards and slices list view,
-they will only see the objects that they have access to.
+还要注意，当 Gamma 用户查看 dashboards 和 slices 列表视图时，他们只会看到他们有权访问的对象。
 
 sql_lab
 """""""
