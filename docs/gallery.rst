@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 
-Visualizations Gallery
+可视化图库
 ======================
 
 .. image:: images/viz_thumbnails/area.png
