@@ -94,13 +94,11 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 管理员可以使用配置变量 ``JINJA_CONTEXT_ADDONS`` 在其环境中公开更多的宏。
 本字典中引用的所有对象都可以在 **SQL Lab** 中集成到用户的查询中。
 
-Query cost estimation
+查询成本估算
 '''''''''''''''''''''
 
-Some databases support ``EXPLAIN`` queries that allow users to estimate the cost
-of queries before executing this. Currently, Presto is supported in SQL Lab. To
-enable query cost estimation, add the following keys to the "Extra" field in the
-database configuration:
+一些数据库支持 ``EXPLAIN`` 查询，这些查询使用户可以在执行此操作之前估算查询的成本。
+当前，SQL Lab 支持 Presto。要启用查询成本估算，请将以下键添加到数据库配置中的 "Extra" 字段中：
 
 .. code-block:: text
 
