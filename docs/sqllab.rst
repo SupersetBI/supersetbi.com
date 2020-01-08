@@ -41,9 +41,9 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 - 一个搜索引擎去查找过去执行的查询
 - 支持使用 `Jinja templating language <http://jinja.pocoo.org/docs/dev/>`_ 进行模板，该语言允许在 SQL 代码中使用宏
 
-Extra features
+额外功能
 --------------
-- Hit ``alt + enter`` as a keyboard shortcut to run your query
+- 敲击 ``alt + enter`` 来作为键盘快捷方式去运行你的查询
 
 Templating with Jinja
 ---------------------
