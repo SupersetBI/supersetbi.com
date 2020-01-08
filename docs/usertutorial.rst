@@ -315,19 +315,15 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 Python 函数
   使用多种方法之一对数据进行重新采样 [#f3]_ 。
 
-Setting up the base chart
+设置基础图表
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this section, we're going to set up a base chart which we can then
-apply the different Advanced Analytics features to. Start off by
-creating a new chart using the same :guilabel:`tutorial_flights`
-datasource and the :guilabel:`Line Chart` visualization type. Within the
-Time section, set the :guilabel:`Time Range` as 1\ :sup:`st` October
-2011 and 31\ :sup:`st` October 2011.
+在本部分中，我们将建立一个基础图表，然后将其应用于其他 Advanced Analytics 功能。
+首先使用相同的 :guilabel:`tutorial_flights` 数据源和 :guilabel:`Line Chart` 可视化类型创建一个新图表。
+在时间部分中，将 :guilabel:`Time Range` 设置为 1\ :sup:`st` October 2011 和 31\ :sup:`st` October 2011。
 
-Next, in the query section, change the :guilabel:`Metrics` to the sum of
-:guilabel:`Cost`. Select :guilabel:`Run Query` to show the chart. You
-should see the total cost per day for each month in October 2011.
+接下来，在查询部分，将 :guilabel:`Metrics` 更改为 :guilabel:`Cost` 总和。
+选择 :guilabel:`Run Query` 以显示图表。你应该在2011年10月看到每个月每天的总成本。
 
 .. image:: images/usertutorial/advanced_analytics_base.png
 
