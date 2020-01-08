@@ -346,8 +346,7 @@ Python 函数
 
 .. image:: images/usertutorial/rolling_mean.png
 
-Save the chart as Tutorial Rolling Mean and add it to the Tutorial
-Dashboard.
+将图表保存为 Tutorial Rolling Mean，并将其添加到 Tutorial Dashboard。
 
 Time Comparison
 ~~~~~~~~~~~~~~~
