@@ -34,9 +34,9 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 - 浏览数据库元数据：表，列，索引，分区
 - 支持长时间运行的查询
 
-  - uses the `Celery distributed queue <http://www.celeryproject.org/>`_
-    to dispatch query handling to workers
-  - supports defining a "results backend" to persist query results
+  - 使用 `Celery distributed queue <http://www.celeryproject.org/>`_
+    去分发查询处理到 workers
+  - 支持定义一个 "results backend" 以保留查询结果
 
 - A search engine to find queries executed in the past
 - Supports templating using the
