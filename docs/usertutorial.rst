@@ -299,7 +299,7 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 否则，选择确定，最后选择 :guilabel:`Save` 以保存图表。如果保留默认选择以覆盖图表，
 则注释将保存到图表中，并自动出现在 Tutorial Dashboard 中。
 
-Advanced Analytics
+高级分析
 ------------------
 
 In this section, we are going to explore the Advanced Analytics feature
