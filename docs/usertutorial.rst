@@ -332,21 +332,14 @@ Python 函数
 滚动平均值
 ~~~~~~~~~~~~
 
-There is quite a lot of variation in the data, which makes it difficult
-to identify any trend. One approach we can take is to show instead a
-rolling average of the time series. To do this, in the
-:guilabel:`Moving Average` subsection of :guilabel:`Advanced Analytics`,
-select mean in the :guilabel:`Rolling` box and enter 7 into both Periods
-and Min Periods. The period is the length of the rolling period
-expressed as a multiple of the :guilabel:`Time Grain`. In our example,
-the :guilabel:`Time Grain` is day, so the rolling period is 7 days, such
-that on the 7th October 2011 the value shown would correspond to the
-first seven days of October 2011. Lastly, by specifying
-:guilabel:`Min Periods` as 7, we ensure that our mean is always
-calculated on 7 days and we avoid any ramp up period.
 数据差异很大，因此很难识别任何趋势。我们可以采用的一种方法是显示时间序列的滚动平均值。
 为此，请在 :guilabel:`Advanced Analytics` 的 :guilabel:`Moving Average` 小节中
 的 :guilabel:`Rolling` 框中选择均值，然后在 Periods 和 Min Periods 中输入7。
+周期是滚动周期的长度，表示为 :guilabel:`Time Grain` 的倍数。
+在我们的示例中，:guilabel:`Time Grain` 为天，因此滚动周期为7天，
+因此，在2011年10月7日，显示的值将与2011年10月的前7天相对应。
+最后，通过将 :guilabel:`Min Periods` 指定为7，我们可以确保我们的均值始终以7天计算，
+因此我们避免了任何爬坡期。
 
 After displaying the chart by selecting :guilabel:`Run Query` you will
 see that the data is less variable and that the series starts later as
