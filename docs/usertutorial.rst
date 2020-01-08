@@ -362,10 +362,8 @@ Python 函数
 
 .. image:: images/usertutorial/time_comparison_two_series.png
 
-Then, change the :guilabel:`Calculation type` to
-:guilabel:`Absolute difference` and select :guilabel:`Run
-Query`. We can now see only one series again, this time showing the
-difference between the two series we saw previously.
+然后，将 :guilabel:`Calculation type` 更改为 :guilabel:`Absolute difference` 并选择 :guilabel:`Run
+Query`。现在，我们只能再次看到一个系列，这一次显示了我们之前看到的两个系列之间的差异。
 
 .. image:: images/usertutorial/time_comparison_absolute_difference.png
 
