@@ -18,8 +18,7 @@
 SQL Lab
 =======
 
-SQL Lab is a modern, feature-rich SQL IDE written in
-`React <https://facebook.github.io/react/>`_.
+SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功能丰富的现代 SQL IDE。
 
 ------
 
@@ -27,14 +26,13 @@ SQL Lab is a modern, feature-rich SQL IDE written in
 
 ------
 
-Feature Overview
+功能概述
 ----------------
-- Connects to just about any database backend
-- A multi-tab environment to work on multiple queries at a time
-- A smooth flow to visualize your query results using Superset's rich
-  visualization capabilities
-- Browse database metadata: tables, columns, indexes, partitions
-- Support for long-running queries
+- 连接到几乎所有数据库后端
+- 多标签环境可一次处理多个查询
+- 利用 Superset 丰富的可视化功能，流畅地可视化查询结果
+- 浏览数据库元数据：表，列，索引，分区
+- 支持长时间运行的查询
 
   - uses the `Celery distributed queue <http://www.celeryproject.org/>`_
     to dispatch query handling to workers
