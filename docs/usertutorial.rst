@@ -385,13 +385,12 @@ Query`。现在，我们只能再次看到一个系列，这一次显示了我�
 有关本节中各个选项含义的更多信息，请参阅 `Pandas
 documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html>`__ 。
 
-Lastly, save your chart as Tutorial Resample and add it to the Tutorial
-Dashboard. Go to the tutorial dashboard to see the four charts side by
-side and compare the different outputs.
+最后，将图表保存为 Tutorial Resample，并将其添加到 Tutorial Dashboard。
+转到 tutorial dashboard，并排查看四个图表，并比较不同的输出。
 
 .. rubric:: Footnotes
 
-.. [#f1] See the Pandas `rolling method documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rolling.html>`_ for more information.
-.. [#f2] See the Pandas `cumsum method documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.cumsum.html>`_ for more information.
-.. [#f3] See the Pandas `resample method documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html>`_ for more information.
+.. [#f1] 有关更多信息，请参见 Pandas `rolling method documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rolling.html>`_ 。
+.. [#f2] 有关更多信息，请参见 Pandas `cumsum method documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.cumsum.html>`_ 。
+.. [#f3] 有关更多信息，请参见 Pandas `resample method documentation <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html>`_ 。
 
