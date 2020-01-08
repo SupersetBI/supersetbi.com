@@ -108,11 +108,9 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
         ...
     }
 
-Here, "version" should be the version of your Presto cluster. Support for this
-functionality was introduced in Presto 0.319.
+在这里，"version" 应该是 Presto cluster 的版本。Presto 0.319 中引入了对此功能的支持。
 
-You also need to enable the feature flag in your `superset_config.py`, and you
-can optionally specify a custom formatter. Eg:
+您还需要在 `superset_config.py` 中启用功能标记，并且可以选择指定自定义格式器。 例如：
 
 .. code-block:: python
 
