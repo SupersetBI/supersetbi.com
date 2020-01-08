@@ -309,13 +309,11 @@ Cheatsheet <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
   选择滚动窗口 [#f1]_ ，然后对其进行计算（均值，总和或标准差）。
   第四个选项 cumsum 计算序列 [#f2]_ 的累加和。
 
-Time Comparison
-  Shift your data in time and, optionally, apply a calculation to compare the
-  shifted data with your actual data (e.g. calculate the absolute difference
-  between the two).
+时间比较
+  及时移动数据，并可选地应用计算来比较移动的数据和实际数据(例如，计算两者之间的绝对差异)。
 
-Python Functions
-  Resample your data using one of a variety of methods [#f3]_.
+Python 函数
+  使用多种方法之一对数据进行重新采样 [#f3]_ 。
 
 Setting up the base chart
 ~~~~~~~~~~~~~~~~~~~~~~~~~
