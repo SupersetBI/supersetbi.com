@@ -141,14 +141,13 @@ SQL Lab 是一个用 `React <https://facebook.github.io/react/>`_ 编写的功�
 
 .. _ref_ctas_engine_config:
 
-Create Table As (CTAS)
+创建表为 (CTAS)
 ''''''''''''''''''''''
 
-You can use ``CREATE TABLE AS SELECT ...`` statements on SQLLab. This feature can be toggled on
-and off at the database configuration level.
+您可以在 SQLLab 上使用 ``CREATE TABLE AS SELECT ...`` 语句。可以在数据库配置级别上启用和禁用此功能。
 
-Note that since ``CREATE TABLE..`` belongs to a SQL DDL category. Specifically on PostgreSQL, DDL is transactional,
-this means that to properly use this feature you have to set ``autocommit`` to true on your engine parameters:
+请注意，由于 ``CREATE TABLE..`` 属于 SQL DDL 类别。特别是在 PostgreSQL 上，DDL 是事务性的，
+这意味着要正确使用此功能，必须在 engine 参数上将 ``autocommit`` 设置为true：
 
 .. code-block:: text
 
