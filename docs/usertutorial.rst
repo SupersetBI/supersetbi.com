@@ -369,12 +369,11 @@ Query`。现在，我们只能再次看到一个系列，这一次显示了我�
 
 将图表另存为 Tutorial Time Comparison，并将其添加到 Tutorial Dashboard 中。
 
-Resampling the data
+重新采样数据
 ~~~~~~~~~~~~~~~~~~~
 
-In this section, we'll resample the data so that rather than having
-daily data we have weekly data. As in the previous section, reopen the
-Tutorial Advanced Analytics Base chart.
+在本部分中，我们将对数据进行重新采样，以便获取每周数据而不是每日数据。
+与上一节一样，重新打开 Tutorial Advanced Analytics 基本图表。
 
 Next, in the :guilabel:`Python Functions` subsection of
 :guilabel:`Advanced Analytics`, enter 7D, corresponding to seven days,
