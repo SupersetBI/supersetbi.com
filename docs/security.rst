@@ -42,12 +42,10 @@ Alpha 用户可以添加和更改数据源。
 
 Gamma
 """""
-Gamma users have limited access. They can only consume data coming from data sources
-they have been given access to through another complementary role.
-They only have access to view the slices and
-dashboards made from data sources that they have access to. Currently Gamma
-users are not able to alter or add data sources. We assume that they are
-mostly content consumers, though they can create slices and dashboards.
+Gamma 用户的访问权限受到限制。他们只能使用来自其他角色可以访问的数据源中的数据。
+他们仅有权查看由他们有权访问的数据源制成的 slices 和 dashboards 。
+当前，Gamma 用户无法更改或添加数据源。尽管他们可以创建 slices 和 dashboards ，
+但我们假设他们主要是内容消费者。
 
 Also note that when Gamma users look at the dashboards and slices list view,
 they will only see the objects that they have access to.
