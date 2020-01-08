@@ -356,11 +356,9 @@ Python 函数
 然后在列表中选择可视化名称（或者，在 Tutorial Dashboard 中找到该图表，
 然后从该可视化菜单中选择 Explore chart）。
 
-Next, in the :guilabel:`Time Comparison` subsection of
-:guilabel:`Advanced Analytics`, enter the :guilabel:`Time Shift` by
-typing in "minus 1 week" (note this box accepts input in natural
-language). :guilabel:`Run Query` to see the new chart, which has an
-additional series with the same values, shifted a week back in time.
+接下来，在 :guilabel:`Advanced Analytics` 的 :guilabel:`Time Comparison` 子部分中，
+通过键入 "minus 1 week" 来输入 :guilabel:`Time Shift`（请注意，此框接受使用自然语言的输入）。
+:guilabel:`Run Query` 以查看新图表，该图表有一个具有相同值的附加序列，并且将时间倒退了一周。
 
 .. image:: images/usertutorial/time_comparison_two_series.png
 
