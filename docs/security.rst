@@ -78,30 +78,24 @@ Public
 然后，您可以与 Gamma 用户确认他们是否看到与与其角色相关的表相关联的对象（dashboards 和 slices）。
 
 
-Customizing
+定制
 -----------
 
-The permissions exposed by FAB are very granular and allow for a great level
-of customization. FAB creates many permissions automagically for each model
-that is created (can_add, can_delete, can_show, can_edit, ...) as well as for
-each view. On top of that, Superset can expose more granular permissions like
-``all_datasource_access``.
+FAB 公开的权限非常精细，可以进行很大程度的自定义。FAB 自动为创建的每个模型
+（can_add，can_delete，can_show，can_edit等）以及每个视图创建许多权限。
+最重要的是，Superset 可以公开更详细的权限，例如 ``all_datasource_access``。
 
-We do not recommend altering the 3 base roles as there
-are a set of assumptions that Superset is built upon. It is possible though for
-you to create your own roles, and union them to existing ones.
+我们不建议更改3个基本角色，因为有一组 Superset 所基于的假设。
+您可以创建自己的角色，并将它们与现有的角色结合起来。
 
-Permissions
+权限
 """""""""""
 
-Roles are composed of a set of permissions, and Superset has many categories
-of permissions. Here are the different categories of permissions:
+角色由一组权限组成，并且 Superset 具有许多类别的权限。以下是权限的不同类别：
 
-- **Model & action**: models are entities like ``Dashboard``,
-  ``Slice``, or ``User``. Each model has a fixed set of permissions, like
-  ``can_edit``, ``can_show``, ``can_delete``, ``can_list``, ``can_add``, and
-  so on. By adding ``can_delete on Dashboard`` to a role, and granting that
-  role to a user, this user will be able to delete dashboards.
+- **Model & action**: 模型是 ``Dashboard`` ，``Slice`` 或 ``User`` 之类的实体。每个模型都有一组固定的权限，
+  例如 ``can_edit`` ， ``can_show`` ， ``can_delete`` ， ``can_list`` ， ``can_add`` 等。
+  通过将 ``can_delete on Dashboard`` 添加到角色，并将该角色授予用户，该用户将能够删除看板。
 - **Views**: views are individual web pages, like the ``explore`` view or the
   ``SQL Lab`` view. When granted to a user, he/she will see that view in its menu items, and be able to load that page.
 - **Data source**: For each data source, a permission is created. If the user
