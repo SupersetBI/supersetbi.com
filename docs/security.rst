@@ -51,20 +51,16 @@ Gamma 用户的访问权限受到限制。他们只能使用来自其他角色�
 
 sql_lab
 """""""
-The ``sql_lab`` role grants access to SQL Lab. Note that while ``Admin``
-users have access to all databases by default, both ``Alpha`` and ``Gamma``
-users need to be given access on a per database basis.
+``sql_lab`` 角色授予对 SQL Lab 的访问权限。请注意，虽然默认情况下 ``Admin`` 用户可以访问所有数据库，
+但 ``Alpha`` 和 ``Gamma`` 用户都需要基于每个数据库进行访问。
 
 Public
 """"""
-It's possible to allow logged out users to access some Superset features.
+可以允许注销的用户访问某些 Superset 功能。
 
-By setting ``PUBLIC_ROLE_LIKE_GAMMA = True`` in your ``superset_config.py``,
-you grant public role the same set of permissions as for the GAMMA role.
-This is useful if one wants to enable anonymous users to view
-dashboards. Explicit grant on specific datasets is still required, meaning
-that you need to edit the ``Public`` role and add the Public data sources
-to the role manually.
+通过在 ``superset_config.py`` 中设置 ``PUBLIC_ROLE_LIKE_GAMMA = True``，
+可以为公共角色授予与 GAMMA 角色相同的权限集。如果要允许匿名用户查看看板，这将很有用。
+仍然需要对特定数据集进行显式授予，这意味着您需要编辑 ``Public`` 角色并将 Public 数据源手动添加到角色。
 
 
 Managing Gamma per data source access
