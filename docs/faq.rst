@@ -209,12 +209,10 @@ Superset 的后端使用 Mysql、Postgresql 和 Sqlite 进行测试。建议在�
 在向表中添加列时，可以使用 ``Source -> Tables`` 页面中的 "Refresh Metadata" 操作让 Superset 检测并合并新列。
 只需选中表格旁边的框您想要刷新的 schema，然后单击 ``Actions -> Refresh Metadata``。
 
-Is there a way to force the use specific colors?
+有没有办法强制使用特定的颜色?
 ------------------------------------------------
 
-It is possible on a per-dashboard basis by providing a mapping of
-labels to colors in the ``JSON Metadata`` attribute using the
-``label_colors`` key.
+通过使用 ``label_colors`` key 在 ``JSON Metadata`` 属性中提供标签到颜色的映射，可以在每个仪表板上实现。
 
 .. code-block:: json
 
@@ -225,7 +223,7 @@ labels to colors in the ``JSON Metadata`` attribute using the
         }
     }
 
-Does Superset work with [insert database engine here]?
+Superset 是否与 [insert database engine here] 一起工作?
 ------------------------------------------------------
 
 The community over time has curated a list of databases that work well with
