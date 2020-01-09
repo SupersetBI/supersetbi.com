@@ -67,9 +67,8 @@ superset cli 允许您从 YAML 导入和导出数据源。
 
 或者，您可以使用 UI 导出数据源:
 
-1. Open **Sources** -> **Databases** to export all tables associated to a
-   single or multiple databases. (**Tables** for one or more tables,
-   **Druid Clusters** for clusters, **Druid Datasources** for datasources)
+1. 打开 **Sources** -> **Databases** 导出与单个或多个数据库关联的所有表。 
+   (**Tables** 针对一个或多个表，**Druid Clusters** 针对集群，**Druid Datasources** 针对数据源)
 #. Select the items you would like to export
 #. Click **Actions** -> **Export to YAML**
 #. If you want to import an item that you exported through the UI, you
