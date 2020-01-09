@@ -192,10 +192,10 @@ Superset 的后端使用 Mysql、Postgresql 和 Sqlite 进行测试。建议在�
 
 请注意，几乎所有具有 SqlAlchemy 集成的数据库都可以作为 Superset 的数据源完美地工作，只是不能作为 OLTP 后端。
 
-How can i configure OAuth authentication and authorization?
+如何配置 OAuth 身份验证和授权？
 -----------------------------------------------------------
 
-You can take a look at this Flask-AppBuilder `configuration example
+您可以看一下这个 Flask-AppBuilder `configuration example
 <https://github.com/dpgaspar/Flask-AppBuilder/blob/master/examples/oauth/config.py>`_.
 
 How can I set a default filter on my dashboard?
