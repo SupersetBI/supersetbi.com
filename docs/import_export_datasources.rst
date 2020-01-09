@@ -74,7 +74,7 @@ superset cli 允许您从 YAML 导入和导出数据源。
 #. 如果你想导入一个你通过 UI 导出的项目，你需要将它嵌套在它的父元素中，
    例如，一个 `database` 需要嵌套在 `databases` 下，一个 `table` 需要嵌套在一个 `database` 元素中。
 
-Exporting the complete supported YAML schema
+导出完整的受支持的 YAML schema
 --------------------------------------------
 In order to obtain an exhaustive list of all fields you can import using the YAML import run: ::
 
