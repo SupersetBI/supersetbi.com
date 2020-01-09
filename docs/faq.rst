@@ -166,23 +166,15 @@ __ https://www.sqlite.org/lockingv3.html
 
 可以使用 ``SUPERSET_HOME`` 环境变量覆盖此路径。
 
-Another work around is to change where superset stores the sqlite database by adding 
- in superset_config.py (create the file if needed), then adding the directory where superset_config.py lives to PYTHONPATH environment variable (e.g. ).
+另一个解决方法是，通过在 superset_config.py 中添加 ``SQLALCHEMY_DATABASE_URI = 'sqlite:////new/location/superset.db'``（如果需要，创建文件），然后将 superset_config.py 所在的目录添加到 PYTHONPATH 环境变量中（例如，``export PYTHONPATH=/opt/logs/sandbox/airbnb/`` ）。
 
-另一个解决方法是，通过在 superset_config.py 中添加 ``SQLALCHEMY_DATABASE_URI = 'sqlite:////new/location/superset.db'``（如果需要，创建文件），然后在 superset_config 目录中添加目录，来更改 superset 存储 sqlite 数据库的位置。superset_config.py 存在于 PYTHONPATH 环境变量中（例如，``export PYTHONPATH=/opt/logs/sandbox/airbnb/`` ）。
-
-What if the table schema changed?
+如果 table schema 改变了怎么办?
 ---------------------------------
 
-Table schemas evolve, and Superset needs to reflect that. It's pretty common
-in the life cycle of a dashboard to want to add a new dimension or metric.
-To get Superset to discover your new columns, all you have to do is to
-go to ``Menu -> Sources -> Tables``, click the ``edit`` icon next to the
-table who's schema has changed, and hit ``Save`` from the ``Detail`` tab.
-Behind the scene, the new columns will get merged it. Following this,
-you may want to
-re-edit the table afterwards to configure the ``Column`` tab, check the
-appropriate boxes and save again.
+Table schemas 在发展，Superset 需要反映这一点。在看板的生命周期中，添加新维度或指标是非常常见的。
+要获得 Superset 来发现新的列，您所要做的就是转到 ``Menu -> Sources -> Tables`` ，
+单击 schema has changed 的表旁边的 ``edit`` 图标，然后从 ``Detail`` 选项卡中单击 ``Save``。
+在背后，新列将被合并。之后，您可能需要稍后重新编辑表格以配置 ``Column`` 选项卡，选中相应的框并再次保存。 
 
 How do I go about developing a new visualization type?
 ------------------------------------------------------
