@@ -237,28 +237,20 @@ Superset 是否与[insert database engine here]一起工作?
 具有有限 SQL 支持的数据库也可以工作。例如，可以通过 SQLAlchemy 连接器连接到 Druid，
 即使 Druid 不支持连接和子查询。要支持的数据库的另一个关键元素是通过 Superset `Database Engine Specification
 <https://github.com/apache/incubator-superset/blob/master/superset/db_engine_specs.py>`_ 。
-这个接口允许定义特定于数据库的配置和逻辑，这些配置和逻辑超出了 SQLAlchemy 和 DBAPI 范围。这包括功能如下:
+这个接口允许定义特定于数据库的配置和逻辑，这些配置和逻辑超出了 SQLAlchemy 和 DBAPI 范围。这包括以下功能:
 
 
-* date-related SQL function that allow Superset to fetch different
-  time granularities when running time-series queries
-* whether the engine supports subqueries. If false, Superset may run 2-phase
-  queries to compensate for the limitation
-* methods around processing logs and inferring the percentage of completion
-  of a query
-* technicalities as to how to handle cursors and connections if the driver
-  is not standard DBAPI
-* more, read the code for more details
+* 日期相关的 SQL 函数，允许 Superset 在运行时间序列查询时获取不同的时间粒度
+* 引擎是否支持子查询。如果为 false, Superset 可以运行两阶段查询来弥补这个限制
+* 方法处理日志并推断查询完成百分比
+* 如果驱动程序不是标准 DBAPI，如何处理游标和连接的技术细节
+* 更多，请阅读代码了解更多详细信息
 
-Beyond the SQLAlchemy connector, it's also possible, though much more
-involved, to extend Superset and write
-your own connector. The only example of this at the moment is the Druid
-connector, which is getting superseded by Druid's growing SQL support and
-the recent availability of a DBAPI and SQLAlchemy driver. If the database
-you are considering integrating has any kind of of SQL support, it's probably
-preferable to go the SQLAlchemy route. Note that for a native connector to
-be possible the database needs to have support for running OLAP-type queries
-and should be able to things that are typical in basic SQL:
+
+除了 SQLAlchemy 连接器之外，还可以扩展超集并编写自己的连接器，尽管涉及的内容要多得多。
+目前唯一的例子就是 Druid 连接器，它正在被 Druid 不断增长的 SQL 支持以及最近 DBAPI 和 SQLAlchemy 驱动程序
+的可用性所取代。如果您正在考虑集成的数据库有任何类型的 SQL 支持，那么最好采用 SQLAlchemy 方法。
+注意，要使本地连接器成为可能，数据库需要支持运行 OLAP 类型查询，并且应该能够执行基本 SQL 中的典型操作：
 
 - aggregate data
 - apply filters (==, !=, >, <, >=, <=, IN, ...)
