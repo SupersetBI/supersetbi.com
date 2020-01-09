@@ -158,8 +158,9 @@ Slice 刷新也将在指定时间段内错开。您可以通过将 ``stagger_ref
 
 为什么启动时 'flask fab' 或 superset 冻结/挂起/不响应（我的主目录已安装NFS）？
 -------------------------------------------------------------------------------------------------------------
+
 默认情况下，superset 在 ``~/.superset/superset.db`` 中创建并使用一个 sqlite 数据库。
-已知由于在 NFS 上的文件锁定实现损坏，如果在 NFS 上使用 Sqlite 可能无法正常工作。
+已知由于在 NFS 上的文件锁定实现损坏，`don't work well if used on NFS`__ 。
 
 __ https://www.sqlite.org/lockingv3.html
 
