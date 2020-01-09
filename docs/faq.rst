@@ -43,13 +43,11 @@
 许多分布式数据库可以执行以交互方式扫描 tb 级数据的查询。
 
 
-How do I create my own visualization?
+如何创建自己的可视化?
 -------------------------------------
 
-We are planning on making it easier to add new visualizations to the
-framework, in the meantime, we've tagged a few pull requests as
-``example`` to give people examples of how to contribute new
-visualizations.
+我们计划让向框架添加新的可视化变得更容易，同时，我们标记了一些 PR 作为 ``example``，
+给人们提供如何贡献新的可视化的例子。
 
 https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 
