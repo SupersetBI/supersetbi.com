@@ -118,9 +118,8 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 
 在上面的 json blob 中，slice 324、65 和 92 不会受到任何仪表板级过滤的影响。
 
-Now note the ``filter_immune_slice_fields`` key. This one allows you to
-be more specific and define for a specific slice_id, which filter fields
-should be disregarded.
+现在注意 ``filter_immune_slice_fields`` 键。这种方法允许您更具体地定义一个特定的 slice_id，
+应该忽略哪些筛选器字段。
 
 Note the use of the ``__time_range`` keyword, which is reserved for dealing
 with the time boundary filtering mentioned above.
