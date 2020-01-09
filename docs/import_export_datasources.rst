@@ -15,10 +15,10 @@
     specific language governing permissions and limitations
     under the License.
 
-Importing and Exporting Datasources
+导入和导出数据源
 ===================================
 
-The superset cli allows you to import and export datasources from and to YAML.
+superset cli 允许您从 YAML 导入和导出数据源。
 Datasources include both databases and druid clusters. The data is expected to be organized in the following hierarchy: ::
 
     .
