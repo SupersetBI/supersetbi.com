@@ -142,8 +142,7 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
         "timed_refresh_immune_slices": [324]
     }
 
-In the example above, if a timed refresh is set for the dashboard, then every slice except 324 will
-be automatically re-queried on schedule.
+在上面的示例中，如果为仪表板设置了定时刷新，则除 324 以外的每个片段都将按计划自动重新查询。
 
 Slice refresh will also be staggered over the specified period. You can turn off this staggering
 by setting the ``stagger_refresh`` to ``false`` and modify the stagger period by setting
