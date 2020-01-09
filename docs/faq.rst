@@ -15,27 +15,21 @@
     specific language governing permissions and limitations
     under the License.
 
-FAQ
+常见问题解答
 ===
 
-
-Can I query/join multiple tables at one time?
+我可以一次 query/join 多个表吗?
 ---------------------------------------------
-Not directly no. A Superset SQLAlchemy datasource can only be a single table
-or a view.
+不直接提供。 Superset SQLAlchemy 数据源只能是单个表或视图。
 
-When working with tables, the solution would be to materialize
-a table that contains all the fields needed for your analysis, most likely
-through some scheduled batch process.
+在处理表时，解决方案是物化一个包含分析所需的所有字段的表，很可能是通过某个预定的批处理过程实现的。
 
-A view is a simple logical layer that abstract an arbitrary SQL queries as
-a virtual table. This can allow you to join and union multiple tables, and
-to apply some transformation using arbitrary SQL expressions. The limitation
-there is your database performance as Superset effectively will run a query
-on top of your query (view). A good practice may be to limit yourself to
-joining your main large table to one or many small tables only, and avoid
-using ``GROUP BY`` where possible as Superset will do its own ``GROUP BY`` and
-doing the work twice might slow down performance.
+视图是一个简单的逻辑层，它将任意 SQL 查询抽象为一个虚拟表。
+这允许您连接和联合多个表，并使用任意 SQL 表达式应用一些转换。
+这里的限制是您的数据库性能，因为 Superset 将有效地在您的查询(视图)之上运行查询。
+一个好的做法可能是限制自己只将主大表连接到一个或多个小表，
+并避免在可能的情况下使用 ``GROUP BY``，因为 Superset 将执行自己的 ``GROUP BY`` ，
+并且执行两次可能会降低性能。
 
 Whether you use a table or a view, the important factor is whether your
 database is fast enough to serve it in an interactive fashion to provide
