@@ -184,15 +184,13 @@ https://github.com/airbnb/superset/pull/3013
 我可以使用什么数据库引擎作为 Superset 的后端?
 ---------------------------------------------------------
 
-To clarify, the *database backend* is an OLTP database used by Superset to store its internal
-information like your list of users, slices and dashboard definitions.
+澄清一下，*database backend* 是一个 OLTP 数据库，Superset 使用它来存储内部信息，比如用户列表、slice 和看板定义。
 
-Superset is tested using Mysql, Postgresql and Sqlite for its backend. It's recommended you
-install Superset on one of these database server for production.
+Superset 的后端使用 Mysql、Postgresql 和 Sqlite 进行测试。建议在其中一个数据库服务器上安装 Superset 以用于生产。
 
-Using a column-store, non-OLTP databases like Vertica, Redshift or Presto as a database backend simply won't work as these databases are not designed for this type of workload. Installation on Oracle, Microsoft SQL Server, or other OLTP databases may work but isn't tested.
+使用列存储、非 OLTP 数据库(如 Vertica、Redshift 或 Presto )作为数据库后端是行不通的，因为这些数据库不适合这种类型的工作负载。安装在 Oracle、Microsoft SQL Server 或其他 OLTP 数据库上可以工作，但没有经过测试。
 
-Please note that pretty much any databases that have a SqlAlchemy integration should work perfectly fine as a datasource for Superset, just not as the OLTP backend.
+请注意，几乎所有具有 SqlAlchemy 集成的数据库都可以作为 Superset 的数据源完美地工作，只是不能作为 OLTP 后端。
 
 How can i configure OAuth authentication and authorization?
 -----------------------------------------------------------
