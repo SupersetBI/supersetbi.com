@@ -164,9 +164,12 @@ Slice 刷新也将在指定时间段内错开。您可以通过将 ``stagger_ref
 
 __ https://www.sqlite.org/lockingv3.html
 
-You can override this path using the ``SUPERSET_HOME`` environment variable.
+可以使用 ``SUPERSET_HOME`` 环境变量覆盖此路径。
 
-Another work around is to change where superset stores the sqlite database by adding ``SQLALCHEMY_DATABASE_URI = 'sqlite:////new/location/superset.db'`` in superset_config.py (create the file if needed), then adding the directory where superset_config.py lives to PYTHONPATH environment variable (e.g. ``export PYTHONPATH=/opt/logs/sandbox/airbnb/``).
+Another work around is to change where superset stores the sqlite database by adding 
+ in superset_config.py (create the file if needed), then adding the directory where superset_config.py lives to PYTHONPATH environment variable (e.g. ).
+
+另一个解决方法是，通过在 superset_config.py 中添加 ``SQLALCHEMY_DATABASE_URI = 'sqlite:////new/location/superset.db'``（如果需要，创建文件），然后在 superset_config 目录中添加目录，来更改 superset 存储 sqlite 数据库的位置。superset_config.py 存在于 PYTHONPATH 环境变量中（例如，``export PYTHONPATH=/opt/logs/sandbox/airbnb/`` ）。
 
 What if the table schema changed?
 ---------------------------------
