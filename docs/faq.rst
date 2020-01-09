@@ -64,8 +64,7 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 
 导致查询超时的原因有很多。
 
-
-- For running long query from Sql Lab, by default Superset allows it run as long as 6 hours before it being killed by celery. If you want to increase the time for running query, you can specify the timeout in configuration. For example:
+- 对于运行来自 Sql Lab 的长查询，默认情况下 Superset 允许它在被 celery 杀死之前运行长达6个小时。如果希望增加运行查询的时间，可以在配置中指定超时。例如:
 
   ``SQLLAB_ASYNC_TIME_LIMIT_SEC = 60 * 60 * 6``
 
