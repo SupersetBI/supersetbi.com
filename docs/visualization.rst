@@ -1970,14 +1970,14 @@ ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部�
 3. 您需要将 shapefile 转换为 geojson 文件。
    这个动作可以用 ogr2ogr 工具完成: https://www.gdal.org/ogr2ogr.html
 
-4. Put your geojson file in next folder : superset/assets/src/visualizations/CountryMap/countries with the next name : nameofyourcountries.geojson
+4. 将您的 geojson 文件放到下一个文件夹中 : superset/assets/src/visualizations/CountryMap/countries with the next name : nameofyourcountries.geojson
 
-5. You can to reduce size of geojson file on this site: https://mapshaper.org/
+5. 您可以在这个站点上减少 geojson 文件的大小: https://mapshaper.org/
 
-6. Go in file superset/assets/src/explore/controls.jsx
+6. 进入文件 superset/assets/src/explore/controls.jsx
 
-7. Add your country in component 'select_country'
-   Example :
+7. 在组件 'select_country' 中添加您的国家
+   示例 :
 
 .. code-block:: javascript
 
