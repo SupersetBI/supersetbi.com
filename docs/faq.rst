@@ -123,9 +123,7 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 
 注意使用了关键字 ``__time_range`` ，该关键字用于处理上面提到的时间边界过滤。
 
-But what happens with filtering when dealing with slices coming from
-different tables or databases? If the column name is shared, the filter will
-be applied, it's as simple as that.
+但是当处理来自不同表或数据库的 slice 时，过滤会发生什么呢?如果列名是共享的，那么将应用筛选器，就这么简单。
 
 
 How to limit the timed refresh on a dashboard?
