@@ -20,6 +20,7 @@
 
 我可以一次 query/join 多个表吗?
 ---------------------------------------------
+
 不直接提供。 Superset SQLAlchemy 数据源只能是单个表或视图。
 
 在处理表时，解决方案是物化一个包含分析所需的所有字段的表，很可能是通过某个预定的批处理过程实现的。
@@ -35,13 +36,11 @@
 能够以交互方式为它提供服务，从而在 Superset 中提供良好的用户体验。
 
 
-How BIG can my data source be?
+我的数据源能有多大?
 ------------------------------
 
-It can be gigantic! As mentioned above, the main criteria is whether your
-database can execute queries and return results in a time frame that is
-acceptable to your users. Many distributed databases out there can execute
-queries that scan through terabytes in an interactive fashion.
+它可以是巨大的!如前所述，主要的标准是您的数据库是否能够执行查询并在用户可接受的时间范围内返回结果。
+许多分布式数据库可以执行以交互方式扫描 tb 级数据的查询。
 
 
 How do I create my own visualization?
