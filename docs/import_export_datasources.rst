@@ -98,18 +98,14 @@ sync 标志 ``-s`` 接受参数，以便将提供的元素与文件同步。小�
 
    superset import_datasources -p <path / filename> -s columns,metrics
 
-This will sync all ``metrics`` and ``columns`` for all datasources found in the
-``<path / filename>`` in the Superset meta database. This means columns and metrics
-not specified in YAML will be deleted. If you would add ``tables`` to ``columns,metrics``
-those would be synchronised as well.
+
 这将同步 Superset 元数据库中 ``<path / filename>`` 中找到的所有数据源的所有 ``metrics`` 和 ``columns``。
 这意味着 YAML 中未指定的列和指标将被删除。如果您要将 ``tables`` 添加到 ``columns,metrics``，
 那么这些指标也将被同步。
 
-
-If you don't supply the sync flag (``-s``) importing will only add and update (override) fields.
-E.g. you can add a ``verbose_name`` to the column ``ds`` in the table ``random_time_series`` from the example datasets
-by saving the following YAML to file and then running the ``import_datasources`` command. ::
+如果您不提供同步标志( ``-s`` )，导入将只添加和更新(覆盖)字段。例如，
+您可以从示例数据集中将以下 YAML 保存到文件中，然后运行 ``import_datasources`` 命令，
+从而将 ``verbose_name`` 添加到表 ``random_time_series`` 中的 ``ds`` 列。::
 
     databases:
     - database_name: main
