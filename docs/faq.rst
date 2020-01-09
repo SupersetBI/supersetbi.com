@@ -144,9 +144,8 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 
 在上面的示例中，如果为仪表板设置了定时刷新，则除 324 以外的每个片段都将按计划自动重新查询。
 
-Slice refresh will also be staggered over the specified period. You can turn off this staggering
-by setting the ``stagger_refresh`` to ``false`` and modify the stagger period by setting
-``stagger_time`` to a value in milliseconds in the ``JSON Metadata`` field:
+Slice 刷新也将在指定时间段内错开。您可以通过将 ``stagger_refresh`` 设置为 ``false`` 来关闭此交错，
+并通过在 ``JSON Metadata`` 字段中将 ``stagger_time`` 设置为以毫秒为单位的值来修改交错周期：
 
 .. code-block:: json
 
