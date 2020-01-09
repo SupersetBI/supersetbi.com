@@ -76,24 +76,23 @@ superset cli 允许您从 YAML 导入和导出数据源。
 
 导出完整的受支持的 YAML schema
 --------------------------------------------
-为了获得所有字段的详尽列表，您可以使用 YAML import 运行导入: ::
+为了获得所有字段的详尽列表，您可以使用 YAML import 导入 运行: ::
 
     superset export_datasource_schema
 
 同样，您可以使用 ``-b`` 标志来包含反向引用。
 
-Importing Datasources from YAML
+从 YAML 导入数据源
 -------------------------------
-In order to import datasources from a YAML file(s), run: ::
+为了从YAML文件导入数据源, 运行: ::
 
     superset import_datasources -p <path or filename>
 
-If you supply a path all files ending with ``*.yaml`` or ``*.yml`` will be parsed.
-You can apply additional flags e.g.: ::
+如果您提供一个路径，所有文件以 ``*.yaml`` or ``*.yml`` 结尾将被解析。你可以应用额外的标志，例如: ::
 
     superset import_datasources -p <path> -r
 
-Will search the supplied path recursively.
+将递归搜索提供的路径。
 
 The sync flag ``-s`` takes parameters in order to sync the supplied elements with
 your file. Be careful this can delete the contents of your meta database. Example:
