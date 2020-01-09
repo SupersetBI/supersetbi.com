@@ -154,12 +154,12 @@ Slice 刷新也将在指定时间段内错开。您可以通过将 ``stagger_ref
         "stagger_time": 2500
     }
 
-Here, the entire dashboard will refresh at once if periodic refresh is on. The stagger time of
-2.5 seconds is ignored.
+如果启用定期刷新，则整个看板将立即刷新。2.5秒的交错时间将被忽略。
 
-Why does 'flask fab' or superset freezed/hung/not responding when started (my home directory is NFS mounted)?
+为什么启动时 'flask fab' 或 superset 冻结/挂起/不响应（我的主目录已安装NFS）？
 -------------------------------------------------------------------------------------------------------------
-By default, superset creates and uses an sqlite database at ``~/.superset/superset.db``. Sqlite is known to `don't work well if used on NFS`__ due to broken file locking implementation on NFS.
+默认情况下，superset 在 ``~/.superset/superset.db`` 中创建并使用一个 sqlite 数据库。
+已知由于在 NFS 上的文件锁定实现损坏，如果在 NFS 上使用 Sqlite 可能无法正常工作。
 
 __ https://www.sqlite.org/lockingv3.html
 
