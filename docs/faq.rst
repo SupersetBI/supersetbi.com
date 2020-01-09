@@ -232,19 +232,12 @@ Superset 是否与 [insert database engine here] 一起工作?
 .. _SQLAlchemy dialect: https://docs.sqlalchemy.org/en/latest/dialects/
 .. _DBAPI driver: https://www.python.org/dev/peps/pep-0249/
 
-For a database engine to be supported in Superset through the
-SQLAlchemy connector, it requires having a Python compliant
-`SQLAlchemy dialect`_ as well as a
-`DBAPI driver`_ defined.
-Database that have limited SQL support may
-work as well. For instance it's possible to connect
-to Druid through the SQLAlchemy connector even though Druid does not support
-joins and subqueries. Another key element for a database to be supported is through
-the Superset `Database Engine Specification
-<https://github.com/apache/incubator-superset/blob/master/superset/db_engine_specs.py>`_
-interface. This interface allows for defining database-specific configurations
-and logic
-that go beyond the SQLAlchemy and DBAPI scope. This includes features like:
+要在 Superset 中通过 SQLAlchemy 连接器支持数据库引擎，
+需要定义符合 Python 的 `SQLAlchemy dialect`_ 和 `DBAPI driver`_ 。
+具有有限 SQL 支持的数据库也可以工作。例如，可以通过 SQLAlchemy 连接器连接到 Druid，
+即使 Druid 不支持连接和子查询。要支持的数据库的另一个关键元素是通过 Superset `Database Engine Specification
+<https://github.com/apache/incubator-superset/blob/master/superset/db_engine_specs.py>`_ 。
+这个接口允许定义特定于数据库的配置和逻辑，这些配置和逻辑超出了 SQLAlchemy 和 DBAPI 范围。这包括功能如下:
 
 
 * date-related SQL function that allow Superset to fetch different
