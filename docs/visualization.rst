@@ -27,15 +27,16 @@
 
 ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部分，它定义了识别 ISO 3166-1 中所有国家的主要分支（如省或州）的代码
 
-The purpose of ISO 3166-2 is to establish an international standard of short and unique alphanumeric codes to represent the relevant administrative divisions and dependent territories of all countries in a more convenient and less ambiguous form than their full names. Each complete ISO 3166-2 code consists of two parts, separated by a hyphen:[1]
+国际标准化组织 3166-2 的目的是建立一个简短和独特的字母数字代码的国际标准，以比其全名更方便和更不含糊的形式代表所有国家的有关行政区划和附属领土。每个完整的 ISO 3166-2 代码由两部分组成，用连字符分隔：[1]
 
-The first part is the ISO 3166-1 alpha-2 code of the country;
-The second part is a string of up to three alphanumeric characters, which is usually obtained from national sources and stems from coding systems already in use in the country concerned, but may also be developed by the ISO itself.
+第一部分是国家 ISO 3166-1 alpha-2 规范;
+第二部分是由最多三个字母数字字符组成的字符串，
+这些字符通常从国家来源获得，并源于已在有关国家使用的编码系统，但也可以由 ISO 本身开发。
 
-List of Countries
+国家名单
 -----------------
 
-* Belgium
+* 比利时(Belgium)
 
 +---------+-------------------+
 |  ISO    | Name of region    |
@@ -67,7 +68,7 @@ List of Countries
 
 
 
-* Brazil
+* 巴西(Brazil)
 
 +----------+-----------------------+
 |  ISO     | Name of region        |
@@ -127,7 +128,7 @@ List of Countries
 |  BR-TO   | Tocantins             |
 +----------+-----------------------+
 
-* China
+* 中国(China)
 
 +---------+--------------------+
 |   ISO   | Name of region     |
