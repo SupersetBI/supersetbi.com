@@ -116,8 +116,7 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
         "timed_refresh_immune_slices": [324]
     }
 
-In the json blob above, slices 324, 65 and 92 won't be affected by any
-dashboard level filtering.
+在上面的 json blob 中，slice 324、65 和 92 不会受到任何仪表板级过滤的影响。
 
 Now note the ``filter_immune_slice_fields`` key. This one allows you to
 be more specific and define for a specific slice_id, which filter fields
