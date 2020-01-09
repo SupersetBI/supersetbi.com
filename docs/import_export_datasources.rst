@@ -19,7 +19,7 @@
 ===================================
 
 superset cli 允许您从 YAML 导入和导出数据源。
-Datasources include both databases and druid clusters. The data is expected to be organized in the following hierarchy: ::
+数据源包括数据库和 druid 集群。数据将按照如下层次结构组织: ::
 
     .
     ├──databases
@@ -50,23 +50,22 @@ Datasources include both databases and druid clusters. The data is expected to b
        └── ... (more clusters)
 
 
-Exporting Datasources to YAML
+导出数据源到 YAML
 -----------------------------
-You can print your current datasources to stdout by running: ::
+您可以通过运行将当前的数据源打印到标准输出: ::
 
     superset export_datasources
 
 
-To save your datasources to a file run: ::
+将您的数据源保存到一个文件运行: ::
 
     superset export_datasources -f <filename>
 
 
-By default, default (null) values will be omitted. Use the ``-d`` flag to include them.
-If you want back references to be included (e.g. a column to include the table id
-it belongs to) use the ``-b`` flag.
+默认情况下，缺省值 (null) 将被省略。使用 ``-d`` 标志来包含它们。
+如果想要包含回引用(例如，一个列包含它所属的表 id )，请使用 ``-b`` 标志。
 
-Alternatively, you can export datasources using the UI:
+或者，您可以使用 UI 导出数据源:
 
 1. Open **Sources** -> **Databases** to export all tables associated to a
    single or multiple databases. (**Tables** for one or more tables,
