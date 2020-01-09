@@ -203,13 +203,11 @@ Superset 的后端使用 Mysql、Postgresql 和 Sqlite 进行测试。建议在�
 
 简单。只需应用过滤器并在过滤器处于活动状态时保存看板。
 
-How do I get Superset to refresh the schema of my table?
+如何让 Superset 刷新表的 schema？
 --------------------------------------------------------
 
-When adding columns to a table, you can have Superset detect and merge the
-new columns in by using the "Refresh Metadata" action in the
-``Source -> Tables`` page. Simply check the box next to the tables
-you want the schema refreshed, and click ``Actions -> Refresh Metadata``.
+在向表中添加列时，可以使用 ``Source -> Tables`` 页面中的 "Refresh Metadata" 操作让 Superset 检测并合并新列。
+只需选中表格旁边的框您想要刷新的 schema，然后单击 ``Actions -> Refresh Metadata``。
 
 Is there a way to force the use specific colors?
 ------------------------------------------------
