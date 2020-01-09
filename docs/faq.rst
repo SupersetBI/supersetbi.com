@@ -126,13 +126,12 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 但是当处理来自不同表或数据库的 slice 时，过滤会发生什么呢?如果列名是共享的，那么将应用筛选器，就这么简单。
 
 
-How to limit the timed refresh on a dashboard?
+如何限制看板上的定时刷新？
 ----------------------------------------------
-By default, the dashboard timed refresh feature allows you to automatically re-query every slice
-on a dashboard according to a set schedule. Sometimes, however, you won't want all of the slices
-to be refreshed - especially if some data is slow moving, or run heavy queries. To exclude specific
-slices from the timed refresh process, add the ``timed_refresh_immune_slices`` key to the dashboard
-``JSON Metadata`` field:
+默认情况下，仪表板定时刷新功能使您可以根据设置的时间表自动重新查询仪表板上的每个切片。
+但是，有时您不希望刷新所有切片，尤其是当某些数据移动缓慢或运行繁重的查询时。
+要从定时刷新过程中排除特定的 slice，
+请将 ``timed_refresh_immune_slices`` 键添加到仪表板 ``JSON Metadata`` 字段：
 
 .. code-block:: json
 
