@@ -69,10 +69,11 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
   ``SQLLAB_ASYNC_TIME_LIMIT_SEC = 60 * 60 * 6``
 
 - Superset 运行在 gunicorn web 服务器上，可能 web 请求会超时。如果希望增加默认值(50)，可以在启动 web 服务器时使用 ``-t`` 标志指定超时时间，该标志以秒为单位表示。
+  
   ``superset runserver -t 300``
 
-- If you are seeing timeouts (504 Gateway Time-out) when loading dashboard or explore slice, you are probably behind gateway or proxy server (such as Nginx). If it did not receive a timely response from Superset server (which is processing long queries), these web servers will send 504 status code to clients directly. Superset has a client-side timeout limit to address this issue. If query didn't come back within clint-side timeout (60 seconds by default), Superset will display warning message to avoid gateway timeout message. If you have a longer gateway timeout limit, you can change the timeout settings in ``superset_config.py``:
-
+- 如果您在加载 dashboard 或 explore slice 时看到超时(504 Gateway Time-out)，那么您可能在网关或代理服务器(如 Nginx )之后。如果没有收到来自 Superset 服务器的及时响应(它正在处理长时间的查询)，这些 web 服务器将直接向客户机发送504状态码。Superset 有一个客户端超时限制来解决这个问题。如果在 client-side 超时(默认60秒)内没有返回查询，Superset 将显示警告消息，以避免网关超时消息。如果你有一个较长的网关超时限制，你可以改变 ``superset_config.py`` 中的超时设置:
+  
   ``SUPERSET_WEBSERVER_TIMEOUT = 60``
 
 
