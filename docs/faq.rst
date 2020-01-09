@@ -95,10 +95,8 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 这个组件还有一个 ``Date Filter`` 复选框，它可以为您的看板启用时间筛选功能。
 选中复选框并刷新之后，您将看到一个 ``from`` 和一个 ``to`` 下拉列表。
 
-By default, the filtering will be applied to all the slices that are built
-on top of a datasource that shares the column name that the filter is based
-on. It's also a requirement for that column to be checked as "filterable"
-in the column tab of the table editor.
+默认情况下，该过滤将应用于在共享过滤器所基于的列名称的数据源之上构建的所有 slice。
+还要求在表编辑器的 column 选项卡中将该列检查为 "filterable"。
 
 But what about if you don't want certain widgets to get filtered on your
 dashboard? You can do that by editing your dashboard, and in the form,
