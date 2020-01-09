@@ -102,6 +102,9 @@ This will sync all ``metrics`` and ``columns`` for all datasources found in the
 ``<path / filename>`` in the Superset meta database. This means columns and metrics
 not specified in YAML will be deleted. If you would add ``tables`` to ``columns,metrics``
 those would be synchronised as well.
+这将同步 Superset 元数据库中 ``<path / filename>`` 中找到的所有数据源的所有 ``metrics`` 和 ``columns``。
+这意味着 YAML 中未指定的列和指标将被删除。如果您要将 ``tables`` 添加到 ``columns,metrics``，
+那么这些指标也将被同步。
 
 
 If you don't supply the sync flag (``-s``) importing will only add and update (override) fields.
