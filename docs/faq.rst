@@ -31,9 +31,8 @@
 并避免在可能的情况下使用 ``GROUP BY``，因为 Superset 将执行自己的 ``GROUP BY`` ，
 并且执行两次可能会降低性能。
 
-Whether you use a table or a view, the important factor is whether your
-database is fast enough to serve it in an interactive fashion to provide
-a good user experience in Superset.
+无论您使用的是表还是视图，重要的因素是您的数据库是否足够快，
+能够以交互方式为它提供服务，从而在 Superset 中提供良好的用户体验。
 
 
 How BIG can my data source be?
