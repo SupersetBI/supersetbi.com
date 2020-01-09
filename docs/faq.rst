@@ -98,11 +98,10 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 默认情况下，该过滤将应用于在共享过滤器所基于的列名称的数据源之上构建的所有 slice。
 还要求在表编辑器的 column 选项卡中将该列检查为 "filterable"。
 
-But what about if you don't want certain widgets to get filtered on your
-dashboard? You can do that by editing your dashboard, and in the form,
-edit the ``JSON Metadata`` field, more specifically the
-``filter_immune_slices`` key, that receives an array of sliceIds that should
-never be affected by any dashboard level filtering.
+但是，如果您不希望在看板上对某些小部件进行筛选，该怎么办呢?
+您可以通过编辑看板来做到这一点，在表单中，编辑 ``JSON Metadata`` 字段，
+更具体地说是 ``filter_immune_slices`` 键，它接收一个 sliceIds 数组，
+这个数组不应该受到任何看板级过滤的影响。
 
 
 .. code-block:: json
