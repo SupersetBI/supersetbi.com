@@ -15,18 +15,17 @@
     specific language governing permissions and limitations
     under the License.
 
-Visualization Tools
+可视化工具
 ===================
 
-The data is visualized via the slices. These slices are visual components made with the D3.js. Some components can be completed or required inputs.
+数据通过 slice 可视化。这些 slice 是用 D3.js 制作的可视化组件。
 
-Country Map Tools
+国家地图工具
 -----------------
 
-This tool is used in slices for visualization number or string by region, province or department of your countries.
-So, if you want to use tools, you need ISO 3166-2 code of region, province or department.
+此工具在 slice 中按国家/地区、省或部门用于可视化数字或字符串。所以，如果你想使用工具，你需要 ISO 3166-2 地区，省或部门的代码。
 
-ISO 3166-2 is part of the ISO 3166 standard published by the International Organization for Standardization (ISO), and defines codes for identifying the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1
+ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部分，它定义了识别 ISO 3166-1 中所有国家的主要分支（如省或州）的代码
 
 The purpose of ISO 3166-2 is to establish an international standard of short and unique alphanumeric codes to represent the relevant administrative divisions and dependent territories of all countries in a more convenient and less ambiguous form than their full names. Each complete ISO 3166-2 code consists of two parts, separated by a hyphen:[1]
 

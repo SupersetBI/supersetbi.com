@@ -16,7 +16,7 @@
     under the License.
 
 
-Misc
+杂项
 ----
 
 .. toctree::
