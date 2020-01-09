@@ -226,10 +226,8 @@ Superset 的后端使用 Mysql、Postgresql 和 Sqlite 进行测试。建议在�
 Superset 是否与 [insert database engine here] 一起工作?
 ------------------------------------------------------
 
-The community over time has curated a list of databases that work well with
-Superset in the :ref:`ref_database_deps` section of the docs. Database
-engines not listed in this page may work too. We rely on the
-community to contribute to this knowledge base.
+随着时间的推移，社区已经在文档的 :ref:`ref_database_deps` 中策划了一个可以很好地使用 Superset 的数据库列表。
+没有在此页列出的数据库引擎也可以工作。我们依靠社区为这个知识库做出贡献。
 
 .. _SQLAlchemy dialect: https://docs.sqlalchemy.org/en/latest/dialects/
 .. _DBAPI driver: https://www.python.org/dev/peps/pep-0249/
