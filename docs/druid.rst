@@ -25,21 +25,18 @@ Superset 有一个与 Druid 的本地连接器，而且 Druid 的大部分功能
     long-term vision 是不赞成 Druid 原生 REST connector 的，
     并且只通过 SQL 接口查询 Druid。
 
-Aggregations
+聚合
 ------------
 
-Common aggregations or Druid metrics can be defined and used in Superset.
-The first and simpler use case is to use the checkbox matrix expose in your
-datasource's edit view (``Sources -> Druid Datasources ->
-[your datasource] -> Edit -> [tab] List Druid Column``).
-Clicking the ``GroupBy`` and ``Filterable`` checkboxes will make the column
-appear in the related dropdowns while in explore view. Checking
-``Count Distinct``, ``Min``, ``Max`` or ``Sum`` will result in creating
-new metrics that will appear in the ``List Druid Metric`` tab upon saving the
-datasource. By editing these metrics, you'll notice that their ``json``
-element corresponds to Druid aggregation definition. You can create your own
-aggregations manually from the ``List Druid Metric`` tab following Druid
-documentation.
+普通的聚合或者 Druid 指标可以在 Superset 中定义和使用。
+第一个更简单的用例是在你的数据源的编辑视图中使用 checkbox matrix expose (``Sources -> Druid Datasources ->
+[your datasource] -> Edit -> [tab] List Druid Column``) 
+单击 ``GroupBy`` 和 ``Filterable`` 复选框将使该列在 explore 视图中显示在相关下拉列表中。
+检查 ``Count Distinct``, ``Min``, ``Max`` or ``Sum`` 将导致创建新的指标，
+这些指标将在保存数据源时显示在 ``List Druid Metric`` 选项卡中。
+通过编辑这些指标，您将注意到它们的 ``json`` 元素对应于 Druid 聚合定义。
+您可以从 Druid 文档后面的 ``List Druid Metric`` 选项卡手动创建自己的聚合。
+
 
 .. image:: images/druid_agg.png
    :scale: 50 %
@@ -47,11 +44,9 @@ documentation.
 Post-Aggregations
 -----------------
 
-Druid supports post aggregation and this works in Superset. All you have to
-do is create a metric, much like you would create an aggregation manually,
-but specify ``postagg`` as a ``Metric Type``. You then have to provide a valid
-json post-aggregation definition (as specified in the Druid docs) in the
-Json field.
+Druid 支持 post aggregation ，这在 Superset 中工作。您所要做的就是创建一个指标，
+这与手动创建聚合非常相似，但要将 ``postagg`` 指定为 ``Metric Type``。
+然后必须在 Json 字段中提供有效的 json post-aggregation 定义（如 Druid 文档中指定的）。
 
 
 Unsupported Features
