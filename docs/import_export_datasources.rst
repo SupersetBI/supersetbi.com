@@ -69,12 +69,10 @@ superset cli 允许您从 YAML 导入和导出数据源。
 
 1. 打开 **Sources** -> **Databases** 导出与单个或多个数据库关联的所有表。 
    (**Tables** 针对一个或多个表，**Druid Clusters** 针对集群，**Druid Datasources** 针对数据源)
-#. Select the items you would like to export
-#. Click **Actions** -> **Export to YAML**
-#. If you want to import an item that you exported through the UI, you
-   will need to nest it inside its parent element, e.g. a `database`
-   needs to be nested under `databases` a `table` needs to be
-   nested inside a `database` element.
+#. 选择要导出的项目
+#. 单击 **Actions** -> **Export to YAML**
+#. 如果你想导入一个你通过 UI 导出的项目，你需要将它嵌套在它的父元素中，
+   例如，一个 `database` 需要嵌套在 `databases` 下，一个 `table` 需要嵌套在一个 `database` 元素中。
 
 Exporting the complete supported YAML schema
 --------------------------------------------
