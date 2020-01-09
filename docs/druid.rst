@@ -18,8 +18,7 @@
 Druid
 =====
 
-Superset has a native connector to Druid and a majority of Druid's
-features are accessible through Superset.
+Superset 有一个与 Druid 的本地连接器，而且 Druid 的大部分功能都可以通过 Superset 访问。
 
 .. note ::
     Druid now supports SQL and can be accessed through Superset's
