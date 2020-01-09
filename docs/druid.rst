@@ -21,10 +21,9 @@ Druid
 Superset 有一个与 Druid 的本地连接器，而且 Druid 的大部分功能都可以通过 Superset 访问。
 
 .. note ::
-    Druid now supports SQL and can be accessed through Superset's
-    SQLAlchemy connector. The long-term vision is to deprecate
-    the Druid native REST connector and query Druid exclusively through
-    the SQL interface.
+    Druid 现在支持 SQL，可以通过 Superset 的 SQLAlchemy 连接器访问。
+    long-term vision 是不赞成 Druid 原生 REST connector 的，
+    并且只通过 SQL 接口查询 Druid。
 
 Aggregations
 ------------
