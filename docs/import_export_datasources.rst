@@ -94,8 +94,7 @@ superset cli 允许您从 YAML 导入和导出数据源。
 
 将递归搜索提供的路径。
 
-The sync flag ``-s`` takes parameters in order to sync the supplied elements with
-your file. Be careful this can delete the contents of your meta database. Example:
+sync 标志 ``-s`` 接受参数，以便将提供的元素与文件同步。小心，这会删除元数据库的内容。例子:
 
    superset import_datasources -p <path / filename> -s columns,metrics
 
