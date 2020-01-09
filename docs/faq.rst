@@ -84,20 +84,16 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 你需要在 mapbox.com 注册，得到一个 API key 并且在 ``superset_config.py`` 中配置 ``MAPBOX_API_KEY``。
 
 
-How to add dynamic filters to a dashboard?
+如何向看板添加动态过滤器?
 ------------------------------------------
 
-It's easy: use the ``Filter Box`` widget, build a slice, and add it to your
-dashboard.
+非常容易：使用 ``Filter Box`` 组件，构建一个 slice，并且添加它到你的看板。
 
-The ``Filter Box`` widget allows you to define a query to populate dropdowns
-that can be used for filtering. To build the list of distinct values, we
-run a query, and sort the result by the metric you provide, sorting
-descending.
+``Filter Box`` 组件允许您定义一个查询来填充可用于过滤的下拉列表。
+为了构建不同值的列表，我们运行一个查询，并根据您提供的指标对结果进行降序排序。
 
-The widget also has a checkbox ``Date Filter``, which enables time filtering
-capabilities to your dashboard. After checking the box and refreshing, you'll
-see a ``from`` and a ``to`` dropdown show up.
+这个组件还有一个 ``Date Filter`` 复选框，它可以为您的看板启用时间筛选功能。
+选中复选框并刷新之后，您将看到一个 ``from`` 和一个 ``to`` 下拉列表。
 
 By default, the filtering will be applied to all the slices that are built
 on top of a datasource that shares the column name that the filter is based
