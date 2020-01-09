@@ -198,11 +198,10 @@ Superset 的后端使用 Mysql、Postgresql 和 Sqlite 进行测试。建议在�
 您可以看一下这个 Flask-AppBuilder `configuration example
 <https://github.com/dpgaspar/Flask-AppBuilder/blob/master/examples/oauth/config.py>`_.
 
-How can I set a default filter on my dashboard?
+如何在看板上设置默认过滤器？
 -----------------------------------------------
 
-Easy. Simply apply the filter and save the dashboard while the filter
-is active.
+简单。只需应用过滤器并在过滤器处于活动状态时保存看板。
 
 How do I get Superset to refresh the schema of my table?
 --------------------------------------------------------
