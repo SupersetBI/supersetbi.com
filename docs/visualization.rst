@@ -1336,7 +1336,7 @@ ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部�
 |ES-MU6 |                      Murcia |
 +-------+-----------------------------+
 
-* Switzerland
+* Switzerland(瑞士)
 
 +-------+-----------------------------+
 |ISO    | Name of region              |
@@ -1394,7 +1394,7 @@ ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部�
 |CH-ZH  |                      Zürich |
 +-------+-----------------------------+
 
-* Uk
+* Uk(英国)
 
 +-------+------------------------------+
 |ISO    | Name of region               |
@@ -1784,7 +1784,7 @@ ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部�
 |GB-WRX |                      Wrexham |
 +-------+------------------------------+
 
-* Ukraine
+* Ukraine(乌克兰)
 
 +------+------------------------------+
 |ISO   | Name of region               |
@@ -1845,7 +1845,7 @@ ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部�
 +------+------------------------------+
 
 
-* Usa
+* Usa(美国)
 
 +------+------------------------------+
 |ISO   | Name of region               |
@@ -1956,19 +1956,19 @@ ISO 3166-2 是国际标准化组织（ISO）发布的 ISO 3166 标准的一部�
 +------+------------------------------+
 
 
-Need to add a new Country?
+需要添加新国家?
 -------------------------------
 
-To add a new country in country map tools, we need to follow the following steps :
+要添加新的国家地图工具，我们需要遵循以下步骤：
 
-1. You need shapefiles which contain data of your map.
-   You can get this file on this site: https://www.diva-gis.org/gdata
+1. 您需要包含地图数据的形状文件。
+   你可以在这个网站上得到这个文件: https://www.diva-gis.org/gdata
 
-2. You need to add ISO 3166-2 with column name ISO for all record in your file. 
-   It's important because it's a norm for mapping your data with geojson file
+2. 您需要为文件中的所有记录添加 ISO 3166-2 和列名 ISO。
+   这很重要，因为它是用 geojson 文件映射数据的规范
 
-3. You need to convert shapefile to geojson file.
-   This action can make with ogr2ogr tools: https://www.gdal.org/ogr2ogr.html
+3. 您需要将 shapefile 转换为 geojson 文件。
+   这个动作可以用 ogr2ogr 工具完成: https://www.gdal.org/ogr2ogr.html
 
 4. Put your geojson file in next folder : superset/assets/src/visualizations/CountryMap/countries with the next name : nameofyourcountries.geojson
 
