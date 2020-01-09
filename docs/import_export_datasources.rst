@@ -76,12 +76,11 @@ superset cli 允许您从 YAML 导入和导出数据源。
 
 导出完整的受支持的 YAML schema
 --------------------------------------------
-In order to obtain an exhaustive list of all fields you can import using the YAML import run: ::
+为了获得所有字段的详尽列表，您可以使用 YAML import 运行导入: ::
 
     superset export_datasource_schema
 
-Again, you can use the ``-b`` flag to include back references.
-
+同样，您可以使用 ``-b`` 标志来包含反向引用。
 
 Importing Datasources from YAML
 -------------------------------
