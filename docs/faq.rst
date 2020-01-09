@@ -51,20 +51,18 @@
 
 https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
 
-
-Can I upload and visualize csv data?
+我可以上传和可视化 csv 数据吗？
 ------------------------------------
 
-Yes, using the ``Upload a CSV`` button under the ``Sources`` menu item.
-This brings up a form that allows you specify required information.
-After creating the table from CSV, it can then be loaded like any
-other on the ``Sources -> Tables`` page.
+可以，使用 ``Sources`` 菜单项下的 ``Upload a CSV`` 按钮。
+这将打开一个允许您指定所需信息的表单。从 CSV 创建表之后，
+就可以像其他任何表一样加载 ``Sources -> Tables`` 页面。
 
 
-Why are my queries timing out?
+为什么我的查询超时了?
 ------------------------------
 
-There are many reasons may cause long query timing out.
+导致查询超时的原因有很多。
 
 
 - For running long query from Sql Lab, by default Superset allows it run as long as 6 hours before it being killed by celery. If you want to increase the time for running query, you can specify the timeout in configuration. For example:
