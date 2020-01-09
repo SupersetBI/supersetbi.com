@@ -77,11 +77,11 @@ https://github.com/airbnb/superset/issues?q=label%3Aexample+is%3Aclosed
   ``SUPERSET_WEBSERVER_TIMEOUT = 60``
 
 
-Why is the map not visible in the mapbox visualization?
+为什么地图在 mapbox 可视化中不可见?
 -------------------------------------------------------
 
-You need to register to mapbox.com, get an API key and configure it as
-``MAPBOX_API_KEY`` in ``superset_config.py``.
+
+你需要在 mapbox.com 注册，得到一个 API key 并且在 ``superset_config.py`` 中配置 ``MAPBOX_API_KEY``。
 
 
 How to add dynamic filters to a dashboard?
