@@ -176,13 +176,12 @@ Table schemas 在发展，Superset 需要反映这一点。在看板的生命周
 单击 schema has changed 的表旁边的 ``edit`` 图标，然后从 ``Detail`` 选项卡中单击 ``Save``。
 在背后，新列将被合并。之后，您可能需要稍后重新编辑表格以配置 ``Column`` 选项卡，选中相应的框并再次保存。 
 
-How do I go about developing a new visualization type?
+如何开发新的可视化类型？
 ------------------------------------------------------
-Here's an example as a Github PR with comments that describe what the
-different sections of the code do:
+这是一个 Github PR 的示例，带有注释，描述了代码的不同部分的功能:
 https://github.com/airbnb/superset/pull/3013
 
-What database engine can I use as a backend for Superset?
+我可以使用什么数据库引擎作为 Superset 的后端?
 ---------------------------------------------------------
 
 To clarify, the *database backend* is an OLTP database used by Superset to store its internal
