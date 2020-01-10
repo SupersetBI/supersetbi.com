@@ -28,6 +28,8 @@
 Apache Superset 中文网
 ''''''''''''''''''''''''''''
 
+`官方文档 <http://superset.apache.org/>`_ | `本站 GitHub <https://github.com/ZAN-BI/supersetbi.com>`_
+
 Apache Superset 是一个现代的、企业级的商业智能 web 应用程序
 
 ----------------
