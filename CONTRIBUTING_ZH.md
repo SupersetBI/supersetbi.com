@@ -167,8 +167,13 @@ When posting Python stack traces, please quote them using
 
 The best way is to file an issue on GitHub:
 
+最好的办法是在 GitHub 上提交一个问题:
+
 - Explain in detail how it would work.
+  * 详细解释它是如何工作的。
 - Keep the scope as narrow as possible, to make it easier to implement.
+  * 保持范围尽可能小，以便更容易实现。
+    * narrow adj. 狭窄的，有限的；勉强的；精密的；度量小的
 - Remember that this is a volunteer-driven project, and that contributions are welcome :)
 
 For large features or major changes to codebase, please create **Superset Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/apache/incubator-superset/issues/5602)
