@@ -179,6 +179,7 @@ The best way is to file an issue on GitHub:
     * volunteer n. 志愿者；志愿兵
 
 For large features or major changes to codebase, please create **Superset Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/apache/incubator-superset/issues/5602)
+* 对于较大的特性或对代码库的主要更改，请创建 **Superset改进建议(SIP)**。参见SIP-0中的模板
 
 ### Fix Bugs
 
