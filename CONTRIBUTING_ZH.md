@@ -8,6 +8,8 @@ little bit helps, and credit will always be given.
 欢迎投稿，我们将不胜感激!每一点都有帮助，荣誉总是会被给予。
 * contributing adj. 贡献的；起作用的
 * contribution n. 贡献；捐献；投稿
+* greatly adv.非常;很;大大地
+* appreciate v.欣赏;赏识;重视;感激;感谢;欢迎;理解;意识到;领会
 
 ## Table of Contents
 
