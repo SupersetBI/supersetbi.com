@@ -135,9 +135,15 @@ Here's a list of repositories that contain Superset-related packages:
 
 ## Types of Contributions
 
+贡献类型
+
 ### Report Bug
 
+上报 Bug
+
 The best way to report a bug is to file an issue on GitHub. Please include:
+
+报告 bug 的最佳方法是在 GitHub 上提交一个 issue。请包括:
 
 - Your operating system name and version.
 - Superset version.
