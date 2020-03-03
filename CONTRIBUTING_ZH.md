@@ -129,6 +129,9 @@ Here's a list of repositories that contain Superset-related packages:
 - [github.com/apache-superset](https://github.com/apache-superset) is the
   Github organization under which we manage Superset-related
   small tools, forks and Superset-related experimental ideas.
+  * [github.com/apache-superset](https://github.com/apache-superset) 是 Github 组织，
+  我们在该组织下管理与 Superset 相关的小工具、分叉和与 Superset 相关的实验想法。
+    * experimental adj. 实验的；根据实验的；试验性的
 
 ## Types of Contributions
 
