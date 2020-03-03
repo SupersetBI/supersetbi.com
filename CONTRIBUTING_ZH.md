@@ -175,6 +175,8 @@ The best way is to file an issue on GitHub:
   * 保持范围尽可能小，以便更容易实现。
     * narrow adj. 狭窄的，有限的；勉强的；精密的；度量小的
 - Remember that this is a volunteer-driven project, and that contributions are welcome :)
+  * 请记住，这是一个由志愿者推动的项目，欢迎大家贡献自己的力量。
+    * volunteer n. 志愿者；志愿兵
 
 For large features or major changes to codebase, please create **Superset Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/apache/incubator-superset/issues/5602)
 
