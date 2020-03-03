@@ -105,14 +105,21 @@ Here's a list of repositories that contain Superset-related packages:
   这个资源库还包括 Superset 的主要 TypeScript/JavaScript 包，
   以及在 [superset-frontend](https://github.com/apache/incubator-superset/tree/master/superset-frontend) 
   文件夹下的 react 应用。
+
 - [apache-superset/superset-ui](https://github.com/apache-superset/superset-ui)
   contains core Superset's
   [npm packages](https://github.com/apache-superset/superset-ui/tree/master/packages).
   These packages are shared across the React apps in the main repository,
   and in visualization plugins.
+  * [apache-superset/superset-ui](https://github.com/apache-superset/superset-ui) 包含核心
+  Superset 的 npm 包。这些包在主存储库中的 React 应用程序和可视化插件中共享。
+
 - [apache-superset/superset-ui-plugins](https://github.com/apache-superset/superset-ui-plugins)
   contains the code for the default visualizations that ship with Superset
   and are maintained by the core community.
+  * [apache-superset/superset-ui-plugins](https://github.com/apache-superset/superset-ui-plugins)
+  包含了 Superset 附带的、由核心社区维护的默认可视化的代码。
+
 - [apache-superset/superset-ui-plugins-deckgl](https://github.com/apache-superset/superset-ui-plugins-deckgl)
   contains the code for the geospatial visualizations that ship with Superset
   and are maintained by the core community.
