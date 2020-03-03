@@ -100,6 +100,7 @@ Here's a list of repositories that contain Superset-related packages:
   also includes Superset's main TypeScript/JavaScript bundles and react apps under
   the [superset-frontend](https://github.com/apache/incubator-superset/tree/master/superset-frontend)
   folder.
+  * [apache/incubator-superset](https://github.com/apache/incubator-superset) 是主存储库，其中包含分发在 pypi 上的apache-superset Python 包。
 - [apache-superset/superset-ui](https://github.com/apache-superset/superset-ui)
   contains core Superset's
   [npm packages](https://github.com/apache-superset/superset-ui/tree/master/packages).
