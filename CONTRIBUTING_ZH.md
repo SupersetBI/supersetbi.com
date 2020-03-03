@@ -5,7 +5,7 @@
 Contributions are welcome and are greatly appreciated! Every
 little bit helps, and credit will always be given.
 
-欢迎投稿，我们将不胜感激!每一点都有帮助，荣誉总是会被给予。
+欢迎投稿，我们将不胜感激! 每一点都有帮助，荣誉总是会被给予。
 * contributing adj. 贡献的；起作用的
 * contribution n. 贡献；捐献；投稿
 * greatly adv.非常;很;大大地
@@ -86,7 +86,12 @@ little bit helps, and credit will always be given.
 
 ## Orientation
 
+方向
+* orientation n. 方向；定向；适应；情况介绍；向东方
+
 Here's a list of repositories that contain Superset-related packages:
+
+下面是包含与 Superset 相关的包的存储库列表:
 
 - [apache/incubator-superset](https://github.com/apache/incubator-superset)
   is the main repository containing the `apache-superset` Python package
