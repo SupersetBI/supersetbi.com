@@ -123,6 +123,9 @@ Here's a list of repositories that contain Superset-related packages:
 - [apache-superset/superset-ui-plugins-deckgl](https://github.com/apache-superset/superset-ui-plugins-deckgl)
   contains the code for the geospatial visualizations that ship with Superset
   and are maintained by the core community.
+  * [apache-superset/superset-ui-plugins-deckgl](https://github.com/apache-superset/superset-ui-plugins-deckgl)
+  包含了随 Superset 一起发布并由核心社区维护的地理空间可视化代码。
+
 - [github.com/apache-superset](https://github.com/apache-superset) is the
   Github organization under which we manage Superset-related
   small tools, forks and Superset-related experimental ideas.
