@@ -158,7 +158,12 @@ The best way to report a bug is to file an issue on GitHub. Please include:
 When posting Python stack traces, please quote them using
 [Markdown blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/).
 
+在发布 Python 堆栈跟踪时，请使用 [Markdown blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
+引用它们。
+
 ### Submit Ideas or Feature Requests
+
+提交想法或特性请求
 
 The best way is to file an issue on GitHub:
 
