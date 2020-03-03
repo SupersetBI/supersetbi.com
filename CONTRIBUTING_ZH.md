@@ -146,8 +146,12 @@ The best way to report a bug is to file an issue on GitHub. Please include:
 报告 bug 的最佳方法是在 GitHub 上提交一个 issue。请包括:
 
 - Your operating system name and version.
+  * 您的操作系统名称和版本。
 - Superset version.
+  * Superset 版本
 - Detailed steps to reproduce the bug.
+  * 重现错误的详细步骤。
+    * reproduce vt. 复制；再生；生殖；使…在脑海中重现
 - Any details about your local setup that might be helpful in troubleshooting.
 
 When posting Python stack traces, please quote them using
