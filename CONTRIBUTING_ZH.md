@@ -153,6 +153,7 @@ The best way to report a bug is to file an issue on GitHub. Please include:
   * 重现错误的详细步骤。
     * reproduce vt. 复制；再生；生殖；使…在脑海中重现
 - Any details about your local setup that might be helpful in troubleshooting.
+  * 有关您的本地设置的任何可能有助于故障排除的细节。
 
 When posting Python stack traces, please quote them using
 [Markdown blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/).
