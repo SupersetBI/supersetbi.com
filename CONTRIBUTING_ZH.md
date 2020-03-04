@@ -234,7 +234,11 @@ See [Translating](#translating) for more details.
 
 ### Ask Questions
 
+提出问题
+
 There is a dedicated [`apache-superset` tag](https://stackoverflow.com/questions/tagged/apache-superset) on [StackOverflow](https://stackoverflow.com/). Please use it when asking questions.
+
+[StackOverflow](https://stackoverflow.com/) 上有一个专用的 [`apache-superset` tag](https://stackoverflow.com/questions/tagged/apache-superset)。请在提问时使用。
 
 ## Pull Request Guidelines
 
