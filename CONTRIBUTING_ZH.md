@@ -192,6 +192,8 @@ open to whoever wants to implement them.
 
 ### Implement Features
 
+实现功能
+
 Look through the GitHub issues. Issues tagged with
 `#feature` is open to whoever wants to implement it.
 
