@@ -408,6 +408,8 @@ Triaging goals
 
 First, add **Category labels (a.k.a. hash labels)**. Every issue/PR must have one hash label (except spam entry). Labels that begin with `#` defines issue/PR type:
 
+首先，添加 **分类标签  (a.k.a. hash 标签)**。每个 issue/PR 必须有一个 hash 标签（除了垃圾邮件条目）。
+
 | Label           | for Issue                                                                                                                               | for PR                                                                                                                                            |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `#bug`          | Bug report                                                                                                                              | Bug fix                                                                                                                                           |
@@ -418,6 +420,21 @@ First, add **Category labels (a.k.a. hash labels)**. Every issue/PR must have on
 | `#question`     | Troubleshooting: Installation, Running locally, Ask how to do something. Can be changed to `#bug` later.                                | N/A                                                                                                                                               |
 | `#SIP`          | Superset Improvement Proposal                                                                                                           | N/A                                                                                                                                               |
 | `#ASF`          | Tasks related to Apache Software Foundation policy                                                                                      | Tasks related to Apache Software Foundation policy                                                                                                |
+---
+---
+---
+
+| 标签           | 针对 Issue                                                                                                                               | 针对 PR                                                                                                                                            |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `#bug`          | Bug 上报                                                                                                                              | Bug 修复                                                                                                                                           |
+| `#code-quality` | 描述代码、架构或生产效率方面的问题                                                                                | 重构、测试、工具                                                                                                                         |
+| `#feature`      | 新功能请求                                                                                                                   | 新功能实现                                                                                              |
+| `#refine`       | 不提供新特性的改进，也不是bug修复或重构，比如调整填充、改进UI样式。 | 实现的改进，不提供新的功能，也不是一个 bug 修复或重构，如调整填充，细化UI风格。|
+| `#doc`          | 文档                                                                                                                           | 文档                                                                                                                                     |
+| `#question`     | 故障排除: 安装，本地运行，询问如何做某事。稍后可以更改为`#bug`。                                | N/A                                                                                                                                               |
+| `#SIP`          | Superset Improvement Proposal                                                                                                           | N/A                                                                                                                                               |
+| `#ASF`          | Tasks related to Apache Software Foundation policy                                                                                      | Tasks related to Apache Software Foundation policy                                                                                                |
+
 
 Then add other types of labels as appropriate.
 
