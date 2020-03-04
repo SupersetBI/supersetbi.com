@@ -372,8 +372,14 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 
 #### Post-merge Responsibility
 
+合并后责任
+
 - Project maintainers may contact the PR author if new issues are introduced by the PR.
 - Project maintainers may revert your changes if a critical issue is found, such as breaking master branch CI.
+
+- 如果PR引入了新问题，项目维护人员可以联系PR作者。
+- 如果发现关键问题（如中断主分支 CI），项目维护人员可能会还原您的更改。
+  * critical adj.批评的;批判性的;挑剔的;极重要的;关键的;至关紧要的;严重的;不稳定的;可能有危险的
 
 ## Managing Issues and PRs
 
