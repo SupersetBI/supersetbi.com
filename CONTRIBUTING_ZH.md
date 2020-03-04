@@ -305,9 +305,17 @@ Finally, never submit a PR that will put master branch in broken state. If the P
   - If no screenshot is provided, the committers will mark the PR with `need:screenshot` label and will not review until screenshot is provided.
 - **屏幕截图/GIF：** 更改用户界面需要在屏幕截图之前/之后进行，或更改 GIF 以进行交互
   - 推荐的捕获工具 ([Kap](https://getkap.co/), [LICEcap](https://www.cockos.com/licecap/), [Skitch](https://download.cnet.com/Skitch/3000-13455_4-189876.html))
+  - 如果没有提供截图，提交者将在 PR 上标注 `need:screenshot` 的标签，在提供截图之前不会进行审查。
 - **Dependencies:** Be careful about adding new dependency and avoid unnecessary dependencies.
   - For Python, include it in `setup.py` denoting any specific restrictions and in `requirements.txt` pinned to a specific version which ensures that the application build is deterministic.
   - For TypeScript/JavaScript, include new libraries in `package.json`
+- **依赖关系：** 添加新的依赖项时要小心，避免不必要的依赖项。
+  - 对于 Python，将其包含在表示任何特定限制的 `setup.py` 和固定到特定版本的 `requirements.txt` 中，以确保应用程序生成是确定的。
+    * denoting v.标志;预示;象征;表示;意指 denote的现在分词
+    * pinned v.(用大头钉等)固定，别上，钉住;使不能动弹;按住;钳住 pin的过去分词和过去式
+    * restrictions n.限制规定;限制法规;限制;约束;制约因素 restriction的复数
+    * deterministic adj. 确定性的；命运注定论的
+  - 对于 TypeScript/JavaScript，在 'package.json' 中包含新库
 - **Tests:** The pull request should include tests, either as doctests, unit tests, or both. Make sure to resolve all errors and test failures. See [Testing](#testing) for how to run tests.
 - **Documentation:** If the pull request adds functionality, the docs should be updated as part of the same PR. Doc string are often sufficient, make sure to follow the sphinx compatible standards.
 - **CI:** Reviewers will not review the code until all CI tests are passed. Sometimes there can be flaky tests. You can close and open PR to re-run CI test. Please report if the issue persists. After the CI fix has been deployed to `master`, please rebase your PR.
