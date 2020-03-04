@@ -447,6 +447,7 @@ Then add other types of labels as appropriate.
 - **Risk labels:** These labels have pattern `risk:xxx`, which describe the potential risk on adopting the work, such as `risk:db-migration`. The intention was to better understand the impact and create awareness for PRs that need more rigorous testing.
 - **风险标签:** 这些标签有 `risk:xxx` 模式，描述采用该工作的潜在风险，如 `risk:db-migration`。其目的是为了更好地理解影响，并为需要更严格测试的 PRs 创建感知。
 - **Status labels:** These labels describe the status (`abandoned`, `wontfix`, `cant-reproduce`, etc.) Issue/PRs that are rejected or closed without completion should have one or more status labels.
+- **状态标签:** 这些标签描述了被拒绝或未完成就关闭的 Issue/PRs(`abandoned`, `wontfix`, `cant-reproduce`, 等.) 状态 ，应该有一个或多个状态标签。
 - **Version labels:** These have the pattern `vx.x` such as `v0.28`. Version labels on issues describe the version the bug was reported on. Version labels on PR describe the first release that will include the PR.
 
 Committers may also update title to reflect the issue/PR content if the author-provided title is not descriptive enough.
