@@ -534,6 +534,8 @@ Superset 使用 [Sphinx](http://www.sphinx-doc.org/en/1.5.1/) 将 `docs/` 中的
 Finally, to make changes to the rst files and build the docs using Sphinx,
 you'll need to install a handful of dependencies from the repo you cloned:
 
+最后，要更改 rst 文件并使用 Sphinx 构建文档，需要从克隆的 repo 中安装一些依赖项：
+
 ```bash
 pip install -r docs/requirements.txt
 ```
