@@ -384,7 +384,17 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 
 ## Managing Issues and PRs
 
+管理 Issues 和 PRs
+
 To handle issues and PRs that are coming in, committers read issues/PRs and flag them with labels to categorize and help contributors spot where to take actions, as contributors usually have different expertises.
+
+为了处理即将到来的 issues 和 PRs，
+提交者阅读 issues/PRs 并用 labels 标记它们，
+以便对贡献者进行分类
+并帮助贡献者确定采取行动的位置，
+因为贡献者通常具有不同的专业知识。
+* expertise n. 专门知识；专门技术；专家的意见
+* spot adv. 准确地；恰好
 
 Triaging goals
 
