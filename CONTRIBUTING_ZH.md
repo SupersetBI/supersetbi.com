@@ -457,6 +457,8 @@ Committers may also update title to reflect the issue/PR content if the author-p
 
 If the PR passes CI tests and does not have any `need:` labels, it is ready for review, add label `review` and/or `design-review`.
 
+如果 PR 通过了 CI 测试，并且没有任何 `need:` 标签，那么它就可以进行评审了，添加 `review` 和/或 `design-review` 标签。
+
 If an issue/PR has been inactive for >=30 days, it will be closed. If it does not have any status label, add `inactive`.
 
 ## Revert Guidelines
