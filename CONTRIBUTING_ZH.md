@@ -432,8 +432,8 @@ First, add **Category labels (a.k.a. hash labels)**. Every issue/PR must have on
 | `#refine`       | 不提供新特性的改进，也不是bug修复或重构，比如调整填充、改进UI样式。 | 实现的改进，不提供新的功能，也不是一个 bug 修复或重构，如调整填充，细化UI风格。|
 | `#doc`          | 文档                                                                                                                           | 文档                                                                                                                                     |
 | `#question`     | 故障排除: 安装，本地运行，询问如何做某事。稍后可以更改为`#bug`。                                | N/A                                                                                                                                               |
-| `#SIP`          | Superset Improvement Proposal                                                                                                           | N/A                                                                                                                                               |
-| `#ASF`          | Tasks related to Apache Software Foundation policy                                                                                      | Tasks related to Apache Software Foundation policy                                                                                                |
+| `#SIP`          | Superset 改进建议                                                                                                           | N/A                                                                                                                                               |
+| `#ASF`          | 与 Apache Software Foundation 策略相关的任务                                                                                      | 与Apache Software Foundation策略相关的任务                                                                                                |
 
 
 Then add other types of labels as appropriate.
