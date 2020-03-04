@@ -502,7 +502,11 @@ Should you decide that reverting is desirable, it is the responsibility of the C
 
 ## Setup Local Environment for Development
 
+设置本地开发环境
+
 First, [fork the repository on GitHub](https://help.github.com/articles/about-forks/), then clone it. You can clone the main repository directly, but you won't be able to send pull requests.
+
+首先，[在 GitHub 上 fork 这个仓库](https://help.github.com/articles/about-forks/)，然后 clone 它。你可以直接克隆这个主仓库，但是你没有能力发送 PR。
 
 ```bash
 git clone git@github.com:your-username/incubator-superset.git
@@ -511,7 +515,11 @@ cd incubator-superset
 
 ### Documentation
 
+文档
+
 The latest documentation and tutorial are available at https://superset.incubator.apache.org/.
+
+最新的文档和教程可以在 https://superset.incubator.apache.org/ 上找到。
 
 Contributing to the official documentation is relatively easy, once you've setup
 your environment and done an edit end-to-end. The docs can be found in the
@@ -519,8 +527,9 @@ your environment and done an edit end-to-end. The docs can be found in the
 [reStructuredText format](https://en.wikipedia.org/wiki/ReStructuredText) (.rst).
 If you've written Markdown before, you'll find the reStructuredText format familiar.
 
-Superset uses [Sphinx](http://www.sphinx-doc.org/en/1.5.1/) to convert the rst files
-in `docs/` to the final HTML output users see.
+一旦您设置了环境并完成了端到端的编辑，就可以相对容易地为官方文档做贡献。文档可以在存储库的 `docs/` 子目录中找到，并以 [reStructuredText 格式](https://en.wikipedia.org/wiki/ReStructuredText) (.rst) 编写。如果您以前写过Markdown，您会发现 reStructuredText 格式很熟悉。
+
+Superset 使用 [Sphinx](http://www.sphinx-doc.org/en/1.5.1/) 将 `docs/` 中的 rst 文件转换为用户看到的最终 HTML 输出。
 
 Finally, to make changes to the rst files and build the docs using Sphinx,
 you'll need to install a handful of dependencies from the repo you cloned:
