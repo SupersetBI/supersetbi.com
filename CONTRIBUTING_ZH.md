@@ -359,9 +359,16 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 
 #### Merging
 
+合并
+
 - At least one approval is required for merging a PR.
 - PR is usually left open for at least 24 hours before merging.
 - After the PR is merged, [close the corresponding issue(s)](https://help.github.com/articles/closing-issues-using-keywords/).
+
+- 合并 PR 至少需要一个审批。
+- PR 通常在合并前至少24小时保持打开状态。
+- PR 合并后，[关闭相应问题](https://help.github.com/articles/closing-issues-using-keywords/)。
+  * corresponding adj.符合的;相应的;相关的
 
 #### Post-merge Responsibility
 
