@@ -242,9 +242,16 @@ There is a dedicated [`apache-superset` tag](https://stackoverflow.com/questions
 
 ## Pull Request Guidelines
 
+拉请求指南
+
 A philosophy we would like to strongly encourage is
 
+我们强烈提倡的一种哲学是
+* philosophy n. 哲学；哲理；人生观
+
 > Before creating a PR, create an issue.
+
+创建 PR 之前，请先创建 issue。
 
 The purpose is to separate problem from possible solutions.
 
