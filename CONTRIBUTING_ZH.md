@@ -337,6 +337,9 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 - **Code coverage:** Please ensure that code coverage does not decrease.
 - Remove `[WIP]` when ready for review. Please note that it may be merged soon after approved so please make sure the PR is ready to merge and do not expect more time for post-approval edits.
 - If the PR was not ready for review and inactive for > 30 days, we will close it due to inactivity. The author is welcome to re-open and update.
+- **代码覆盖率：** 请确保代码覆盖率不会降低。
+- 在准备评审时删除 `[WIP]`。请注意，审批后不久可能会合并，因此请确保 PR 已准备好合并，并且不要期望有更多时间进行审批后编辑。
+- 如果 PR 未准备好供审阅，并且在超过 30 天内处于不活动状态，我们将由于不活动而关闭它。欢迎作者重新打开和更新。
 
 #### Reviewing
 
