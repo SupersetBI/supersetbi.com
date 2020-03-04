@@ -201,10 +201,16 @@ Look through the GitHub issues. Issues tagged with
 
 ### Improve Documentation
 
+改进文档
+
 Superset could always use better documentation,
 whether as part of the official Superset docs,
 in docstrings, `docs/*.rst` or even on the web as blog posts or
 articles. See [Documentation](#documentation) for more details.
+* Superset 总是可以使用更好的文档，
+无论是作为官方 Superset 文档的一部分，
+还是在 docstrings, `docs/*.rst` 中。
+甚至在 web 上作为博客帖子或文章。有关更多细节，请参见 [Documentation](#documentation)。
 
 ### Add Translations
 
