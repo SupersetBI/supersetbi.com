@@ -461,6 +461,8 @@ If the PR passes CI tests and does not have any `need:` labels, it is ready for 
 
 If an issue/PR has been inactive for >=30 days, it will be closed. If it does not have any status label, add `inactive`.
 
+如果一个 issue/PR 在 >=30 天内处于非活动状态，那么它将被关闭。如果它没有任何状态标签，添加 `inactive`。
+
 ## Revert Guidelines
 
 Reverting changes that are causing issues in the master branch is a normal and expected part of the development process. In an open source community, the ramifications of a change cannot always be fully understood. With that in mind, here are some considerations to keep in mind when considering a revert:
