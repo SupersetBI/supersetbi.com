@@ -449,6 +449,7 @@ Then add other types of labels as appropriate.
 - **Status labels:** These labels describe the status (`abandoned`, `wontfix`, `cant-reproduce`, etc.) Issue/PRs that are rejected or closed without completion should have one or more status labels.
 - **状态标签:** 这些标签描述了被拒绝或未完成就关闭的 Issue/PRs(`abandoned`, `wontfix`, `cant-reproduce`, 等.) 状态 ，应该有一个或多个状态标签。
 - **Version labels:** These have the pattern `vx.x` such as `v0.28`. Version labels on issues describe the version the bug was reported on. Version labels on PR describe the first release that will include the PR.
+- **版本标签:** 这些有 `vx.x` 模式，例如 `v0.28`。issues 上的版本标签描述了报告错误的版本。PR 上的版本标签描述了包含 PR 的第一个版本。
 
 Committers may also update title to reflect the issue/PR content if the author-provided title is not descriptive enough.
 
