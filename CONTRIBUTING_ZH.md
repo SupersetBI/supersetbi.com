@@ -179,12 +179,16 @@ The best way is to file an issue on GitHub:
     * volunteer n. 志愿者；志愿兵
 
 For large features or major changes to codebase, please create **Superset Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/apache/incubator-superset/issues/5602)
-* 对于较大的特性或对代码库的主要更改，请创建 **Superset改进建议(SIP)**。参见 [SIP-0](https://github.com/apache/incubator-superset/issues/5602) 中的模板
+* 对于较大的特性或对代码库的主要更改，请创建 **Superset 改进建议(SIP)**。参见 [SIP-0](https://github.com/apache/incubator-superset/issues/5602) 中的模板
 
 ### Fix Bugs
 
+Bug 修复
+
 Look through the GitHub issues. Issues tagged with `#bug` are
 open to whoever wants to implement them.
+* 浏览 GitHub 的 issues。标记为 `#bug` 的 issues 对任何想要实现它们的人都是开放的。
+  * whoever pron.…的那个人(或那些人);…的任何人;无论谁;不管什么人;(用于问句，表示惊讶)究竟是谁，到底是谁
 
 ### Implement Features
 
