@@ -282,7 +282,11 @@ The purpose is to separate problem from possible solutions.
 
 In general, small PRs are always easier to review than large PRs. The best practice is to break your work into smaller independent PRs and refer to the same issue. This will greatly reduce turnaround time.
 
+一般来说，小 PRs 总是比大 PRs 更容易审查。最好的做法是把你的工作分解成更小的独立的PRs，并参考相同的 issue。这将大大减少周转时间。
+
 Finally, never submit a PR that will put master branch in broken state. If the PR is part of multiple PRs to complete a large feature and cannot work on its own, you can create a feature branch and merge all related PRs into the feature branch before creating a PR from feature branch to master.
+
+最后，永远不要提交会使主分支处于崩溃状态的 PR。如果 PR 是多个 PRs 的一部分，以完成一个大的功能，而不能单独工作，你可以创建一个功能分支，并将所有相关的 PRs 合并到功能分支中，然后再创建一个从功能分支到主功能分支的 PR。
 
 ### Protocol
 
