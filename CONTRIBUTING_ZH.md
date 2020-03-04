@@ -274,6 +274,12 @@ The purpose is to separate problem from possible solutions.
 
 **Feature/Large changes:** If you intend to change the public API, or make any non-trivial changes to the implementation, we requires you to file a new issue as `#SIP` (Superset Improvement Proposal). This lets us reach an agreement on your proposal before you put significant effort into it. You are welcome to submit a PR along with the SIP (sometimes necessary for demonstration), but we will not review/merge the code until the SIP is approved.
 
+**特性/大变化：** 如果您打算更改公共 API，或者对实现进行任何重要的更改，我们要求您提交一个新 issue 作为 `#SIP` ( Superset 改进建议)。这使我们能够在你作出重大努力之前就你的建议达成协议。欢迎您与 SIP 一起提交一份 PR (有时需要进行演示)，但是在 SIP 得到批准之前，我们不会 review/merge 代码。
+* intend to 打算; 打算去; 想要
+* reach an agreement 达成协议
+* along with 除某物以外; 随同…一起，跟…一起
+* necessary for 对…是必要的
+
 In general, small PRs are always easier to review than large PRs. The best practice is to break your work into smaller independent PRs and refer to the same issue. This will greatly reduce turnaround time.
 
 Finally, never submit a PR that will put master branch in broken state. If the PR is part of multiple PRs to complete a large feature and cannot work on its own, you can create a feature branch and merge all related PRs into the feature branch before creating a PR from feature branch to master.
