@@ -196,6 +196,8 @@ open to whoever wants to implement them.
 
 Look through the GitHub issues. Issues tagged with
 `#feature` is open to whoever wants to implement it.
+* 查看 GitHub issues。带有 `#feature` 标签的 issues 对任何想要实现它的人都是开放的。
+  * Look through 逐一查看; 浏览; 翻阅
 
 ### Improve Documentation
 
