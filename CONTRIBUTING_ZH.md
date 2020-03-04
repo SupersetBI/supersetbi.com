@@ -453,6 +453,8 @@ Then add other types of labels as appropriate.
 
 Committers may also update title to reflect the issue/PR content if the author-provided title is not descriptive enough.
 
+如果作者提供的标题不够描述性，提交者也可以更新标题来反映 issue/PR 内容。
+
 If the PR passes CI tests and does not have any `need:` labels, it is ready for review, add label `review` and/or `design-review`.
 
 If an issue/PR has been inactive for >=30 days, it will be closed. If it does not have any status label, add `inactive`.
