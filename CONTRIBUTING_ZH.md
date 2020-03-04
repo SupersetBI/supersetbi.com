@@ -327,8 +327,13 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 - **文档：** 如果 pull request 添加了功能，文档应该作为相同 PR 的一部分进行更新。Doc 字符串通常就足够了，请确保遵循 sphinx 兼容标准。
   * compatible adj.可共用的;兼容的;可共存的;(因志趣等相投而)关系好的，和睦相处的
   * sufficient adj.足够的;充足的
+  * functionality n.实用;符合实际;设计目的;设计功能;(计算机或电子系统的)功能
 
 - **CI:** Reviewers will not review the code until all CI tests are passed. Sometimes there can be flaky tests. You can close and open PR to re-run CI test. Please report if the issue persists. After the CI fix has been deployed to `master`, please rebase your PR.
+- **持续集成：** 在通过所有 CI 测试之前，评审员不会评审代码。有时会有不可靠的测试。您可以关闭和打开 PR 来重新运行CI 测试。如果问题仍然存在，请报告。在 CI 修复被部署到 `master` 之后，请重新调整您的 PR。
+  * flaky adj. 薄片的；薄而易剥落的；古里古怪的
+  * persist vi. 存留，坚持；持续，固执
+
 - **Code coverage:** Please ensure that code coverage does not decrease.
 - Remove `[WIP]` when ready for review. Please note that it may be merged soon after approved so please make sure the PR is ready to merge and do not expect more time for post-approval edits.
 - If the PR was not ready for review and inactive for > 30 days, we will close it due to inactivity. The author is welcome to re-open and update.
