@@ -179,7 +179,8 @@ The best way is to file an issue on GitHub:
     * volunteer n. 志愿者；志愿兵
 
 For large features or major changes to codebase, please create **Superset Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/apache/incubator-superset/issues/5602)
-* 对于较大的特性或对代码库的主要更改，请创建 **Superset 改进建议(SIP)**。参见 [SIP-0](https://github.com/apache/incubator-superset/issues/5602) 中的模板
+
+对于较大的特性或对代码库的主要更改，请创建 **Superset 改进建议(SIP)**。参见 [SIP-0](https://github.com/apache/incubator-superset/issues/5602) 中的模板
 
 ### Fix Bugs
 
@@ -187,7 +188,8 @@ Bug 修复
 
 Look through the GitHub issues. Issues tagged with `#bug` are
 open to whoever wants to implement them.
-* 浏览 GitHub 的 issues。标记为 `#bug` 的 issues 对任何想要实现它们的人都是开放的。
+
+浏览 GitHub 的 issues。标记为 `#bug` 的 issues 对任何想要实现它们的人都是开放的。
   * whoever pron.…的那个人(或那些人);…的任何人;无论谁;不管什么人;(用于问句，表示惊讶)究竟是谁，到底是谁
 
 ### Implement Features
@@ -196,7 +198,8 @@ open to whoever wants to implement them.
 
 Look through the GitHub issues. Issues tagged with
 `#feature` is open to whoever wants to implement it.
-* 查看 GitHub issues。带有 `#feature` 标签的 issues 对任何想要实现它的人都是开放的。
+
+查看 GitHub issues。带有 `#feature` 标签的 issues 对任何想要实现它的人都是开放的。
   * Look through 逐一查看; 浏览; 翻阅
 
 ### Improve Documentation
@@ -207,12 +210,15 @@ Superset could always use better documentation,
 whether as part of the official Superset docs,
 in docstrings, `docs/*.rst` or even on the web as blog posts or
 articles. See [Documentation](#documentation) for more details.
-* Superset 总是可以使用更好的文档，
+
+Superset 总是可以使用更好的文档，
 无论是作为官方 Superset 文档的一部分，
 还是在 docstrings, `docs/*.rst` 中。
 甚至在 web 上作为博客帖子或文章。有关更多细节，请参见 [Documentation](#documentation)。
 
 ### Add Translations
+
+添加翻译
 
 If you are proficient in a non-English language, you can help translate
 text strings from Superset's UI. You can jump in to the existing
@@ -220,6 +226,11 @@ language dictionaries at
 `superset/translations/<language_code>/LC_MESSAGES/messages.po`, or
 even create a dictionary for a new language altogether.
 See [Translating](#translating) for more details.
+
+如果你精通非英语语言，你可以帮助翻译 Superset 用户界面中的文本字符串。
+您可以通过 `superset/translations/<language_code>/LC_MESSAGES/messages.po` 跳转到现有的语言词典。
+或者干脆为一门新语言创建一本词典。有关更多细节，请参见 [Translating](#translating)。
+* proficient in 精通; 熟练
 
 ### Ask Questions
 
