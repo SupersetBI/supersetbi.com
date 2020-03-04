@@ -476,11 +476,17 @@ Reverting changes that are causing issues in the master branch is a normal and e
 * considering prep. 考虑到；就...而论
 
 - **Availability of the PR author:** If the original PR author or the engineer who merged the code is highly available and can provide a fix in a reasonable timeframe, this would counter-indicate reverting.
+- **PR 作者的可用性:** 如果原始的 PR 作者或合并代码的工程师是高度可用的，并且可以在合理的时间范围内提供修复，则这将反向指示恢复。
 - **Severity of the issue:** How severe is the problem on master? Is it keeping the project from moving forward? Is there user impact? What percentage of users will experience a problem?
+- **issue 的严重程度:** master 的问题有多严重？是不是妨碍了项目的进展？对用户有影响吗？有多少百分比的用户会遇到问题？
 - **Size of the change being reverted:** Reverting a single small PR is a much lower-risk proposition than reverting a massive, multi-PR change.
+- **正在还原的更改的大小:** 恢复一个小的 PR 比恢复一个大的、多 PR 变化的风险要低得多。
 - **Age of the change being reverted:** Reverting a recently-merged PR will be more acceptable than reverting an older PR. A bug discovered in an older PR is unlikely to be causing widespread serious issues.
+- **正在还原的更改的时间：** 恢复最近合并的PR将比恢复旧的PR更容易被接受。在旧的PR中发现的 bug 不太可能引起广泛的严重问题。
 - **Risk inherent in reverting:** Will the reversion break critical functionality? Is the medicine more dangerous than the disease?
+- **还原的内在风险:** 降级会破坏关键功能吗?药物比疾病更危险吗?
 - **Difficulty of crafting a fix:** In the case of issues with a clear solution, it may be preferable to implement and merge a fix rather than a revert.
+- **修复的难度：** 对于具有明确解决方案的问题，最好是实现并合并修复，而不是恢复。
 
 Should you decide that reverting is desirable, it is the responsibility of the Contributor performing the revert to:
 
