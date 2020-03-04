@@ -398,8 +398,13 @@ To handle issues and PRs that are coming in, committers read issues/PRs and flag
 
 Triaging goals
 
+筛选目标
+
 - **For issues:** Categorize, screen issues, flag required actions from authors.
 - **For PRs:** Categorize, flag required actions from authors. If PR is ready for review, flag required actions from reviewers.
+
+- **针对 issues:** 分类，筛选问题，标记需要作者执行的操作。
+- **针对 PRs:** 分类，标记来自作者的必需操作。如果 PR 已准备好进行评审，则标记评审员所需的操作。
 
 First, add **Category labels (a.k.a. hash labels)**. Every issue/PR must have one hash label (except spam entry). Labels that begin with `#` defines issue/PR type:
 
