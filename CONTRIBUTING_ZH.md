@@ -298,14 +298,17 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 
 - Fill in all sections of the PR template.
 - 填写 PR 模板的所有部分。
+
 - Add prefix `[WIP]` to title if not ready for review (WIP = work-in-progress). We recommend creating a PR with `[WIP]` first and remove it once you have passed CI test and read through your code changes at least once.
 - 如果没有准备好 review，则在标题中添加前缀 `[WIP]` (WIP = work-in-progress)。我们建议首先创建一个带有 `[WIP]` 的 PR，并在通过 CI 测试并至少阅读一次代码更改之后删除它。
+
 - **Screenshots/GIFs:** Changes to user interface require before/after screenshots, or GIF for interactions
   - Recommended capture tools ([Kap](https://getkap.co/), [LICEcap](https://www.cockos.com/licecap/), [Skitch](https://download.cnet.com/Skitch/3000-13455_4-189876.html))
   - If no screenshot is provided, the committers will mark the PR with `need:screenshot` label and will not review until screenshot is provided.
 - **屏幕截图/GIF：** 更改用户界面需要在屏幕截图之前/之后进行，或更改 GIF 以进行交互
   - 推荐的捕获工具 ([Kap](https://getkap.co/), [LICEcap](https://www.cockos.com/licecap/), [Skitch](https://download.cnet.com/Skitch/3000-13455_4-189876.html))
   - 如果没有提供截图，提交者将在 PR 上标注 `need:screenshot` 的标签，在提供截图之前不会进行审查。
+
 - **Dependencies:** Be careful about adding new dependency and avoid unnecessary dependencies.
   - For Python, include it in `setup.py` denoting any specific restrictions and in `requirements.txt` pinned to a specific version which ensures that the application build is deterministic.
   - For TypeScript/JavaScript, include new libraries in `package.json`
@@ -316,8 +319,15 @@ Finally, never submit a PR that will put master branch in broken state. If the P
     * restrictions n.限制规定;限制法规;限制;约束;制约因素 restriction的复数
     * deterministic adj. 确定性的；命运注定论的
   - 对于 TypeScript/JavaScript，在 'package.json' 中包含新库
+
 - **Tests:** The pull request should include tests, either as doctests, unit tests, or both. Make sure to resolve all errors and test failures. See [Testing](#testing) for how to run tests.
+- **测试：** pull request 应该包括测试，或者作为文档测试，或者单元测试，或者两者都包含。确保解决所有的错误和测试失败。有关如何运行测试，请参见 [Testing](#testing)。
+
 - **Documentation:** If the pull request adds functionality, the docs should be updated as part of the same PR. Doc string are often sufficient, make sure to follow the sphinx compatible standards.
+- **文档：** 如果 pull request 添加了功能，文档应该作为相同 PR 的一部分进行更新。Doc 字符串通常就足够了，请确保遵循 sphinx 兼容标准。
+  * compatible adj.可共用的;兼容的;可共存的;(因志趣等相投而)关系好的，和睦相处的
+  * sufficient adj.足够的;充足的
+
 - **CI:** Reviewers will not review the code until all CI tests are passed. Sometimes there can be flaky tests. You can close and open PR to re-run CI test. Please report if the issue persists. After the CI fix has been deployed to `master`, please rebase your PR.
 - **Code coverage:** Please ensure that code coverage does not decrease.
 - Remove `[WIP]` when ready for review. Please note that it may be merged soon after approved so please make sure the PR is ready to merge and do not expect more time for post-approval edits.
