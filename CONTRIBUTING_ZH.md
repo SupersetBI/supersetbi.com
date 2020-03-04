@@ -242,7 +242,7 @@ There is a dedicated [`apache-superset` tag](https://stackoverflow.com/questions
 
 ## Pull Request Guidelines
 
-拉请求指南
+PR 指南
 
 A philosophy we would like to strongly encourage is
 
@@ -255,7 +255,17 @@ A philosophy we would like to strongly encourage is
 
 The purpose is to separate problem from possible solutions.
 
+其目的是将问题与可能的解决方案分开。
+
 **Bug fixes:** If you’re only fixing a small bug, it’s fine to submit a pull request right away but we highly recommend to file an issue detailing what you’re fixing. This is helpful in case we don’t accept that specific fix but want to keep track of the issue. Please keep in mind that the project maintainers reserve the rights to accept or reject incoming PRs, so it is better to separate the issue and the code to fix it from each other. In some cases, project maintainers may request you to create a separate issue from PR before proceeding.
+
+**Bug 修复：** 如果你只是修复了一个小 bug，那么立即提交一个 pull request 是可以的，但是我们强烈建议你提交一个 issue，详细说明你正在修复的问题。如果我们不接受特定的修复，但希望跟踪这个 issue，这将很有帮助。请记住，项目维护者保留接受或拒绝传入 PRs 的权利，所以最好将问题和修复它的代码分开。在某些情况下，项目维护者可能会要求您在继续之前创建一个独立于 PR 的问题。
+* right away 立刻
+* keep track of 跟上…的进展;掌握…的最新消息
+* each other 互相，彼此
+* proceeding
+  * n. 进行；程序；诉讼；事项
+  * v. 开始；继续做；行进（proceed的ing形式）
 
 **Refactor:** For small refactors, it can be a standalone PR itself detailing what you are refactoring and why. If there are concerns, project maintainers may request you to create a `#SIP` for the PR before proceeding.
 
