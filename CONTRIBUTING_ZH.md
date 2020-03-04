@@ -490,9 +490,15 @@ Reverting changes that are causing issues in the master branch is a normal and e
 
 Should you decide that reverting is desirable, it is the responsibility of the Contributor performing the revert to:
 
+如果您认为恢复是可取的，则执行恢复的参与者有责任：
+
 - **Contact the interested parties:** The PR's author and the engineer who merged the work should both be contacted and informed of the revert.
 - **Provide concise reproduction steps:** Ensure that the issue can be clearly understood and duplicated by the original author of the PR.
 - **Put the revert through code review:** The revert must be approved by another committer.
+
+- **联系相关方：** 应联系 PR 的作者和合并工作的工程师，并告知其还原。
+- **提供简洁的复制步骤:** 确保问题能够被原PR作者清楚地理解和复制。
+- **通过代码检查还原：** 还原必须由另一个提交者批准。
 
 ## Setup Local Environment for Development
 
