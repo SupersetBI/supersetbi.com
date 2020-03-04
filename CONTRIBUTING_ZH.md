@@ -343,10 +343,19 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 
 #### Reviewing
 
+审查
+
 - Use constructive tone when writing reviews.
 - If there are changes required, state clearly what needs to be done before the PR can be approved.
 - If you are asked to update your pull request with some changes there's no need to create a new one. Push your changes to the same branch.
 - The committers reserve the right to reject any PR and in some cases may request the author to file an issue.
+
+- 写评论时要用建设性的语气。
+  * constructive adj.建设性的;有助益的;积极的
+  * tone n.语气;口气;腔调;
+- 如果需要更改，请清楚说明在批准 PR 之前需要做什么。
+- 如果你被要求更新你的 pull request 使用一些变化，没有必要创建一个新的。将更改推到同一分支。
+- 提交人保留拒绝任何 PR 的权利，在某些情况下可能会要求作者提交 issue。
 
 #### Merging
 
