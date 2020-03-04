@@ -438,9 +438,14 @@ First, add **Category labels (a.k.a. hash labels)**. Every issue/PR must have on
 
 Then add other types of labels as appropriate.
 
+然后根据需要添加其他类型的标签。
+
 - **Descriptive labels (a.k.a. dot labels):** These labels that begin with `.` describe the details of the issue/PR, such as `.ui`, `.js`, `.install`, `.backend`, etc. Each issue/PR can have zero or more dot labels.
+- **描述性标签 (a.k.a. 点标签):** 这些标签以 `.` 开始描述 issue/PR 的详细信息，例如 `.ui`, `.js`, `.install`, `.backend` 等。每个 issue/PR 可以有零个或多个点标签。
 - **Need labels:** These labels have pattern `need:xxx`, which describe the work required to progress, such as `need:rebase`, `need:update`, `need:screenshot`.
+- **需要标签:** 这些标签有 `need:xxx` 模式，描述了需要进行的工作，像 `need:rebase`, `need:update`, `need:screenshot`。
 - **Risk labels:** These labels have pattern `risk:xxx`, which describe the potential risk on adopting the work, such as `risk:db-migration`. The intention was to better understand the impact and create awareness for PRs that need more rigorous testing.
+- **风险标签:** 这些标签有 `risk:xxx` 模式，描述采用该工作的潜在风险，如 `risk:db-migration`。其目的是为了更好地理解影响，并为需要更严格测试的 PRs 创建感知。
 - **Status labels:** These labels describe the status (`abandoned`, `wontfix`, `cant-reproduce`, etc.) Issue/PRs that are rejected or closed without completion should have one or more status labels.
 - **Version labels:** These have the pattern `vx.x` such as `v0.28`. Version labels on issues describe the version the bug was reported on. Version labels on PR describe the first release that will include the PR.
 
