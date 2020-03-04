@@ -299,6 +299,7 @@ Finally, never submit a PR that will put master branch in broken state. If the P
 - Fill in all sections of the PR template.
   * 填写 PR 模板的所有部分。
 - Add prefix `[WIP]` to title if not ready for review (WIP = work-in-progress). We recommend creating a PR with `[WIP]` first and remove it once you have passed CI test and read through your code changes at least once.
+  * 如果没有准备好 review，则在标题中添加前缀 `[WIP]` (WIP = work-in-progress)。我们建议首先创建一个带有 `[WIP]` 的 PR，并在通过 CI 测试并至少阅读一次代码更改之后删除它。
 - **Screenshots/GIFs:** Changes to user interface require before/after screenshots, or GIF for interactions
   - Recommended capture tools ([Kap](https://getkap.co/), [LICEcap](https://www.cockos.com/licecap/), [Skitch](https://download.cnet.com/Skitch/3000-13455_4-189876.html))
   - If no screenshot is provided, the committers will mark the PR with `need:screenshot` label and will not review until screenshot is provided.
