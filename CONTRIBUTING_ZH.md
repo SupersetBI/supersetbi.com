@@ -465,7 +465,15 @@ If an issue/PR has been inactive for >=30 days, it will be closed. If it does no
 
 ## Revert Guidelines
 
+恢复指南
+
 Reverting changes that are causing issues in the master branch is a normal and expected part of the development process. In an open source community, the ramifications of a change cannot always be fully understood. With that in mind, here are some considerations to keep in mind when considering a revert:
+
+恢复主分支中引起问题的更改是开发过程中正常的和预期的一部分。在开放源码社区中，更改的结果并不总是能够被完全理解。考虑到这一点，以下是在考虑恢复时需要注意的一些事项:
+* ramification n. 衍生物；分枝，分叉；支流；（衍生的）结果、影响
+* considerations n. 考虑；注意事项（consideration的复数形式）；体贴
+* keep in mind 牢记;放在心上
+* considering prep. 考虑到；就...而论
 
 - **Availability of the PR author:** If the original PR author or the engineer who merged the code is highly available and can provide a fix in a reasonable timeframe, this would counter-indicate reverting.
 - **Severity of the issue:** How severe is the problem on master? Is it keeping the project from moving forward? Is there user impact? What percentage of users will experience a problem?
