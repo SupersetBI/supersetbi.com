@@ -1156,6 +1156,7 @@ For the translations to take effect:
 
 ```bash
 # In the case of JS translation, we need to convert the PO file into a JSON file, and we need the global download of the npm package po2json.
+# 在 JS 转换的情况下，我们需要将 PO 文件转换成 JSON 文件，我们需要全局下载 po2json 的npm 包。
 npm install -g po2json
 flask fab babel-compile --target superset/translations
 # Convert the en PO file into a JSON file
