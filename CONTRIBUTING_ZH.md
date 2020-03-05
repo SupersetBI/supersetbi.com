@@ -976,9 +976,15 @@ def sqrt(x: Union[float, int]) -> Union[float, int]:
 
 TypeScript is fully supported and is the recommended language for writing all new frontend components. When modifying existing functions/components, migrating to TypeScript is appreciated, but not required. Examples of migrating functions/components to TypeScript can be found in [#9162](https://github.com/apache/incubator-superset/pull/9162) and [#9180](https://github.com/apache/incubator-superset/pull/9180).
 
+TypeScript 是完全支持的，是编写所有新的前端组件的推荐语言。当修改现有的 functions/components 时，可以迁移到 TypeScript，但不是必需的。将 functions/components 迁移到TypeScript 的例子可以在 [#9162](https://github.com/apache/incubator-superset/pull/9162) 和 [#9180](https://github.com/apache/incubator-superset/pull/9180) 中找到。
+
 ## Testing
 
+测试
+
 ### Python Testing
+
+Python 测试
 
 All python tests are carried out in [tox](https://tox.readthedocs.io/en/latest/index.html)
 a standardized testing framework.
