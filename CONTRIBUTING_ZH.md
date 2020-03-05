@@ -1119,6 +1119,8 @@ import { t, tn } from "@superset-ui/translation";
 
 ### Enabling language selection
 
+启用多语言
+
 Add the `LANGUAGES` variable to your `superset_config.py`. Having more than one
 option inside will add a language selection dropdown to the UI on the right side
 of the navigation bar.
