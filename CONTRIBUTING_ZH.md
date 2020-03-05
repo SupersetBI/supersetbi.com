@@ -595,7 +595,7 @@ git commit -m 'Awesome new change to tutorial'
 git push origin changes-to-docs
 ```
 
-然后, [打开一个 PR](https://help.github.com/articles/about-pull-requests/).
+然后, [open a pull request](https://help.github.com/articles/about-pull-requests/).
 
 #### Images
 
