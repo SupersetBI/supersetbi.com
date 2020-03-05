@@ -643,7 +643,11 @@ Flask 服务器
 
 Make sure your machine meets the [OS dependencies](https://superset.incubator.apache.org/installation.html#os-dependencies) before following these steps.
 
+在执行这些步骤之前，请确保您的机器符合[操作系统依赖项](https://superset.incubator.apache.org/installation.html#os-dependencies)。
+
 Developers should use a virtualenv.
+
+开发人员应该使用 virtualenv。
 
 ```
 pip install virtualenv
@@ -651,38 +655,52 @@ pip install virtualenv
 
 Then proceed with:
 
+然后继续
+
 ```bash
 # Create a virtual environemnt and activate it (recommended)
-virtualenv -p python3 venv # setup a python3.6 virtualenv
+# 创建并激活虚拟环境（推荐）
+virtualenv -p python3 venv # setup a python3.6 virtualenv 设置 python3.6 virtualenv
 source venv/bin/activate
 
 # Install external dependencies
+# 安装外部依赖项
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 
 # Install Superset in editable (development) mode
+# 在可编辑（开发）模式下安装 Superset
 pip install -e .
 
 # Create an admin user in your metadata database
+# 在元数据数据库中创建一个管理用户
 superset fab create-admin
 
 # Initialize the database
+# 初始化数据库
 superset db upgrade
 
 # Create default roles and permissions
+# 创建默认角色和权限
 superset init
 
 # Load some data to play with
+# 加载一些数据来处理
 superset load_examples
 
 # Start the Flask dev web server from inside your virtualenv.
 # Note that your page may not have css at this point.
 # See instructions below how to build the front-end assets.
+# 从 virtualenv 中启动 Flask dev web 服务器。
+# 请注意，您的页面此时可能没有 css。
+# 参见下面关于如何构建前端资源的说明。
 FLASK_ENV=development superset run -p 8088 --with-threads --reload --debugger
 ```
 
 **Note: the FLASK_APP env var should not need to be set, as it's currently controlled
 via `.flaskenv`, however if needed, it should be set to `superset.app:create_app()`**
+
+**Note: 不需要设置 FLASK_APP 环境变量，因为它目前是通过 `.flaskenv` 控制的，但是如果需要，它应该通过 `superset.app:create_app()`被设置**
 
 If you have made changes to the FAB-managed templates, which are not built the same way as the newer, React-powered front-end assets, you need to start the app without the `--with-threads` argument like so:
 `FLASK_ENV=development superset run -p 8088 --reload --debugger`
