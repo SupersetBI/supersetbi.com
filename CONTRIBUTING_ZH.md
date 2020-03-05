@@ -622,7 +622,11 @@ For example, the image referenced above actually lives in `superset-frontend/ima
 
 #### API documentation
 
+API 文档
+
 Generate the API documentation with:
+
+使用以下工具生成 API 文档:
 
 ```bash
 pip install -r docs/requirements.txt
@@ -631,7 +635,11 @@ python setup.py build_sphinx
 
 ### Flask server
 
+Flask 服务器
+
 #### OS Dependencies
+
+系统依赖
 
 Make sure your machine meets the [OS dependencies](https://superset.incubator.apache.org/installation.html#os-dependencies) before following these steps.
 
