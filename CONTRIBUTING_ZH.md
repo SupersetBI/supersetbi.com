@@ -587,13 +587,15 @@ you edited earlier, and check out your changes!
 If you've made a change you'd like to contribute to the actual docs, just commit
 your code, push your new branch to Github:
 
+如果你已经做了改变，你想贡献给实际的文档，只要提交你的代码，把你的新分支推到 Github:
+
 ```bash
 git add docs/tutorial.rst
 git commit -m 'Awesome new change to tutorial'
 git push origin changes-to-docs
 ```
 
-Then, [open a pull request](https://help.github.com/articles/about-pull-requests/).
+然后, [打开一个 PR](https://help.github.com/articles/about-pull-requests/).
 
 #### Images
 
