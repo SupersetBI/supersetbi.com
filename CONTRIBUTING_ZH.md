@@ -1160,6 +1160,7 @@ For the translations to take effect:
 npm install -g po2json
 flask fab babel-compile --target superset/translations
 # Convert the en PO file into a JSON file
+# 将 en PO 文件转换为 JSON 文件
 po2json -d superset -f jed1.x superset/translations/en/LC_MESSAGES/messages.po superset/translations/en/LC_MESSAGES/messages.json
 ```
 
