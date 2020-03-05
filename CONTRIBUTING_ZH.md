@@ -618,6 +618,8 @@ in the docs.
 
 For example, the image referenced above actually lives in `superset-frontend/images/tutorial`. Since the image is moved during the documentation build process, the docs reference the image in `_static/images/tutorial` instead.
 
+例如，上面引用的图像实际上位于 `superset-frontend/images/tutorial`中。由于图像是在文档构建过程中移动的，所以文档在 `_static/images/tutorial` 中引用图像。
+
 #### API documentation
 
 Generate the API documentation with:
