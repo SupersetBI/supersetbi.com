@@ -751,7 +751,11 @@ Frontend assets (TypeScript, JavaScript, CSS, and images) must be compiled in or
 
 #### nvm and node
 
+nvm 和 node
+
 First, be sure you are using recent versions of NodeJS and npm. Using [nvm](https://github.com/creationix/nvm) to manage them is recommended. Check the docs at the link to be sure, but at the time of writing the following would install nvm and node:
+
+首先，确保您使用的是最新版本的 NodeJS 和 npm。建议使用 [nvm](https://github.com/creationix/nvm) 来管理它们。请查看链接中的文档以确定，但在撰写本文时，下面将安装 nvm 和 node:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
@@ -760,21 +764,33 @@ nvm install node
 
 #### Prerequisite
 
+前提条件
+
 #### Installing Dependencies
+
+安装依赖项
 
 Install third-party dependencies listed in `package.json`:
 
+安装 `package.json` 中列出的第三方依赖项：
+
 ```bash
 # From the root of the repository
+# 从仓库的根目录中
 cd superset-frontend
 
 # Install dependencies from `package-lock.json`
+# 从 `package-lock.json` 安装依赖项
 npm ci
 ```
 
 #### Building
 
+构建
+
 You can run the Webpack dev server (in a separate terminal from Flask), which runs on port 9000 and proxies non-asset requests to the Flask server on port 8088. After pointing your browser to `http://localhost:9000`, updates to asset sources will be reflected in-browser without a refresh.
+
+您可以运行 Webpack dev server(在与 Flask 分开的一个终端中)，它运行在端口 9000 上，并将非资源请求代理到端口 8088 上的 Flask 服务器。将浏览器指向 `http://localhost:9000` 后，对 asset 源的更新将在浏览器中反映出来，而不需要刷新。
 
 ```bash
 # Run the dev server
