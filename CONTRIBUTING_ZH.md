@@ -879,6 +879,8 @@ in combined feature flags of `{ 'FOO': True, 'BAR': True, 'BAZ': True }`.
 
 Superset uses Git pre-commit hooks courtesy of [pre-commit](https://pre-commit.com/). To install run the following:
 
+Superset 使用 Git pre-commit 钩子，由 [pre-commit](https://pre-commit.com/) 提供。要安装，请运行以下命令：
+
 ```bash
 pip3 install -r requirements-dev.txt
 pre-commit install
