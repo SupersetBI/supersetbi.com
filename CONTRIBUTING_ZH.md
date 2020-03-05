@@ -812,9 +812,11 @@ Alternatively you can use one of the following commands.
 
 ```bash
 # Start a watcher that recompiles your assets as you modify them (but have to manually reload your browser to see changes.)
+# 启动一个监视程序，在您修改资源时重新编译它们(但是必须手动重新加载浏览器才能看到更改)。
 npm run dev
 
 # Compile the TypeScript/JavaScript and CSS in production/optimized mode for official releases
+# 以 production/optimized 模式为正式发布编译 TypeScript/JavaScript 和 CSS
 npm run prod
 ```
 
