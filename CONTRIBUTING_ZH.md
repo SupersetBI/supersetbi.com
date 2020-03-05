@@ -560,6 +560,8 @@ for a reference on the formatting of the rst files.
 
 Once you've made your changes, run this command to convert the docs into HTML:
 
+更改后，运行此命令将文档转换为 HTML：
+
 ```bash
 make html
 ```
@@ -567,6 +569,8 @@ make html
 You'll see a lot of output as Sphinx handles the conversion. After it's done, the
 HTML Sphinx generated should be in `docs/_build/html`. Navigate there
 and start a simple web server so we can check out the docs in a browser:
+
+在 Sphinx 处理转换时，您将看到大量输出。完成之后，Sphinx 生成的 HTML 应该在 `docs/_build/html` 中。导航到此处并启动一个简单的 web 服务器，这样我们就可以在浏览器中查看文档:
 
 ```bash
 cd docs/_build/html
@@ -577,6 +581,8 @@ python -m http.server # Python2 users should use SimpleHTTPServer
 This will start a small Python web server listening on port 8000. Point your
 browser to http://localhost:8000, find the file
 you edited earlier, and check out your changes!
+
+这将启动一个监听端口 8000 的小型 Python web 服务器。将浏览器指向 http://localhost:8000，找到您先前编辑的文件，然后检查您的更改！
 
 If you've made a change you'd like to contribute to the actual docs, just commit
 your code, push your new branch to Github:
