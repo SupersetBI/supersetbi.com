@@ -747,6 +747,8 @@ app.logger.info(form_data)
 
 Frontend assets (TypeScript, JavaScript, CSS, and images) must be compiled in order to properly display the web UI. The `superset-frontend` directory contains all NPM-managed front end assets. Note that there are additional frontend assets bundled with Flask-Appbuilder (e.g. jQuery and bootstrap); these are not managed by NPM, and may be phased out in the future.
 
+必须编译前端资产(TypeScript、JavaScript、CSS 和图像)才能正确显示 web UI。`superset-frontend` 目录包含所有 npm 管理的前端资源。请注意，有额外的前端资源捆绑 Flask-Appbuilder (如 jQuery 和 bootstrap );这些不是由 NPM 管理的，将来可能会逐步淘汰。
+
 #### nvm and node
 
 First, be sure you are using recent versions of NodeJS and npm. Using [nvm](https://github.com/creationix/nvm) to manage them is recommended. Check the docs at the link to be sure, but at the time of writing the following would install nvm and node:
