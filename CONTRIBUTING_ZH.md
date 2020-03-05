@@ -1405,11 +1405,15 @@ Note that:
 
 Chart parameters are stored as a JSON encoded string the `slices.params` column and are often referenced throughout the code as form-data. Currently the form-data is neither versioned nor typed as thus is somewhat free-formed. Note in the future there may be merit in using something like [JSON Schema](https://json-schema.org/) to both annotate and validate the JSON object in addition to using a Mypy `TypedDict` (introduced in Python 3.8) for typing the form-data in the backend. This section serves as a potential primer for that work.
 
-图表参数以 JSON 编码的字符串存储在 `slices.params` 列，在整个代码中经常作为表单数据引用。目前，表单数据既没有版本控制，也没有类型化，因此在某种程度上是自由格式的。注意: 将来除了使用Mypy TypedDict(在Python 3.8中引入)在后端键入表单数据之外，还可以使用类似JSON模式的东西来注释和验证JSON对象，这可能是有价值的。本节将作为该工作的潜在入门。
+图表参数以 JSON 编码的字符串存储在 `slices.params` 列，在整个代码中经常作为表单数据引用。目前，表单数据既没有版本控制，也没有类型化，因此在某种程度上是自由格式的。注意: 将来除了使用 Mypy `TypedDict` (在 Python 3.8 中引入)在后端键入表单数据之外，还可以使用类似 JSON 模式的东西来注释和验证 JSON 对象，这可能是有价值的。本节将作为该工作的潜在入门。
 
 The following tables provide a non-exhausive list of the various fields which can be present in the JSON object grouped by the Explorer pane sections. These values were obtained by extracting the distinct fields from a legacy deployment consisting of tens of thousands of charts and thus some fields may be missing whilst others may be deprecated.
 
+下表提供了一个不详细的字段列表，这些字段可以出现在按 Explorer 窗格节分组的JSON对象中。这些值是通过从由成千上万个图表组成的遗留部署中提取不同的字段获得的，因此一些字段可能会丢失，而另一些可能会被弃用。
+
 Note not all fields are correctly catagorized. The fields vary based on visualization type and may apprear in different sections depending on the type. Verified deprecated columns may indicate a missing migration and/or prior migrations which were unsucessful and thus future work may be required to clean up the form-data.
+
+注意，并不是所有字段都被正确分解了。字段根据可视化类型不同而有所不同，并且可能根据类型在不同的部分中理解。已验证的废弃列可能表明缺少迁移和/或以前的迁移不成功，因此可能需要进行后续工作来清理表单数据。
 
 ### Datasource & Chart Type
 
@@ -1486,6 +1490,8 @@ Note not all fields are correctly catagorized. The fields vary based on visualiz
 
 The `metric` (or equivalent) and `timeseries_limit_metric` fields are all composed of either metric names or the JSON representation of the `AdhocMetric` TypeScript type. The `adhoc_filters` is composed of the JSON represent of the `AdhocFilter` TypeScript type (which can comprise of columns or metrics depending on whether it is a WHERE or HAVING clause). The `all_columns`, `all_columns_x`, `columns`, `groupby`, and `order_by_cols` fields all represent column names.
 
+`metric` (or equivalent) 和 `timeseries_limit_metric` 字段都是由度量名称或者 `AdhocMetric` TypeScript类型的JSON 表示形式组成的。`adhoc_filters` 由表示 `AdhocFilter` TypeScript 类型的 JSON 组成(可以由列或指标组成，这取决于它是 WHERE 子句还是 HAVING 子句)。`all_columns`、`all_columns_x`、`columns`、`groupby` 和 `order_by_cols` 字段都表示列名。
+
 ### Filters Configuration
 
 | Field            | Type          | Notes                             |
@@ -1493,6 +1499,9 @@ The `metric` (or equivalent) and `timeseries_limit_metric` fields are all compos
 | `filter_configs` | array(object) | The filter-box **Filters** widget |
 
 The filter-box configuration references column names (via the `column` key) and optionally metric names (via the `metric` key) if sorting is defined.
+
+如果定义了排序，那么过滤框配置将引用列名(通过 `column` 键)和可选的度量名称(通过 `metric` 键)。
+
 
 ### Options
 
