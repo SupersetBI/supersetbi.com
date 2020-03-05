@@ -832,15 +832,25 @@ npm install --global webpack webpack-cli webpack-dev-server
 
 See docs [here](docker/README.md)
 
+查看文档，[这里](docker/README.md)
+
 #### Updating NPM packages
+
+更新 NPM 包
 
 Use npm in the prescribed way, making sure that
 `superset-frontend/package-lock.json` is updated according to `npm`-prescribed
 best practices.
 
+按照规定的方式使用 npm，确保 `superset-frontend/package-lock.json` 是根据`npm`-prescribed 的最佳实践更新。
+
 #### Feature flags
 
+功能标记
+
 Superset supports a server-wide feature flag system, which eases the incremental development of features. To add a new feature flag, simply modify `superset_config.py` with something like the following:
+
+Superset 支持服务器范围的功能标记系统，这有助于特性的增量开发。要添加新的功能标记，只需使用如下内容修改 `superset_config.py`：
 
 ```python
 FEATURE_FLAGS = {
@@ -849,6 +859,8 @@ FEATURE_FLAGS = {
 ```
 
 If you want to use the same flag in the client code, also add it to the FeatureFlag TypeScript enum in `superset-frontend/src/featureFlags.ts`. For example,
+
+如果你想在客户端代码中使用相同的标记，也可以将它添加到 `superset-frontend/src/featureFlags.ts` 中的 FeatureFlag TypeScript enum 中。例如,
 
 ```typescript
 export enum FeatureFlag {
@@ -859,6 +871,9 @@ export enum FeatureFlag {
 `superset/config.py` contains `DEFAULT_FEATURE_FLAGS` which will be overwritten by
 those specified under FEATURE_FLAGS in `superset_config.py`. For example, `DEFAULT_FEATURE_FLAGS = { 'FOO': True, 'BAR': False }` in `superset/config.py` and `FEATURE_FLAGS = { 'BAR': True, 'BAZ': True }` in `superset_config.py` will result
 in combined feature flags of `{ 'FOO': True, 'BAR': True, 'BAZ': True }`.
+
+`superset/config.py` 包含 `DEFAULT_FEATURE_FLAGS`，它将被 `superset_config.py` 中的 FEATURE_FLAGS 中指定的那些覆盖。例如：
+`DEFAULT_FEATURE_FLAGS = { 'FOO': True, 'BAR': False }` 在 `superset/config.py` 中， `FEATURE_FLAGS = { 'BAR': True, 'BAZ': True }` 在 `superset_config.py` 中。合并后的功能标记是 `{ 'FOO': True, 'BAR': True, 'BAZ': True }`。
 
 ## Git Hooks
 
