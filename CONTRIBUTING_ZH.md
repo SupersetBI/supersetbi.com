@@ -1106,8 +1106,12 @@ At runtime, the `_` function will return the translation of the given
 string for the current language, or the given string itself
 if no translation is available.
 
+在运行时，`_` 函数将返回当前语言的给定字符串的翻译，如果没有可用的翻译，则返回给定字符串本身。
+
 In TypeScript/JavaScript, the technique is similar:
 we import `t` (simple translation), `tn` (translation containing a number).
+
+在 TypeScript/JavaScript 中，技术是类似的: 我们导入 `t` (简单翻译)，`tn` (包含数字的翻译)。
 
 ```javascript
 import { t, tn } from "@superset-ui/translation";
