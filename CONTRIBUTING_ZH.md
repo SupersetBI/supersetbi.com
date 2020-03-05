@@ -888,13 +888,13 @@ pre-commit install
 
 ## Linting
 
-Lint the project with:
+Lint 这个项目使用：
 
 ```bash
-# for python
+# 针对 python
 tox -e flake8
 
-# for frontend
+# 针对 frontend
 cd superset-frontend
 npm ci
 npm run lint
@@ -903,11 +903,17 @@ npm run lint
 The Python code is auto-formatted using [Black](https://github.com/python/black) which
 is configured as a pre-commit hook. There are also numerous [editor integrations](https://black.readthedocs.io/en/stable/editor_integration.html).
 
+Python 代码是使用 [Black](https://github.com/python/black) 自动格式化，它被配置在 pre-commit hook 中。还有许多 [编辑器集成](https://black.readthedocs.io/en/stable/editor_integration.html)。
+
 ## Conventions
+
+约定
 
 ### Python
 
 Parameters in the `config.py` (which are accessible via the Flask app.config dictionary) are assummed to always be defined and thus should be accessed directly via,
+
+`config.py` 中的参数(可以通过 Flask app.config 字典访问)假设总是被定义，因此应该通过以下方式直接访问:
 
 ```python
 blueprints = app.config["BLUEPRINTS"]
@@ -915,11 +921,15 @@ blueprints = app.config["BLUEPRINTS"]
 
 rather than,
 
+而不是，
+
 ```python
 blueprints = app.config.get("BLUEPRINTS")
 ```
 
 or similar as the later will cause typing issues. The former is of type `List[Callable]` whereas the later is of type `Optional[List[Callable]]`.
+
+或类似的，后者将导致 typing issues。前者的类型是 `List[Callable]`，而后者的类型是 `Optional[List[Callable]]`。
 
 ## Typing
 
