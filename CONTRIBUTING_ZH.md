@@ -599,6 +599,8 @@ git push origin changes-to-docs
 
 #### Images
 
+图片
+
 If you're adding new images to the documentation, you'll notice that the images
 referenced in the rst, e.g.
 
