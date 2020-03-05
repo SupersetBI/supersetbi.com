@@ -822,6 +822,8 @@ npm run prod
 
 If you run this service from somewhere other than your local machine, you may need to add hostname value to webpack.config.js at .devServer.public specifying the endpoint at which you will access the app. For example: myhost:9001. For convenience you may want to install webpack, webpack-cli and webpack-dev-server globally so that you can run them directly:
 
+如果您在本地机器之外的其他地方运行此服务，您可能需要在 .devServer.public 处向 webpack.config.js 添加 hostname 值，指定您将访问 app 的端点，例如 :myhost:9001。为了方便，你可能想要在全局范围内安装 webpack, webpack-cli 和 webpack-dev-server，这样你就可以直接运行它们:
+
 ```bash
 npm install --global webpack webpack-cli webpack-dev-server
 ```
