@@ -604,6 +604,8 @@ git push origin changes-to-docs
 If you're adding new images to the documentation, you'll notice that the images
 referenced in the rst, e.g.
 
+如果您正在向文档中添加新图片，您将注意到 rst 中引用的图片，例如
+
     .. image:: _static/images/tutorial/tutorial_01_sources_database.png
 
 aren't actually stored in that directory. Instead, you should add and commit
