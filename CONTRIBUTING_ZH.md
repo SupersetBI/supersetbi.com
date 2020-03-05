@@ -794,16 +794,21 @@ You can run the Webpack dev server (in a separate terminal from Flask), which ru
 
 ```bash
 # Run the dev server
+# 运行 dev server
 npm run dev-server
 
 # Run the dev server on a non-default port
+# 在非默认端口上运行 dev server
 npm run dev-server -- --devserverPort=9001
 
 # Run the dev server proxying to a Flask server on a non-default port
+# 在非默认端口上运行代理到 Flask server 的 dev server
 npm run dev-server -- --supersetPort=8081
 ```
 
 Alternatively you can use one of the following commands.
+
+或者，可以使用以下命令之一。
 
 ```bash
 # Start a watcher that recompiles your assets as you modify them (but have to manually reload your browser to see changes.)
