@@ -1024,9 +1024,15 @@ Note that the test environment uses a temporary directory for defining the
 SQLite databases which will be cleared each time before the group of test
 commands are invoked.
 
+请注意，测试环境使用一个临时目录来定义 SQLite 数据库，在每次调用测试命令组之前，SQLite 数据库都会被清除。
+
 ### Frontend Testing
 
+前端测试
+
 We use [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/) to test TypeScript/JavaScript. Tests can be run with:
+
+我们使用 [Jest](https://jestjs.io/) 和 [Enzyme](https://airbnb.io/enzyme/) 来测试 TypeScript/JavaScript。测试运行，使用:
 
 ```bash
 cd superset-frontend
@@ -1035,7 +1041,11 @@ npm run test
 
 ### Integration Testing
 
+集成测试
+
 We use [Cypress](https://www.cypress.io/) for integration tests. Tests can be run by `tox -e cypress`. To open Cypress and explore tests first setup and run test server:
+
+我们使用 [Cypress](https://www.cypress.io/) 进行集成测试。测试通过 `tox -e cypress` 运行。要打开 Cypress 并探索测试，首先要设置和运行测试服务器：
 
 ```bash
 export SUPERSET_CONFIG=tests.superset_test_config
@@ -1048,6 +1058,8 @@ superset run --port 8081
 
 Run Cypress tests:
 
+运行 Cypress 测试：
+
 ```bash
 cd superset-frontend
 npm run build
@@ -1057,21 +1069,28 @@ npm install
 npm run cypress run
 
 # run tests from a specific file
+# 从指定文件运行测试
 npm run cypress run -- --spec cypress/integration/explore/link.test.js
 
 # run specific file with video capture
+# 运行特定的文件使用视频捕获
 npm run cypress run -- --spec cypress/integration/dashboard/index.test.js --config video=true
 
 # to open the cypress ui
+# 打开 cypress ui
 npm run cypress open
 ```
 
-See [`superset-frontend/cypress_build.sh`](https://github.com/apache/incubator-superset/blob/master/superset-frontend/cypress_build.sh).
+查看 [`superset-frontend/cypress_build.sh`](https://github.com/apache/incubator-superset/blob/master/superset-frontend/cypress_build.sh).
 
 ## Translating
 
+翻译
+
 We use [Babel](http://babel.pocoo.org/en/latest/) to translate Superset.
 In Python files, we import the magic `_` function using:
+
+我们用 [Babel](http://babel.pocoo.org/en/latest/) 来翻译 Superset。在 Python 文件中，我们导入魔术方法 `_`，使用如下：
 
 ```python
 from flask_babel import lazy_gettext as _
@@ -1080,6 +1099,8 @@ from flask_babel import lazy_gettext as _
 then wrap our translatable strings with it, e.g. `_('Translate me')`.
 During extraction, string literals passed to `_` will be added to the
 generated `.po` file for each language for later translation.
+
+然后用它来包装我们的可翻译字符串，例如：`_('Translate me')`。提取过程中，传递给 `_` 的字面量将被添加到为每种语言生成的 `.po` 文件中，以供以后翻译。
 
 At runtime, the `_` function will return the translation of the given
 string for the current language, or the given string itself
