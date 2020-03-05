@@ -1175,8 +1175,12 @@ For example, `"year":["年"]` is correct while `"year":[null,"年"]`is incorrect
 
 ### Creating a new language dictionary
 
+创建一个新的语言字典
+
 To create a dictionary for a new language, run the following, where `LANGUAGE_CODE` is replaced with
 the language code for your target language, e.g. `es` (see [Flask AppBuilder i18n documentation](https://flask-appbuilder.readthedocs.io/en/latest/i18n.html) for more details):
+
+要为一种新语言创建字典，运行以下命令，其中 `LANGUAGE_CODE` 将被替换为目标语言的语言代码，例如（查看 [Flask AppBuilder i18n documentation](https://flask-appbuilder.readthedocs.io/en/latest/i18n.html) 了解更多信息 ）：
 
 ```bash
 pip install -r superset/translations/requirements.txt
@@ -1185,25 +1189,39 @@ pybabel init -i superset/translations/messages.pot -d superset/translations -l L
 
 Then, [extract strings for the new language](#extracting-new-strings-for-translation).
 
+然后，[extract strings for the new language](#extracting-new-strings-for-translation)
+
 ## Tips
 
+提示
+
 ### Adding a new datasource
+
+添加一个新的数据源
 
 1. Create Models and Views for the datasource, add them under superset folder, like a new my_models.py
    with models for cluster, datasources, columns and metrics and my_views.py with clustermodelview
    and datasourcemodelview.
 
+1. 创建数据源的模型和视图，将它们添加到 superset 文件夹下，如新建 my_models.py，其中包含用于集群、数据源、列和指标的模型，以及 my_views.py，其中包含 clustermodelview 和datasourcemodelview。
+
 1. Create DB migration files for the new models
+
+1. 为新模型创建 DB 迁移文件
 
 1. Specify this variable to add the datasource model and from which module it is from in config.py:
 
-   For example:
+1. 指定这个变量来添加 datasource 模型，以及它来自 config.py 中的哪个模块:
+
+   例如:
 
    ```python
    ADDITIONAL_MODULE_DS_MAP = {'superset.my_models': ['MyDatasource', 'MyOtherDatasource']}
    ```
 
    This means it'll register MyDatasource and MyOtherDatasource in superset.my_models module in the source registry.
+   
+   这意味着它将在源注册表的 superset.my_models 模块中注册 MyDatasource 和 MyOtherDatasource。
 
 ### Creating a new visualization type
 
