@@ -990,11 +990,15 @@ All python tests are carried out in [tox](https://tox.readthedocs.io/en/latest/i
 a standardized testing framework.
 All python tests can be run with any of the tox [environments](https://tox.readthedocs.io/en/latest/example/basic.html#a-simple-tox-ini-default-environments), via,
 
+所有的 python 测试都在 [tox](https://tox.readthedocs.io/en/latest/index.html) 标准测试框架中进行。所有的 python 测试都可以在任何 tox [environments](https://tox.readthedocs.io/en/latest/example/basic.html#a-simple-tox-ini-default-environments) 下运行，通过，
+
 ```bash
 tox -e <environment>
 ```
 
 For example,
+
+例如：
 
 ```bash
 tox -e py36
@@ -1002,11 +1006,15 @@ tox -e py36
 
 Alternatively, you can run all tests in a single file via,
 
+或者，您可以通过以下方式在单个文件中运行所有测试:
+
 ```bash
 tox -e <environment> -- tests/test_file.py
 ```
 
 or for a specific test via,
+
+或者对于一个特定的测试，
 
 ```bash
 tox -e <environment> -- tests/test_file.py:TestClassName.test_method_name
