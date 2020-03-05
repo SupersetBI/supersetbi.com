@@ -1220,32 +1220,45 @@ Then, [extract strings for the new language](#extracting-new-strings-for-transla
    ```
 
    This means it'll register MyDatasource and MyOtherDatasource in superset.my_models module in the source registry.
-   
+
    这意味着它将在源注册表的 superset.my_models 模块中注册 MyDatasource 和 MyOtherDatasource。
 
 ### Creating a new visualization type
+
+创建一个新的可视化类型
 
 Here's an example as a Github PR with comments that describe what the
 different sections of the code do:
 https://github.com/apache/incubator-superset/pull/3013
 
+下面是一个 Github PR 示例，其中包含描述代码不同部分的注释：
+https://github.com/apache/incubator-superset/pull/3013
+
 ### Adding a DB migration
 
+添加数据库迁移
+
 1. Alter the model you want to change. This example will add a `Column` Annotations model.
+
+1. 改变你想要改变的模型。本例将添加一个 `Column` 注释模型。
 
    [Example commit](https://github.com/apache/incubator-superset/commit/6c25f549384d7c2fc288451222e50493a7b14104)
 
 1. Generate the migration file
 
+1. 生成迁移文件
+
    ```bash
    superset db migrate -m 'add_metadata_column_to_annotation_model.py'
    ```
 
-   This will generate a file in `migrations/version/{SHA}_this_will_be_in_the_migration_filename.py`.
+   这将生成一个文件 `migrations/version/{SHA}_this_will_be_in_the_migration_filename.py`.
 
    [Example commit](https://github.com/apache/incubator-superset/commit/d3e83b0fd572c9d6c1297543d415a332858e262)
 
 1. Upgrade the DB
+
+1. 升级数据库
 
    ```bash
    superset db upgrade
@@ -1261,17 +1274,25 @@ https://github.com/apache/incubator-superset/pull/3013
 
 1. Add column to view
 
+1. 添加列到视图
+
    Since there is a new column, we need to add it to the AppBuilder Model view.
+
+   由于有一个新列，我们需要将它添加到 AppBuilder 模型视图中。
 
    [Example commit](https://github.com/apache/incubator-superset/pull/5745/commits/6220966e2a0a0cf3e6d87925491f8920fe8a3458)
 
 1. Test the migration's `down` method
+
+1. 测试迁移的 `down` 方法
 
    ```bash
    superset db downgrade
    ```
 
    The output should look like this:
+
+   输出应该是这样的：
 
    ```
    INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
@@ -1281,7 +1302,11 @@ https://github.com/apache/incubator-superset/pull/3013
 
 ### Merging DB migrations
 
+合并DB迁移
+
 When two DB migrations collide, you'll get an error message like this one:
+
+当两个DB迁移发生冲突时，您将得到类似这样的错误消息：
 
 ```
 alembic.util.exc.CommandError: Multiple head revisions are present for
@@ -1292,7 +1317,11 @@ or 'heads' for all heads`
 
 To fix it:
 
+修复:
+
 1. Get the migration heads
+
+1. 得到迁移头
 
    ```bash
    superset db heads
@@ -1300,7 +1329,11 @@ To fix it:
 
    This should list two or more migration hashes.
 
+   这应该列出两个或更多的迁移散列。
+
 1. Create a new merge migration
+
+1. 创建一个新的合并迁移
 
    ```bash
    superset db merge {HASH1} {HASH2}
@@ -1308,20 +1341,29 @@ To fix it:
 
 1. Upgrade the DB to the new checkpoint
 
+1. 将数据库升级到新的检查点
+
    ```bash
    superset db upgrade
    ```
 
 ### SQL Lab Async
 
+SQL Lab 异步
+
 It's possible to configure a local database to operate in `async` mode,
 to work on `async` related features.
 
+可以将本地数据库配置为在 `async` 模式下操作，以处理 `async` 相关功能。
+
 To do this, you'll need to:
+
+为此，您需要：
 
 - Add an additional database entry. We recommend you copy the connection
   string from the database labeled `main`, and then enable `SQL Lab` and the
   features you want to use. Don't forget to check the `Async` box
+- 添加一个额外的数据库条目。我们建议您从标记为 `main` 的数据库中复制连接字符串，然后启用`SQL Lab` 和您想要使用的功能。不要忘记勾选 `Async` 框
 - Configure a results backend, here's a local `FileSystemCache` example,
   not recommended for production,
   but perfect for testing (stores cache in `/tmp`)
@@ -1329,25 +1371,41 @@ To do this, you'll need to:
   from werkzeug.contrib.cache import FileSystemCache
   RESULTS_BACKEND = FileSystemCache('/tmp/sqllab')
   ```
+- 配置一个结果后端，这是一个本地 `FileSystemCache` 示例，不建议用于生产，但非常适合
+  用于测试(将缓存存储在 `/tmp` 中)
+  ```python
+  from werkzeug.contrib.cache import FileSystemCache
+  RESULTS_BACKEND = FileSystemCache('/tmp/sqllab')
+  ```
 
-* Start up a celery worker
+
+* 启动一个 celery worker
   ```shell script
   celery worker --app=superset.tasks.celery_app:app -Ofair
   ```
 
 Note that:
 
+请注意：
+
 - for changes that affect the worker logic, you'll have to
   restart the `celery worker` process for the changes to be reflected.
+- 对于影响 worker 逻辑的更改，您必须重新启动 `celery worker` 进程，以反映更改。
 - The message queue used is a `sqlite` database using the `SQLAlchemy`
   experimental broker. Ok for testing, but not recommended in production
+- 使用的消息队列是一个 `sqlite` 数据库，使用的是 `SQLAlchemy` 实验代理。用于测试是可以的，但不建议用于生产
 - In some cases, you may want to create a context that is more aligned
   to your production environment, and use the similar broker as well as
   results backend configuration
+- 在某些情况下，您可能希望创建与生产环境更一致的上下文，并使用类似的代理和结果后端配置
 
 ## Chart Parameters
 
+图表参数
+
 Chart parameters are stored as a JSON encoded string the `slices.params` column and are often referenced throughout the code as form-data. Currently the form-data is neither versioned nor typed as thus is somewhat free-formed. Note in the future there may be merit in using something like [JSON Schema](https://json-schema.org/) to both annotate and validate the JSON object in addition to using a Mypy `TypedDict` (introduced in Python 3.8) for typing the form-data in the backend. This section serves as a potential primer for that work.
+
+图表参数以 JSON 编码的字符串存储在 `slices.params` 列，在整个代码中经常作为表单数据引用。目前，表单数据既没有版本控制，也没有类型化，因此在某种程度上是自由格式的。注意: 将来除了使用Mypy TypedDict(在Python 3.8中引入)在后端键入表单数据之外，还可以使用类似JSON模式的东西来注释和验证JSON对象，这可能是有价值的。本节将作为该工作的潜在入门。
 
 The following tables provide a non-exhausive list of the various fields which can be present in the JSON object grouped by the Explorer pane sections. These values were obtained by extracting the distinct fields from a legacy deployment consisting of tens of thousands of charts and thus some fields may be missing whilst others may be deprecated.
 
