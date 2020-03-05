@@ -1125,6 +1125,8 @@ Add the `LANGUAGES` variable to your `superset_config.py`. Having more than one
 option inside will add a language selection dropdown to the UI on the right side
 of the navigation bar.
 
+将 `LANGUAGES` 变量添加到您的 `superset_config.py` 中。如果其中有多个选项，则会在导航栏右侧的 UI 中添加一个语言选择下拉菜单。
+
 ```python
 LANGUAGES = {
     'en': {'flag': 'us', 'name': 'English'},
@@ -1135,6 +1137,8 @@ LANGUAGES = {
 
 ### Extracting new strings for translation
 
+提取新的字符串进行翻译
+
 ```bash
 flask fab babel-extract --target superset/translations --output superset/translations/messages.pot --config superset/translations/babel.cfg -k _ -k __ -k t -k tn -k tct
 ```
@@ -1144,7 +1148,11 @@ You can then translate the strings gathered in files located under
 to translate the `po` file more conveniently.
 There are some [tutorials in the wiki](https://wiki.lxde.org/en/Translate_*.po_files_with_Poedit).
 
+然后可以翻译 `superset/translation` 文件夹下收集的字符串，其中每种语言都有一个。您可以使用 [Poedit](https://poedit.net/features) 更方便地翻译 `po` 文件。wiki 中有一些[教程](https://wiki.lxde.org/en/Translate_*.po_files_with_Poedit)。
+
 For the translations to take effect:
+
+为使译文生效:
 
 ```bash
 # In the case of JS translation, we need to convert the PO file into a JSON file, and we need the global download of the npm package po2json.
