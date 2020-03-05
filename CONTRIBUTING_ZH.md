@@ -965,8 +965,8 @@ def sqrt(x: Union[float, int]) -> Union[float, int]:
     返回 x 的平方根。
 
     :param x: 一个数字
-    :returns: The square root of the given number
-    :raises ValueError: If the number is negative
+    :returns: 给定数字的平方根
+    :raises ValueError: 如果数字是负数
     """
 
     return math.sqrt(x)
