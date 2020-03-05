@@ -725,6 +725,8 @@ def FLASK_APP_MUTATOR(app):
 
 Then make sure you run your WSGI server using the right worker type:
 
+然后确保您使用正确的 worker 类型运行您的 WSGI 服务器:
+
 ```bash
 FLASK_ENV=development gunicorn "superset.app:create_app()" -k "geventwebsocket.gunicorn.workers.GeventWebSocketWorker" -b 127.0.0.1:8088 --reload
 ```
