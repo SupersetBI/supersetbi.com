@@ -1171,6 +1171,8 @@ the executable path (e.g. `/usr/local/bin/po2json` instead of `po2json`).
 If you get a lot of `[null,***]` in `messages.json`, just delete all the `null,`.
 For example, `"year":["年"]` is correct while `"year":[null,"年"]`is incorrect.
 
+如果您在运行 `po2json` 时出现错误，那么您可能正在运行同名的 Ubuntu 包，而不是 NodeJS 包(它们的参数格式不同)。如果存在冲突，您可能需要更新 `PATH` 环境变量或完全限定可执行路径（例如：`/usr/local/bin/po2json` 代替 `po2json`）。如果你在 `messages.json` 得到许多 `[null,***]`，只需要删除所有的 `null,`。例如, `"year":["年"]` 是正确的,而 `"year":[null,"年"]` 是不正确的。
+
 ### Creating a new language dictionary
 
 To create a dictionary for a new language, run the following, where `LANGUAGE_CODE` is replaced with
