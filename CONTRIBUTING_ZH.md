@@ -733,6 +733,8 @@ FLASK_ENV=development gunicorn "superset.app:create_app()" -k "geventwebsocket.g
 
 You can log anything to the browser console, including objects:
 
+你可以 log 任何东西到浏览器控制台，包括对象:
+
 ```python
 from superset import app
 app.logger.error('An exception occurred!')
@@ -740,6 +742,8 @@ app.logger.info(form_data)
 ```
 
 ### Frontend Assets
+
+前端资源
 
 Frontend assets (TypeScript, JavaScript, CSS, and images) must be compiled in order to properly display the web UI. The `superset-frontend` directory contains all NPM-managed front end assets. Note that there are additional frontend assets bundled with Flask-Appbuilder (e.g. jQuery and bootstrap); these are not managed by NPM, and may be phased out in the future.
 
