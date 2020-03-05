@@ -714,6 +714,8 @@ If you have made changes to the FAB-managed templates, which are not built the s
 
 This feature is only available on Python 3. When debugging your application, you can have the server logs sent directly to the browser console using the [ConsoleLog](https://github.com/betodealmeida/consolelog) package. You need to mutate the app, by adding the following to your `config.py` or `superset_config.py`:
 
+此功能仅在 Python3 上可用。调试应用程序时，可以使用 [ConsoleLog](https://github.com/betodealmeida/consolelog) 包将服务器日志直接发送到浏览器控制台。您需要修改应用程序，将以下内容添加到您的 `config.py` 或 `superset_config.py`：
+
 ```python
 from console_log import ConsoleLog
 
