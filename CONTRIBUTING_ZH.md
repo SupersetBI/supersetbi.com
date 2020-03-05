@@ -939,9 +939,13 @@ To ensure clarity, consistency, all readability, _all_ new functions should use
 [type hints](https://docs.python.org/3/library/typing.html) and include a
 docstring using Sphinx documentation.
 
+为了确保清晰、一致性和可读性，_所有_ 新函数都应该使用 [type hints](https://docs.python.org/3/library/typing.html)，并使用 Sphinx 文档包含 docstring。
+
 Note per [PEP-484](https://www.python.org/dev/peps/pep-0484/#exceptions) no
 syntax for listing explicitly raised exceptions is proposed and thus the
 recommendation is to put this information in a docstring, i.e.,
+
+请注意，根据 [PEP-484](https://www.python.org/dev/peps/pep-0484/#exceptions)，不建议使用任何语法来列出显式引发的异常，因此建议将这些信息放在 docstring 中，即，
 
 ```python
 import math
@@ -953,6 +957,14 @@ def sqrt(x: Union[float, int]) -> Union[float, int]:
     Return the square root of x.
 
     :param x: A number
+    :returns: The square root of the given number
+    :raises ValueError: If the number is negative
+    """
+
+    """
+    返回 x 的平方根。
+
+    :param x: 一个数字
     :returns: The square root of the given number
     :raises ValueError: If the number is negative
     """
