@@ -545,6 +545,8 @@ the docs and see our changes in action. First, you'll want to
 [create a new branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 to work on your changes:
 
+为了了解如何编辑和构建文档，让我们编辑一个文件，构建文档并查看我们的更改。首先，您需要创建一个 [create a new branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 来处理您的更改：
+
 ```bash
 git checkout -b changes-to-docs
 ```
@@ -553,6 +555,8 @@ Now, go ahead and edit one of the files under `docs/`, say `docs/tutorial.rst` -
 it however you want. Check out the
 [ReStructuredText Primer](http://docutils.sourceforge.net/docs/user/rst/quickstart.html)
 for a reference on the formatting of the rst files.
+
+现在，继续编辑 `docs/` 下的一个文件，比如 `docs/tutorial.rst` - 根据需要进行更改。查看 [ReStructuredText Primer](http://docutils.sourceforge.net/docs/user/rst/quickstart.html) 以获取有关 rst 文件格式的参考。
 
 Once you've made your changes, run this command to convert the docs into HTML:
 
