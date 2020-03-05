@@ -614,6 +614,8 @@ When the docs are deployed to https://superset.incubator.apache.org/, images
 are copied from there to the `_static/images` directory, just like they're referenced
 in the docs.
 
+实际上并没有存储在那个目录中。相反，您应该向 `superset-frontend/images` 目录添加和提交图片(以及任何其他静态资源)。当文档部署到 https://superset.incubator.apache.org/ 时，图片将从那里复制到`_static/images` 目录，就像在文档中引用它们一样。
+
 For example, the image referenced above actually lives in `superset-frontend/images/tutorial`. Since the image is moved during the documentation build process, the docs reference the image in `_static/images/tutorial` instead.
 
 #### API documentation
