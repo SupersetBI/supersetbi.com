@@ -705,6 +705,9 @@ via `.flaskenv`, however if needed, it should be set to `superset.app:create_app
 If you have made changes to the FAB-managed templates, which are not built the same way as the newer, React-powered front-end assets, you need to start the app without the `--with-threads` argument like so:
 `FLASK_ENV=development superset run -p 8088 --reload --debugger`
 
+如果您对 FAB 管理的模板进行了更改，而这些模板的构建方式与较新的、React 驱动的前端资源不同，那么您需要在启动应用程序时不使用 `--with-threads`参数，如下所示：
+`FLASK_ENV=development superset run -p 8088 --reload --debugger`
+
 #### Logging to the browser console
 
 This feature is only available on Python 3. When debugging your application, you can have the server logs sent directly to the browser console using the [ConsoleLog](https://github.com/betodealmeida/consolelog) package. You need to mutate the app, by adding the following to your `config.py` or `superset_config.py`:
